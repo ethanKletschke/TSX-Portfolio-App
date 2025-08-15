@@ -1,0 +1,7 @@
+export default function validateEmail(email: string): boolean {
+  // Declare a RegExp for emails (or localhost addresses)
+  const re = /^[a-z0-9._%+-]+@([a-z0-9.-]+\.[a-z]{2,}|localhost)$/gim;
+
+  // Returns if the email is valid as per the RegExp
+  return re.test(email);
+}
