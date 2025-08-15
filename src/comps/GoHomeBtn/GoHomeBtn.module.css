@@ -1,0 +1,7 @@
+.btn {
+  border: none;
+  border-radius: 0.3em;
+  padding: 1em;
+  background-color: var(--lightBlue);
+
+}
