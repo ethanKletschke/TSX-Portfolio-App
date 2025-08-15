@@ -1,4 +1,5 @@
-import Header from "../comps/Header/Header";
+import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
+import Header from "../../comps/Header/Header";
 
 export default function ConsecSum() {
   return (
@@ -6,6 +7,8 @@ export default function ConsecSum() {
       <Header>
         Consecutive Summation
       </Header>
+
+      <GoHomeBtn />
     </main>
   );
 }

@@ -1,0 +1,11 @@
+.heading {
+  color: var(--blue);
+  background-color: var(--lightBlue);
+  padding: 1em;
+  text-align: center;
+}
+
+.heading > h1 {
+  font-weight: 800;
+  text-decoration: underline;
+}

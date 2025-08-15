@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import Header from "../../comps/Header/Header";
 
 export default function Home() {
   return (
-    <>
-      <header>
-        <h1>Ethan's Portfolio App</h1>
-      </header>
+    <main>
+      <Header>
+        Ethan Kletschke's Portfolio
+      </Header>
 
       <h2>Select a Page to Go To</h2>
 
@@ -25,7 +26,17 @@ export default function Home() {
             Sort Objects
           </Link> 
         </li>
+        <li>
+          <Link to="/southAfricanID">
+            South African ID Validator
+          </Link>
+        </li>
+        <li>
+          <Link to="/email">
+            Email Validator
+          </Link>
+        </li>
       </ul>
-    </>
+    </main>
   );
 }
