@@ -18,3 +18,8 @@ body {
 a {
   color: var(--blue);
 }
+
+/* Main content in <main> */
+#main-body {
+  margin: 0.5em;
+}

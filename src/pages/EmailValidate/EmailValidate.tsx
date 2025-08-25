@@ -2,6 +2,7 @@ import { useState } from "react";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import validateEmail from "../../funcs/validateEmail";
+import Footer from "../../comps/Footer/Footer";
 
 export default function EmailValidate() {
   const [email, setEmail] = useState<string>("");
@@ -16,23 +17,25 @@ export default function EmailValidate() {
         Validate Email
       </Header>
 
-      <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="email-addr">Enter Email Below:</label><br />
-        <input 
-          type="text"
-          name="email-addr"
-          id="email-addr"
-          value={email || ""}
-          onChange={handleChange}
-        />
-        <br />
-        <label htmlFor="email-output">Is the email valid?</label><br />
-        <output name="email-output">{(validateEmail(email) ? "Yes" : "No")}</output>
-      </form>
+      <article id="main-body">
+        <form onSubmit={(e) => e.preventDefault()}>
+          <label htmlFor="email-addr">Enter Email Below:</label><br />
+          <input 
+            type="text"
+            name="email-addr"
+            id="email-addr"
+            value={email || ""}
+            onChange={handleChange}
+          />
+          <br />
+          <label htmlFor="email-output">Is the email valid?</label><br />
+          <output name="email-output">{(validateEmail(email) ? "Yes" : "No")}</output>
+        </form>
 
-      <hr />
+        <GoHomeBtn />
+      </article>
 
-      <GoHomeBtn />
+      <Footer />
     </main>
   );
 }
