@@ -1,16 +1,16 @@
 import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
-import validateID from "../../funcs/validateID";
 
-export default function ValidZA_ID() {
+export default function NoPage() {
   return (
     <main>
       <Header>
-        Validate South African ID Number
+        Oops! 404 Error.
       </Header>
 
       <article id="main-body">
+            
         <GoHomeBtn />
       </article>
 

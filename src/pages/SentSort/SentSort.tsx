@@ -9,7 +9,9 @@ export default function SentSort() {
         Sort a Sentence
       </Header>
 
-      <GoHomeBtn />
+      <article id="main-body">
+        <GoHomeBtn />
+      </article>
     </main>
   );
 }

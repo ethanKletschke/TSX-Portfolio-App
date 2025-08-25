@@ -1,3 +1,4 @@
+import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 
@@ -8,7 +9,12 @@ export default function ConsecSum() {
         Consecutive Summation
       </Header>
 
-      <GoHomeBtn />
+      <article id="main-body">
+
+        <GoHomeBtn />
+      </article>
+
+      <Footer />
     </main>
   );
 }

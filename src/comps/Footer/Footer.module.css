@@ -1,3 +1,6 @@
 .foot {
-  
+  text-align: center;
+  background-color: var(--lightBlue);
+  color: var(--blue);
+  padding: 1.2em;
 }

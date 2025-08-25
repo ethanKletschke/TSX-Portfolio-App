@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import ValidZA_ID from "./pages/ValidZA_ID/ValidZA_ID.tsx";
+import NoPage from "./pages/NoPage/NoPage.tsx";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
         <Route path="/objSort" element={<ObjSort />} />
         <Route path="/email" element={<EmailValidate />} />
         <Route path="/southAfricanID" element={<ValidZA_ID />} />
-        <Route path="*" element={<h2>404</h2>} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </>
   )
