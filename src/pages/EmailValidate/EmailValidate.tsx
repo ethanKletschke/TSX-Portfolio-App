@@ -3,6 +3,7 @@ import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import validateEmail from "../../funcs/validateEmail";
 import Footer from "../../comps/Footer/Footer";
+import styles from "./EmailValidate.module.css";
 
 export default function EmailValidate() {
   const [email, setEmail] = useState<string>("");
@@ -19,7 +20,7 @@ export default function EmailValidate() {
 
       <article id="main-body">
         <form onSubmit={(e) => e.preventDefault()}>
-          <label htmlFor="email-addr">Enter Email Below:</label><br />
+          <label htmlFor="email-addr">Enter Email Below:</label>
           <input 
             type="text"
             name="email-addr"
@@ -27,8 +28,8 @@ export default function EmailValidate() {
             value={email || ""}
             onChange={handleChange}
           />
-          <br />
-          <label htmlFor="email-output">Is the email valid?</label><br />
+          <label htmlFor="email-output" className={styles["out-lbl"]}>Is the email valid?</label>&nbsp;
+          {/* Output if the email is valid or not */}
           <output name="email-output">{(validateEmail(email) ? "Yes" : "No")}</output>
         </form>
 

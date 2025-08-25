@@ -1,7 +1,7 @@
-import Footer from "../../comps/Footer/Footer";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Header from "../../comps/Header/Header";
-import sortObject from "../../funcs/sortObject";
+import Footer from "../../comps/Footer/Footer.tsx";
+import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
+import Header from "../../comps/Header/Header.tsx";
+import sortObject from "../../funcs/sortObjects.tsx";
 
 export default function ObjSort() {
   return (

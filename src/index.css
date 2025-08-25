@@ -23,3 +23,37 @@ a {
 #main-body {
   margin: 0.5em;
 }
+
+/* Target all forms under <main> */
+main form {
+  margin: 0.5em;
+}
+
+main form input[type=text], 
+main form select,
+main form input[type=submit] {
+  width: 100%;
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+main form input[type=text], 
+main form select {
+  border: 1.5pt solid var(--lightBlue);
+  border-radius: 4pt;
+  box-sizing: border-box;
+}
+
+main form input[type=submit] {
+  background-color: var(--lightBlue);
+  color: var(--blue);
+  border: none;
+  border-radius: 4pt;
+  cursor: pointer;
+}
+
+main form input[type=submit]:hover {
+  background-color: var(--blue);
+  color: var(--lightBlue);
+}
