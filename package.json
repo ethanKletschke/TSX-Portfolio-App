@@ -1,13 +1,14 @@
 {
   "name": "tsx-portfolio",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "tsx node_modules/mocha/bin/mocha 'tests/**/*.spec.ts'"
+    "test": "tsx node_modules/mocha/bin/mocha 'tests/**/*.spec.ts'",
+    "pkg-lock-update": "npm i --package-lock-only"
   },
   "dependencies": {
     "react": "^19.1.0",

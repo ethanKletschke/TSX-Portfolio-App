@@ -1,6 +1,6 @@
-import GoHomeBtn from "../comps/GoHomeBtn/GoHomeBtn";
-import Header from "../comps/Header/Header";
-import validateID from "../funcs/validateID";
+import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
+import Header from "../../comps/Header/Header";
+import validateID from "../../funcs/validateID";
 
 export default function ValidZA_ID() {
   return (
