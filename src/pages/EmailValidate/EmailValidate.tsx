@@ -1,7 +1,7 @@
 import { useState } from "react";
-import GoHomeBtn from "../comps/GoHomeBtn/GoHomeBtn";
-import Header from "../comps/Header/Header";
-import validateEmail from "../funcs/validateEmail";
+import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
+import Header from "../../comps/Header/Header";
+import validateEmail from "../../funcs/validateEmail";
 
 export default function EmailValidate() {
   const [email, setEmail] = useState<string>("");
