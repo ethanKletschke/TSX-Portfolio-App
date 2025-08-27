@@ -2,6 +2,7 @@
   --lightBlue: #7ec5ff;
   --blue: #003ace;
   --white: #efefef;
+  --black: #212529;
 }
 
 * {
@@ -29,23 +30,26 @@ main form {
   margin: 0.5em;
 }
 
-main form input[type=text], 
-main form select,
-main form input[type=submit] {
+main form input[type=text],
+main form input[type=number],
+main form input[type=email],
+main form input[type=submit], 
+main form select {
   width: 100%;
   padding: 0.6em 1.2em;
   margin: 0.5em 0;
   display: inline-block;
 }
 
-main form input[type=text], 
+main form input:not([type=submit]),
 main form select {
   border: 1.5pt solid var(--lightBlue);
   border-radius: 4pt;
   box-sizing: border-box;
 }
 
-main form input[type=text]:focus {
+main form input:not([type=submit]):focus,
+main form select:focus {
   outline: 3pt outset lightgray;
   border: 1.5pt solid var(--lightBlue);
 }
@@ -66,6 +70,14 @@ main form input[type=submit]:hover {
 main form > fieldset {
   border: 2pt ridge var(--lightBlue);
   padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+main form > fieldset > legend {
+  padding: 0 0.5em;
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 main form label {
@@ -73,6 +85,7 @@ main form label {
   display: inline-block;
   padding: 0.2em;
   text-decoration: underline;
+  color: var(--blue);
 }
 
 main form output {
