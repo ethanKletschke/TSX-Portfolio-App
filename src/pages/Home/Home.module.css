@@ -1,0 +1,26 @@
+:root {
+  --liBorder: 1pt solid;
+}
+
+/* Table of Contents */
+ul.toc {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+ul.toc > li {
+  flex: 1;
+  text-align: center;
+  border: var(--liBorder);
+  border-bottom: none;
+  padding: 1em;
+}
+
+ul.toc > li:last-child {
+  border-bottom: var(--liBorder);
+}
+
+ul.toc > li > a {
+  color: var(--black);
+}
