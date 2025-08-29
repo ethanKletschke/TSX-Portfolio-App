@@ -1,8 +1,6 @@
 import { expect } from "chai";
 import sortString from "../src/funcs/sortString.ts";
-
-// A tuple for testing multiple values at once.
-type testTuple<T = string> = [value: T, expected: T, msg?: string];
+import testTuple from "./testTuple.ts";
 
 describe("sortString()", () => {
   it("Sorts a string alphabetically", () => {
