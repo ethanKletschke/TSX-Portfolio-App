@@ -24,3 +24,10 @@ ul.toc > li:last-child {
 ul.toc > li > a {
   color: var(--black);
 }
+
+/* "Select page" heading */
+.heading {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
