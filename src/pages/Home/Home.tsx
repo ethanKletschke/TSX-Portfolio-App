@@ -11,7 +11,7 @@ export default function Home() {
       </Header>
 
       <article id="main-body">
-        <h2>Select a Page to Go To</h2>
+        <h2 className={styles.heading}>Select a Page to Go To</h2>
 
         <ul className={styles.toc}>
           <li>

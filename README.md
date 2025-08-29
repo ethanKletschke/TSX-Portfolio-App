@@ -23,7 +23,7 @@ validator.
 
 ### Sentence Sorting
 
-On this page, you can enter a sentence, and sort it by its individual letters.
+On this page, you can enter a sentence, and the program will sort it by its individual letters.
 
 ### South African ID Number Validator
 

@@ -96,3 +96,8 @@ hr {
   border: 1pt solid var(--lightBlue);
   margin: 0.4em;
 }
+
+main {
+  /* Compensate for fixed footer */
+  padding-bottom: 3em;
+}
