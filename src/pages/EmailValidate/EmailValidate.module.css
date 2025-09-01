@@ -1,5 +1,5 @@
 /* Output label */
 .out-lbl {
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: bold; /* Bold font */
+  text-decoration: underline; /* Underline font */
 }
