@@ -8,14 +8,16 @@ export default function SentSort() {
   const [sentence, setSentence] = useState<string>("");
   const [sortedSentence, setSortedSentence] = useState<string>("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSentenceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Set the value of the sentence
     setSentence(e.target.value);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Prevent page refresh on submit
     e.preventDefault();
 
+    // Sort the sentence string entered by the user
     setSortedSentence(sortString(sentence));
   }
 
@@ -27,16 +29,22 @@ export default function SentSort() {
 
       <article id="main-body">
         <form onSubmit={handleSubmit}>
+          {/* Sentence Input */}
           <fieldset>
             <legend>Enter Sentence</legend>
+
+            {/* Input for Sentence */}
             <label htmlFor="sentence">Sentence to sort:</label>
             <input 
               type="text" 
               id="sentence" 
               name="sentence"
               value={sentence || ""}
-              onChange={handleChange}
+              onChange={handleSentenceChange}
+              placeholder="Enter sentence..."
             />
+
+            {/* Sort button */}
             <input type="submit" value="Sort!" />
           </fieldset>
 
@@ -44,6 +52,7 @@ export default function SentSort() {
             <legend>Output</legend>
             <label htmlFor="sorted">Sorted Sentence:</label>
             <output name="sorted" id="sorted">
+              {/* Display the sorted sentence or a placeholder if it is empty. */}
               {sortedSentence || "Please enter a sentence!"}
             </output>
           </fieldset>

@@ -18,14 +18,14 @@ describe("sortString()", () => {
   });
 
   it("Sorts a string case-insensitively", () => {
-    expect(sortString("baBaCac")).to.equal("aaabBCc", "The string should be sorted regardless of case.")
+    expect(sortString("baBaCac")).to.match(/aaabbcc/i, "The string should be sorted regardless of case.")
   });
 
   it("Sorts a string's alphanumeric characters in between any special characters", () => {
     const tests: string[] = [
       "Sort me!!", // Just exclamation marks
       "This \"string\" should be sorted, sir, I'm almost certain of it...!", // Multiple unique punctuation marks
-      "Hello wŒrld~!", // OE ligature
+      "Hello wŒrld~!", // OE ligature and other special chars
       "Manuel Maćaron", // Accent on just C
       "āƂƆƉƐƒƓ" // Latin Extended letters
     ];

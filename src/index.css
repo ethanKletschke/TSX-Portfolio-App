@@ -1,10 +1,12 @@
 :root {
+  /* Colour Variables (Used across all CSS files) */
   --lightBlue: #7ec5ff;
   --blue: #003ace;
   --white: #efefef;
   --black: #212529;
 }
 
+/* all elements */
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +18,7 @@ body {
   background-color: var(--white);
 }
 
+/* All links on the page */
 a {
   color: var(--blue);
 }
@@ -30,10 +33,8 @@ main form {
   margin: 0.5em;
 }
 
-main form input[type=text],
-main form input[type=number],
-main form input[type=email],
-main form input[type=submit], 
+/* All input fields */
+main form input, 
 main form select {
   width: 100%;
   padding: 0.6em 1.2em;
@@ -41,6 +42,7 @@ main form select {
   display: inline-block;
 }
 
+/* Input fields except submit button */
 main form input:not([type=submit]),
 main form select {
   border: 1.5pt solid var(--lightBlue);
@@ -48,6 +50,7 @@ main form select {
   box-sizing: border-box;
 }
 
+/* Input fields with focus */
 main form input:not([type=submit]):focus,
 main form select:focus {
   outline: 3pt outset lightgray;
@@ -88,10 +91,12 @@ main form label {
   color: var(--blue);
 }
 
+/* Output elements in forms */
 main form output {
   font-style: italic;
 }
 
+/* Horizontal Rules */
 hr {
   border: 1pt solid var(--lightBlue);
   margin: 0.4em;
