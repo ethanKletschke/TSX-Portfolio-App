@@ -39,6 +39,11 @@ export default function Home() {
               Email Validator
             </Link>
           </li>
+          <li>
+            <Link to="/dice">
+              Dice Rolling
+            </Link>
+          </li>
         </ul>
       </article>
 

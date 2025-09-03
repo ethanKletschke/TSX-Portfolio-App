@@ -4,6 +4,7 @@
   --blue: #003ace;
   --white: #efefef;
   --black: #212529;
+  --inputBorder: 1.5pt solid var(--lightBlue);
 }
 
 /* all elements */
@@ -26,6 +27,7 @@ a {
 /* Main content in <main> */
 #main-body {
   margin: 0.5em;
+  padding-bottom: 1em;
 }
 
 /* Target all forms under <main> */
@@ -35,17 +37,31 @@ main form {
 
 /* All input fields */
 main form input, 
-main form select {
+main form select,
+main textarea,
+main button {
   width: 100%;
   padding: 0.6em 1.2em;
   margin: 0.5em 0;
   display: inline-block;
 }
 
+/* Text Areas */
+main textarea {
+  resize: vertical;
+  height: 10em;
+  background-color: var(--white);
+  border: var(--inputBorder);
+}
+
+main textarea:focus {
+  outline: none;
+}
+
 /* Input fields except submit button */
 main form input:not([type=submit]),
 main form select {
-  border: 1.5pt solid var(--lightBlue);
+  border: var(--inputBorder);
   border-radius: 4pt;
   box-sizing: border-box;
 }
@@ -54,10 +70,11 @@ main form select {
 main form input:not([type=submit]):focus,
 main form select:focus {
   outline: 3pt outset lightgray;
-  border: 1.5pt solid var(--lightBlue);
+  border: var(--inputBorder);
 }
 
-main form input[type=submit] {
+main form input[type=submit],
+main button {
   background-color: var(--lightBlue);
   color: var(--blue);
   border: none;
