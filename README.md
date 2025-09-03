@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `0.0.4`
+- Version: `0.0.5`
 - Environment(s): Ubuntu (WSL)
 - License: MIT
 
@@ -25,7 +25,17 @@ validator.
 
 On this page, you can enter a sentence, and the program will sort it by its individual letters.
 
-### South African ID Number Validator
+### South African ID Number Validator (WIP)
 
 On this page, you can enter a South African ID number (13 digits), and
 validate it, including the 13th checksum digit.
+
+### Dice Roll
+
+When you click on a button, rolls the die, and displays averages and totals for your
+rolls!
+
+### Object Sort (WIP)
+
+Input four text values, store it internally as an object, and sort the objects
+by one of the four text values.
