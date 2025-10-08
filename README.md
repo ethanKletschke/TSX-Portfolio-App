@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `0.0.5`
+- Version: `0.1.0`
 - Environment(s): Ubuntu (WSL)
 - License: MIT
 
@@ -39,3 +39,8 @@ rolls!
 
 Input four text values, store it internally as an object, and sort the objects
 by one of the four text values.
+
+### Hash Map Responses (WIP)
+
+A hash map with predefined values which uses "response codes" to
+output information (subject to heavy changes).

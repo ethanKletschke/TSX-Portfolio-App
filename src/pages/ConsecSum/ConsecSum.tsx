@@ -29,6 +29,7 @@ export default function ConsecSum() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Prevent default submit behaviour (page refresh on submit)
     e.preventDefault();
+    
     // Set the current value to the number entered by the user multiplied by the step.
     setValue(() => value + (numToAdd * step));
   };
@@ -59,8 +60,9 @@ export default function ConsecSum() {
               type="number"
               name="numAdd"
               id="numAdd"
+              // Value via state (or 1 if state evaluates to false).
               value={numToAdd || 1}
-              onChange={handleChangeNumAdd}
+              onChange={handleChangeNumAdd} // Attach the number add event handler.
               min={1}
               // Max input value is 999,999
               max={999_999}

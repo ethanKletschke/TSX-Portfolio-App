@@ -6,13 +6,17 @@ import styles from "./Home.module.css";
 export default function Home() {
   return (
     <main>
+      {/* Main header component */}
       <Header>
         Ethan Kletschke's Portfolio
       </Header>
 
+      {/* Main body of output. */}
       <article id="main-body">
+        {/* Header with instruction */}
         <h2 className={styles.heading}>Select a Page to Go To</h2>
 
+        {/* Table of contents */}
         <ul className={styles.toc}>
           <li>
             <Link to="/sentenceSort">
@@ -47,6 +51,7 @@ export default function Home() {
         </ul>
       </article>
 
+      {/* Footer for page with copyright info */}
       <Footer />
     </main>
   );

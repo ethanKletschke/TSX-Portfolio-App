@@ -1,6 +1,7 @@
 import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
+import WorkInProg from "../../comps/WorkInProg/WorkInProg";
 
 // 404 Page
 export default function NoPage() {
@@ -13,6 +14,9 @@ export default function NoPage() {
 
       {/* Main page body */}
       <article id="main-body">
+        {/* Indicate that the page is a WIP */}
+        <WorkInProg />
+
         {/* Button to return to index route */} 
         <GoHomeBtn />
       </article>

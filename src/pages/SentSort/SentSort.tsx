@@ -5,11 +5,13 @@ import Header from "../../comps/Header/Header.tsx";
 import sortString from "../../funcs/sortString.ts";
 
 export default function SentSort() {
+  // The sentence to sort
   const [sentence, setSentence] = useState<string>("");
+  // The sorted sentence
   const [sortedSentence, setSortedSentence] = useState<string>("");
 
   const handleSentenceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // Set the value of the sentence
+    // Set the value of the sentence via user input.
     setSentence(e.target.value);
   };
 
@@ -48,19 +50,22 @@ export default function SentSort() {
             <input type="submit" value="Sort!" />
           </fieldset>
 
+          {/* Output */}
           <fieldset>
             <legend>Output</legend>
             <label htmlFor="sorted">Sorted Sentence:</label>
             <output name="sorted" id="sorted">
-              {/* Display the sorted sentence or a placeholder if it is empty. */}
+              {/* Display the sorted sentence or a placeholder if the state is empty. */}
               {sortedSentence || "Please enter a sentence!"}
             </output>
           </fieldset>
         </form>
 
+        {/* Button to go to the index route. */}
         <GoHomeBtn />
       </article>
 
+      {/* Page footer */}
       <Footer />
     </main>
   );
