@@ -70,7 +70,7 @@ export default class HashMap<K extends string | number, V extends string | numbe
       sum += String(key).charCodeAt(i);
     }
 
-    // Get sum modulo the size of the map, and return it.
+    // Get the sum modulo the size of the map, and return it.
     return sum % this.size;
   }
 }

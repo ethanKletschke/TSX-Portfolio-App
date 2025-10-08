@@ -5,13 +5,15 @@ import Header from "../../comps/Header/Header";
 import styles from "./DiceRoll.module.css";
 
 export default function DiceRoll() {
-  // Source of the image
+  // Source of the die face image
   const [imgSrc, setImgSrc] = useState<string>("DiceQuestion.png");
   // Die roll log
   const [log, setLog] = useState<string>("");
   // Number of rolls
   const [rollCount, setRollCount] = useState<number>(0);
+  // Sum of rolls
   const [totalOfRolls, setTotalOfRolls] = useState<number>(0);
+  // Average rolls
   const [avgRolls, setAvgRolls] = useState<number>(0);
 
   // Die faces type alias.
@@ -34,19 +36,20 @@ export default function DiceRoll() {
     // Update log
     setLog(`Die Roll #${newRollCount}: ${dieRoll}\n\nTotal: ${newTotal}\nAverage: ${newAverage.toFixed(2)}\n`);
 
-
     // Set the image to display the corresponding die roll.
     setImgSrc(`Dice${dieRoll || "Question"}.png`);
-
   };
 
+  // Refreshes the values of the 
   const refreshVals = () => {
-    setRollCount(0);
-    setTotalOfRolls(0);
-    setAvgRolls(0);
+    setRollCount(0); // Roll count reset
+    setTotalOfRolls(0); // Roll Sum reset
+    setAvgRolls(0); // Roll average reset
 
+    // Set the log of the rolls to indicate the values were refreshed.
     setLog("Refreshed Values!");
 
+    // Set the die face image to the initial state (die face with question mark).
     setImgSrc("DiceQuestion.png");
   };
 

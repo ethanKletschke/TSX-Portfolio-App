@@ -7,7 +7,7 @@ import styles from "./EmailValidate.module.css";
 
 // Email Validator page
 export default function EmailValidate() {
-  // Email stored as state.
+  // Store email in state.
   const [email, setEmail] = useState<string>("");
 
   // Email input change handler
@@ -32,10 +32,11 @@ export default function EmailValidate() {
             name="email-addr"
             id="email-addr"
             value={email || ""}
-            onChange={handleEmailChange}
+            onChange={handleEmailChange} // attach the email change handler
             placeholder="Email to Validate..."
           />
 
+          {/* Email output  */}
           <label htmlFor="email-output" className={styles["out-lbl"]}>Is the email valid?</label>&nbsp;
           {/* Output if the email is valid or not as the user types */}
           <output name="email-output" htmlFor="email-addr">{(validateEmail(email) ? "Yes" : "No")}</output>

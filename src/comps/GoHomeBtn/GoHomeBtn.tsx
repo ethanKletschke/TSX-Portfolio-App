@@ -3,8 +3,6 @@ import styles from "./GoHomeBtn.module.css";
 
 export default function GoHomeBtn() {
   return (
-    <>
-      <Link className={styles.btn} to="/">Go Home</Link>
-    </>
+    <Link className={styles.btn} to="/">Go Home</Link>
   );
 }

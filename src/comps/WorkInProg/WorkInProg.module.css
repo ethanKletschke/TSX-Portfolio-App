@@ -1,0 +1,10 @@
+.wip-banner {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1em;
+  display: block;
+  color: var(--black);
+  background-color: var(--orange);
+  text-align: center;
+  padding: 1em;
+}
