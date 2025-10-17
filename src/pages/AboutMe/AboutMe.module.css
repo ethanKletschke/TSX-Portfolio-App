@@ -1,0 +1,16 @@
+.body-section {
+  border: 1pt solid;
+  padding: 1em;
+}
+
+.body-section > article {
+  padding: 0.4em;
+}
+
+.body-section ul {
+  margin: 0 2em;
+}
+
+.body-section h2 {
+  text-align: center;
+}

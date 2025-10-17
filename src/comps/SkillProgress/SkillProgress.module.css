@@ -1,0 +1,52 @@
+:root {
+  --lBlue: #bce1ff;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0.5em;
+}
+
+.wrapper > * {
+  flex: 1;
+}
+
+.wrapper label {
+  text-align: right;
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.percentLabel {
+  font-weight: bold;
+}
+
+.pbar {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20%;
+  height: 0.5em;
+  margin: 0 1em;
+  /* vertical-align: baseline; */
+  align-items: baseline;
+}
+
+.pbar::-webkit-progress-bar, 
+.pbar::-webkit-progress-value {
+  border-radius: 0.4em;
+}
+
+.pbar::-webkit-progress-bar {
+  border: 1pt solid var(--black); 
+  background-color: var(--lBlue);
+}
+
+.pbar::-webkit-progress-value {
+  background-color: var(--blue); 
+}
+
+.pbar::-moz-progress-bar {
+  background-color: var(--lBlue);
+}

@@ -19,6 +19,11 @@ export default function Home() {
         {/* Table of contents */}
         <ul className={styles.toc}>
           <li>
+            <Link to="/aboutMe">
+              About Me
+            </Link>
+          </li>
+          <li>
             <Link to="/sentenceSort">
               Sort a Sentence
             </Link>
@@ -51,7 +56,7 @@ export default function Home() {
         </ul>
       </article>
 
-      {/* Footer for page with copyright info */}
+      {/* Footer for page, with copyright info */}
       <Footer />
     </main>
   );
