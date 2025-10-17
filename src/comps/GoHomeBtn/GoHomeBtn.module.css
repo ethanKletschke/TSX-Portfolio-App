@@ -4,7 +4,8 @@
   border-radius: 0.3em;
   padding: 1em;
   background-color: var(--lightBlue);
-  display: inline-block;
+  display: block;
   width: 10em;
   text-align: center;
+  margin: auto;
 }

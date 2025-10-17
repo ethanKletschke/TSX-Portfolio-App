@@ -31,6 +31,10 @@ a {
   padding-bottom: 1em;
 }
 
+main {
+  margin-bottom: 3em;
+}
+
 /* Target all forms under <main> */
 main form {
   margin: 0.5em;

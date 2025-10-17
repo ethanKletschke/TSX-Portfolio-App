@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import AboutMe from "./pages/AboutMe/AboutMe.tsx";
 import ConsecSum from "./pages/ConsecSum/ConsecSum.tsx";
 import DiceRoll from "./pages/DiceRoll/DiceRoll.tsx";
 import EmailValidate from "./pages/EmailValidate/EmailValidate.tsx";
@@ -14,6 +15,8 @@ export default function App() {
       <Routes>
         {/* Route Index */}
         <Route path="/" element={<Home />} />
+        {/* About Me Page */}
+        <Route path="/aboutMe" element={<AboutMe />} />
         {/* Sentence Sort */}
         <Route path="/sentenceSort" element={<SentSort />} />
         {/* Consecutive Summation */}
