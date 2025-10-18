@@ -8,4 +8,9 @@
   width: 10em;
   text-align: center;
   margin: auto;
+  outline: 2pt outset;
+}
+
+.btn:focus {
+  outline: 2pt inset;
 }
