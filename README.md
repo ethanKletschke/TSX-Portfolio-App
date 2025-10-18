@@ -7,6 +7,10 @@ A TypeScript React app used as my portfolio
 - Environment(s): Ubuntu (WSL)
 - License: MIT
 
+## Using the App
+
+### Installation
+
 ## Pages
 
 ### Consecutive Summation
@@ -24,11 +28,6 @@ validator.
 ### Sentence Sorting
 
 On this page, you can enter a sentence, and the program will sort it by its individual letters.
-
-### South African ID Number Validator (WIP)
-
-On this page, you can enter a South African ID number (13 digits), and
-validate it, including the 13th checksum digit.
 
 ### Dice Roll
 
