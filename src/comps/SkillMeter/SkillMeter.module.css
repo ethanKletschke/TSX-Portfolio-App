@@ -1,7 +1,3 @@
-:root {
-  --lBlue: #bce1ff;
-}
-
 .wrapper {
   display: flex;
   margin: 0.5em;
@@ -18,35 +14,35 @@
   font-weight: bold;
 }
 
-.percentLabel {
+.mtrLabel {
   font-weight: bold;
 }
 
-.pbar {
+.mtr {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 20%;
-  height: 0.5em;
+  height: 1em;
   margin: 0 1em;
   /* vertical-align: baseline; */
   align-items: baseline;
 }
 
-.pbar::-webkit-progress-bar, 
-.pbar::-webkit-progress-value {
+.mtr::-webkit-meter-bar, 
+.mtr::-webkit-meter-optimum-value,
+.mtr::-webkit-meter-suboptimum-value,
+.mtr::-webkit-meter-even-less-good-value {
   border-radius: 0.4em;
 }
 
-.pbar::-webkit-progress-bar {
-  border: 1pt solid var(--black); 
-  background-color: var(--lBlue);
+.mtr::-webkit-meter-bar {
+  background: none; 
+  background-color: var(--lightBlue);
+  border: 1.2pt solid;
 }
 
-.pbar::-webkit-progress-value {
-  background-color: var(--blue); 
-}
-
-.pbar::-moz-progress-bar {
-  background-color: var(--lBlue);
+.mtr::-webkit-meter-optimum-value {
+  background: none;
+  background-color: var(--blue)
 }
