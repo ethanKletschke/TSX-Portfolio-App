@@ -24,7 +24,8 @@ export default function AboutMe() {
               I, Ethan Kletschke, am an 18-year-old aspiring Web Developer 
               with experience dating back to high school with both software 
               and web apps. I'm mostly interested in web development, but am well-versed in 
-              a wide variety of programming languages related to software and web apps, such as:
+              a wide variety of programming languages related to software and web apps, 
+              particularly:
             </p>
             <ul>
               <li>React</li>
