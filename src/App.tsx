@@ -7,7 +7,6 @@ import Home from "./pages/Home/Home.tsx";
 import NoPage from "./pages/NoPage/NoPage.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
-import ValidZA_ID from "./pages/ValidZA_ID/ValidZA_ID.tsx";
 
 export default function App() {
   return (
@@ -25,8 +24,6 @@ export default function App() {
         <Route path="/objSort" element={<ObjSort />} />
         {/* Email Validator */}
         <Route path="/email" element={<EmailValidate />} />
-        {/* South African ID Validator */}
-        <Route path="/southAfricanID" element={<ValidZA_ID />} />
         {/* Dice Rolling */}
         <Route path="/dice" element={<DiceRoll />} />
         {/* 404 Page */}
