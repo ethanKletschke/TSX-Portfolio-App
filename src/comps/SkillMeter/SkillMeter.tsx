@@ -2,13 +2,13 @@ import styles from "./SkillMeter.module.css";
 
 type meterProps = {
   value: number;
-  lbl: string;
-  id: string;
+  lblText: string;
+  htmlID: string;
 };
 
 
 // Defines a progress bar that displays my confidence in a programming language
-export default function SkillMeter({ value, lbl, id }: meterProps) {
+export default function SkillMeter({ value, lblText, htmlID }: meterProps) {
   // Declare a variable to hold the meter value 
   let mtrVal: number = 0;
   // The message to display after the meter (e.g. "")
@@ -31,18 +31,20 @@ export default function SkillMeter({ value, lbl, id }: meterProps) {
 
   return (
     <div className={styles.wrapper}>
-      <label htmlFor={id}>
-        {lbl}
+      {/* Display the Label Text */}
+      <label htmlFor={htmlID}>
+        {lblText}
       </label>
 
       <meter
         className={styles.mtr}
-        id={id + "-meter"}
+        id={htmlID + "-meter"}
         min="0"
         value={mtrVal}
         max="100"
-        title={`${mtrVal}%`}
+        title={`${mtrVal}%`} // Display the current % on hover
       >
+        {/* e.g. 45% */}
         {value}%
       </meter>
       <span className={styles.mtrLabel}>{mtrMsg || ""} ({value}%)</span>
