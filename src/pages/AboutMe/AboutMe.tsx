@@ -1,7 +1,7 @@
 import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
-import SkillProgress from "../../comps/SkillProgress/SkillProgress";
+import SkillMeter from "../../comps/SkillMeter/SkillMeter";
 import WorkInProg from "../../comps/WorkInProg/WorkInProg";
 import styles from "./AboutMe.module.css";
 
@@ -44,16 +44,16 @@ export default function AboutMe() {
             <h2>My Skills and My Confidence in Them</h2>
           </header>
           <article>
-            <SkillProgress lbl="HTML" value={70} id="html" />
-            <SkillProgress lbl="JavaScript" value={70} id="js" />
-            <SkillProgress lbl="CSS" value={60} id="css" />
-            <SkillProgress lbl="PostgreSQL" value={50} id="pgsql" />
-            <SkillProgress lbl="Java" value={45} id="java" />
-            <SkillProgress lbl="PHP" value={45} id="php" />
-            <SkillProgress lbl="Database Normalisation" value={33} id="db-norm" />
-            <SkillProgress lbl="Git" value={30} id="git" />
-            <SkillProgress lbl="GitHub Automation" value={20} id="github-auto" />
-            <SkillProgress lbl="MySQL" value={5} id="mysql" />
+            <SkillMeter lblText="HTML" value={70} htmlID="html" />
+            <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
+            <SkillMeter lblText="CSS" value={60} htmlID="css" />
+            <SkillMeter lblText="PostgreSQL" value={50} htmlID="pgsql" />
+            <SkillMeter lblText="Java" value={45} htmlID="java" />
+            <SkillMeter lblText="PHP" value={45} htmlID="php" />
+            <SkillMeter lblText="Database Normalisation" value={33} htmlID="db-norm" />
+            <SkillMeter lblText="Git" value={30} htmlID="git" />
+            <SkillMeter lblText="GitHub Automation" value={20} htmlID="github-auto" />
+            <SkillMeter lblText="MySQL" value={5} htmlID="mysql" />
           </article>
         </section>
       </article>
