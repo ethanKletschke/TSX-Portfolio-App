@@ -39,11 +39,6 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link to="/southAfricanID">
-              South African ID Validator
-            </Link>
-          </li>
-          <li>
             <Link to="/email">
               Email Validator
             </Link>

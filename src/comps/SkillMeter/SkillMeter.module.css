@@ -29,10 +29,12 @@
   align-items: baseline;
 }
 
+.mtr,
 .mtr::-webkit-meter-bar, 
 .mtr::-webkit-meter-optimum-value,
 .mtr::-webkit-meter-suboptimum-value,
-.mtr::-webkit-meter-even-less-good-value {
+.mtr::-webkit-meter-even-less-good-value,
+.mtr::-moz-meter-bar {
   border-radius: 0.4em;
 }
 
@@ -45,4 +47,9 @@
 .mtr::-webkit-meter-optimum-value {
   background: none;
   background-color: var(--blue)
+}
+
+.mtr::-moz-meter-bar {
+  background: none;
+  background-color: var(--blue);
 }

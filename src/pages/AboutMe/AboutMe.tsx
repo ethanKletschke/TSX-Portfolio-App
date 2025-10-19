@@ -47,6 +47,7 @@ export default function AboutMe() {
             <SkillMeter lblText="HTML" value={70} htmlID="html" />
             <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
             <SkillMeter lblText="CSS" value={60} htmlID="css" />
+            <SkillMeter lblText="React" value={55} htmlID="react" />
             <SkillMeter lblText="PostgreSQL" value={50} htmlID="pgsql" />
             <SkillMeter lblText="Java" value={45} htmlID="java" />
             <SkillMeter lblText="PHP" value={45} htmlID="php" />
