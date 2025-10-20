@@ -9,9 +9,30 @@ A TypeScript React app used as my portfolio
 
 ## Using the App
 
+### Requirements to Run
+
+- NPM v22 and above
+
 ### Installation
 
+- Clone the repository.
+- Use `cd` to go to the repository folder
+- Run `npm install` to download all the dependencies.
+
+### Running the App
+
+- For the heavily tested "dev" version:
+  - Run `npm run dev` in the project folder.
+
+- For the (currently untested) production version:
+  - Run `npm run build` to build the production version of the app.
+  - Run `npm run preview` to run the production version.
+
 ## Pages
+
+### About Me
+
+A page discussing me and my confidence in my skills.
 
 ### Consecutive Summation
 
