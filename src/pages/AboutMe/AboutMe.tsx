@@ -2,7 +2,6 @@ import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import SkillMeter from "../../comps/SkillMeter/SkillMeter";
-import WorkInProg from "../../comps/WorkInProg/WorkInProg";
 import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {
@@ -13,8 +12,6 @@ export default function AboutMe() {
       </Header>
 
       <article id="main-body">
-        <WorkInProg />
-
         <section className={styles["body-section"]}>
           <header>
             <h2>Who am I?</h2>
@@ -46,6 +43,7 @@ export default function AboutMe() {
           <article>
             <SkillMeter lblText="HTML" value={70} htmlID="html" />
             <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
+            <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
             <SkillMeter lblText="CSS" value={60} htmlID="css" />
             <SkillMeter lblText="React" value={55} htmlID="react" />
             <SkillMeter lblText="PostgreSQL" value={50} htmlID="pgsql" />

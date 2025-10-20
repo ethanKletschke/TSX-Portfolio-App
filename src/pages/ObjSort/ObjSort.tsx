@@ -6,6 +6,11 @@ import sortObject from "../../funcs/sortObjects.ts";
 
 // Object Sorting Component
 export default function ObjSort() {
+  // Submit event handler
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <main>
       {/* Main header component */}
@@ -17,6 +22,10 @@ export default function ObjSort() {
       <article id="main-body">
         {/* Indicate the page is a WIP */}
         <WorkInProg />
+
+        <form onSubmit={handleSubmit}>
+
+        </form>
 
         {/* Button to return to index route */}
         <GoHomeBtn />
