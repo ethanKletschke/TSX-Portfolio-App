@@ -6,7 +6,11 @@
   margin: auto;
   display: block;
 
+  width: 18.75em; /* 300px */
+  height: 18.75em; /* 300px */
+}
 
-  width: 300px;
-  height: 300px;
+/* Roll Log <textarea> */
+.rollLog {
+  resize: none;
 }

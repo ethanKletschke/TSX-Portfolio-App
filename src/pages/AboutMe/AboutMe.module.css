@@ -1,5 +1,5 @@
 .body-section {
-  border: 1pt solid;
+  border: 1pt solid var(--blue);
   padding: 1em;
 }
 
