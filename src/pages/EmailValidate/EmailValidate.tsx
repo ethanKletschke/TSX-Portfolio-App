@@ -23,6 +23,8 @@ export default function EmailValidate() {
         Validate Email
       </Header>
 
+      <img src="/Mail.png" alt="Mail logo" className={styles.mailImg} />
+
       {/* Main Page Body */}
       <article id="main-body">
         <form onSubmit={(e) => e.preventDefault() /*  */}>

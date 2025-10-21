@@ -11,6 +11,6 @@
   outline: 2pt outset;
 }
 
-.btn:focus {
+.btn:active {
   outline: 2pt inset;
 }

@@ -8,6 +8,7 @@ export default function sortObjects<T, K extends keyof T>(
     // Store the property values
     const valA: T[K] = a[prop], valB: T[K] = b[prop];
 
+    // Stores the comparison value temporarily
     let comparison: number = 0;
 
     // If the property is a number
