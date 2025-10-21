@@ -13,8 +13,6 @@ export default function DiceRoll() {
   const [rollCount, setRollCount] = useState<number>(0);
   // Sum of rolls
   const [totalOfRolls, setTotalOfRolls] = useState<number>(0);
-  // Average rolls
-  const [avgRolls, setAvgRolls] = useState<number>(0);
 
   // Die faces type alias.
   type dieFaces = 1 | 2 | 3 | 4 | 5 | 6;
@@ -31,8 +29,6 @@ export default function DiceRoll() {
     // Update state
     setRollCount(newRollCount);
     setTotalOfRolls(newTotal);
-    setAvgRolls(newAverage);
-
     // Update log
     setLog(`Die Roll #${newRollCount}: ${dieRoll}\n\nTotal: ${newTotal}\nAverage: ${newAverage.toFixed(2)}\n`);
 
@@ -44,7 +40,6 @@ export default function DiceRoll() {
   const refreshVals = () => {
     setRollCount(0); // Roll count reset
     setTotalOfRolls(0); // Roll Sum reset
-    setAvgRolls(0); // Roll average reset
 
     // Set the log of the rolls to indicate the values were refreshed.
     setLog("Refreshed Values!");
@@ -83,6 +78,8 @@ export default function DiceRoll() {
         {/* Die roll log */}
         <textarea
           value={log || ""}
+          placeholder="Roll Log..."
+          readOnly
         />
 
         <hr />
