@@ -18,7 +18,8 @@ export default function DiceRoll() {
   type dieFaces = 1 | 2 | 3 | 4 | 5 | 6;
 
   const handleDiceRollClick = () => {
-    // Set the die roll as a random number between 1 and 6
+    // Set the die roll as a random number between 1 and 6 and then
+    // cast it as the above type alias
     const dieRoll: dieFaces = (Math.floor(Math.random() * 6) + 1) as dieFaces;
 
     // Compute the stats
@@ -77,6 +78,7 @@ export default function DiceRoll() {
 
         {/* Die roll log */}
         <textarea
+          className={styles.rollLog}
           value={log || ""}
           placeholder="Roll Log..."
           readOnly

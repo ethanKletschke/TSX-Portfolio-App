@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import Footer from "../../comps/Footer/Footer";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
-import WorkInProg from "../../comps/WorkInProg/WorkInProg";
+import styles from "./NoPage.module.css";
 
 // 404 Page
 export default function NoPage() {
@@ -14,11 +14,11 @@ export default function NoPage() {
 
       {/* Main page body */}
       <article id="main-body">
-        {/* Indicate that the page is a WIP */}
-        <WorkInProg />
+        <p className={styles.notExist}>
+          This page does not exist. Please go back to <Link to="/">the home page</Link>!
+        </p>
 
-        {/* Button to return to index route */} 
-        <GoHomeBtn />
+        <hr /> 
       </article>
 
       {/* Footer component */}
