@@ -1,8 +1,9 @@
 {
   "name": "tsx-portfolio",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.22.0",
   "type": "module",
+  "license": "MIT (Modified)",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

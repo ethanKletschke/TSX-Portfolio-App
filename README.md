@@ -3,9 +3,12 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `0.20.0` <!-- New version number = commit number -->
+- Version: `0.22.0`
 - Environment(s): Ubuntu (WSL)
-- License: MIT
+- License: Modified MIT (See below)
+
+As of version 0.22.0, this project is licensed under a modified MIT License that prohibits AI training.
+Previous versions remain under the standard MIT License.
 
 ## Using the App
 
