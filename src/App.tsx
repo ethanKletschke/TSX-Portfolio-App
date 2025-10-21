@@ -11,6 +11,7 @@ import SentSort from "./pages/SentSort/SentSort.tsx";
 export default function App() {
   return (
     <>
+      {/* Different routes for components. */}
       <Routes>
         {/* Route Index */}
         <Route path="/" element={<Home />} />

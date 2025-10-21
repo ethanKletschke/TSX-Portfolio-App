@@ -8,6 +8,7 @@ import sortObject from "../../funcs/sortObjects.ts";
 export default function ObjSort() {
   // Submit event handler
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Prevent page refresh on form submission
     e.preventDefault();
   };
 

@@ -3,7 +3,7 @@ import Footer from "../../comps/Footer/Footer";
 import Header from "../../comps/Header/Header";
 import styles from "./NoPage.module.css";
 
-// 404 Page
+// Page displayed when a route isn't found
 export default function NoPage() {
   return (
     <main>

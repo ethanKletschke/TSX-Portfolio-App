@@ -1,3 +1,4 @@
+// Sorts a string alphabetically
 export default function sortString(str: string): string {
   // Return the argument if it is an empty string.
   if (str === "") return str;

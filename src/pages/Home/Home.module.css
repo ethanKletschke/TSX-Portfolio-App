@@ -5,25 +5,26 @@
 
 /* Table of Contents */
 ul.toc {
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
+  display: flex; /* Flex display */
+  list-style-type: none; /* No list bullets */
+  flex-direction: column; /* Vertical block list */
 }
 
 ul.toc > li {
-  flex: 1;
+  flex-grow: 1; /* Ensures the links stay the same size */
   text-align: center;
   border: var(--liBorder);
-  border-bottom: none;
+  border-bottom: none; /* Prevent clashing top and bottom borders */
   padding: 1em;
 }
 
+/* Last list item */
 ul.toc > li:last-child {
-  border-bottom: var(--liBorder);
+  border-bottom: var(--liBorder); /* Adds a bottom border */
 }
 
 ul.toc > li > a {
-  color: var(--black);
+  color: var(--black); /* Make link text black */
 }
 
 /* "Select page" heading */
