@@ -37,7 +37,7 @@ export default function DiceRoll() {
     setImgSrc(`Dice${dieRoll || "Question"}.png`);
   };
 
-  // Refreshes the values of the 
+  // Refreshes the values of the dice rolls
   const refreshVals = () => {
     setRollCount(0); // Roll count reset
     setTotalOfRolls(0); // Roll Sum reset
