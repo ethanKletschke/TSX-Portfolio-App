@@ -3,6 +3,7 @@ import Footer from "../../comps/Footer/Footer.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
 import sortString from "../../funcs/sortString.ts";
+import styles from "./SentSort.module.css";
 
 export default function SentSort() {
   // The sentence to sort
@@ -30,6 +31,8 @@ export default function SentSort() {
       </Header>
 
       <article id="main-body">
+        <img src="/Sort.png" alt="Sort Image" className={styles.img} />
+
         <form onSubmit={handleSubmit}>
           {/* Sentence Input */}
           <fieldset>
