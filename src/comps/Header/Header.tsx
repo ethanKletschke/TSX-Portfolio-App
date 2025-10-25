@@ -1,10 +1,10 @@
 import styles from "./Header.module.css";
 
-type headerProps = {
+type HeaderProps = {
   children: string; // The inner text of the element
 };
 
-export default function Header({ children /* Inner Header Text */ }: headerProps) {
+export default function Header({ children /* Inner Header Text */ }: HeaderProps) {
   return (
     <header className={styles.heading}>
       {/* Allows for a syntax like:
