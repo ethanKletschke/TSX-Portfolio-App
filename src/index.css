@@ -63,7 +63,8 @@ main form input::-moz-placeholder {
 
 /* Text Areas */
 main textarea {
-  resize: vertical;
+  /* Ensures the user can resize the  */
+  resize: vertical; 
   height: 10em;
   background-color: var(--white);
   border: var(--inputBorder);

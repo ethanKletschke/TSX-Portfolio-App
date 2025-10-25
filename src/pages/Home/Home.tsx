@@ -24,18 +24,13 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link to="/sentenceSort">
-              Sort a Sentence
-            </Link>
-          </li>
-          <li>
             <Link to="/consecutiveSum">
               Consecutive Summation
             </Link>
           </li>
           <li>
-            <Link to="/objSort">
-              Sort Objects
+            <Link to="/dice">
+              Dice Rolling
             </Link>
           </li>
           <li>
@@ -44,8 +39,13 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link to="/dice">
-              Dice Rolling
+            <Link to="/sentenceSort">
+              Sort a Sentence
+            </Link>
+          </li>
+          <li>
+            <Link to="/objSort">
+              Sort Objects
             </Link>
           </li>
         </ul>
