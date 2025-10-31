@@ -5,6 +5,23 @@ import SkillMeter from "../../comps/SkillMeter/SkillMeter";
 import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {
+  const age = (birthDate: Date): number => {
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    const hasHadBirthdayThisYear =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+        today.getDate() >= birthDate.getDate());
+
+    if (!hasHadBirthdayThisYear) {
+      age--;
+    }
+
+    return age;
+  }
+
   return (
     <main>
       <Header>
@@ -18,7 +35,8 @@ export default function AboutMe() {
           </header>
           <article>
             <p>
-              I, Ethan Kletschke, am an 18-year-old aspiring Web Developer 
+              I, Ethan Kletschke, am a(n)&nbsp;
+              {age(new Date("2006-12-06"))}-year-old aspiring Web Developer 
               with experience dating back to high school with both software 
               and web apps. I'm mostly interested in web development, but am well-versed in 
               a wide variety of programming languages related to software and web apps, 
@@ -41,7 +59,7 @@ export default function AboutMe() {
             <h2>My Skills and My Confidence in Them</h2>
           </header>
           <article>
-            <SkillMeter lblText="HTML" value={70} htmlID="html" />
+            <SkillMeter lblText="HTML" value={80} htmlID="html" />
             <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
             <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
             <SkillMeter lblText="CSS" value={60} htmlID="css" />
