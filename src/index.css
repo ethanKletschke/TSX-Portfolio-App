@@ -15,6 +15,23 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  /* Hides Chrome (et al.) scrollbar */
+  display: none;
+}
+
+html {
+  /* Hides Firefox scrollbar */
+  scrollbar-width: none;
+  /* Ensures smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+html, body {
+  /* Ensures scrolling is still possible */
+  overflow: auto;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--white);
@@ -83,13 +100,15 @@ main form select {
 }
 
 /* Input fields with focus */
-main form input:not([type=submit]):focus,
+main form input:not([type=submit],[type=button]):focus,
 main form select:focus {
-  outline: 3pt outset lightgray;
+  outline: 2pt outset lightgray;
   border: var(--inputBorder);
 }
 
+/* Buttons */
 main form input[type=submit],
+main form input[type=button],
 main button {
   background-color: var(--lightBlue);
   color: var(--blue);
@@ -98,7 +117,8 @@ main button {
   cursor: pointer;
 }
 
-main form input[type=submit]:hover {
+main form input[type=submit]:hover,
+main form input[type=button]:hover {
   background-color: var(--blue);
   color: var(--lightBlue);
 }
