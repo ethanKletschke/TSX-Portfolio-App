@@ -1,7 +1,7 @@
 {
   "name": "tsx-portfolio",
   "private": true,
-  "version": "0.22.0",
+  "version": "0.23.0",
   "type": "module",
   "license": "MIT (Modified)",
   "scripts": {
@@ -30,5 +30,11 @@
     "tsx": "^4.20.3",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Edge versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions"
+  ]
 }
