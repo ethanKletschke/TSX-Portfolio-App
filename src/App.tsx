@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/AboutMe/AboutMe.tsx";
 import ConsecSum from "./pages/ConsecSum/ConsecSum.tsx";
+import DialogsDemo from "./pages/DialogsDemo/DialogsDemo.tsx";
 import DiceRoll from "./pages/DiceRoll/DiceRoll.tsx";
 import EmailValidate from "./pages/EmailValidate/EmailValidate.tsx";
 import Home from "./pages/Home/Home.tsx";
@@ -27,6 +28,8 @@ export default function App() {
         <Route path="/email" element={<EmailValidate />} />
         {/* Dice Rolling */}
         <Route path="/dice" element={<DiceRoll />} />
+        {/* Dialog Box Demo */}
+        <Route path="/dialogs" element={<DialogsDemo />} />
         {/* 404 Page */}
         <Route path="*" element={<NoPage />} />
       </Routes>
