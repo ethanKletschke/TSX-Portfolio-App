@@ -3,25 +3,31 @@
   margin: 0.5em;
 }
 
+/* flexbox wrapper */
 .wrapper > * {
+  /* Grows all the items within the wrapper to the same length */
   flex: 1;
 }
 
+/* Normal label before Meter (language) */
 .wrapper label {
   text-align: right;
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 1em;
   font-weight: bold;
 }
 
+/* Meter label (after meter, shows percentage) */
 .mtrLabel {
   font-weight: bold;
 }
 
+/* Meter */
 .mtr {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+
   width: 20%;
   height: 1em;
   margin: 0 1em;
@@ -29,6 +35,7 @@
   align-items: baseline;
 }
 
+/* Meter and its respective states */
 .mtr,
 .mtr::-webkit-meter-bar, 
 .mtr::-webkit-meter-optimum-value,
@@ -38,6 +45,7 @@
   border-radius: 0.4em;
 }
 
+/* Webkit */
 .mtr::-webkit-meter-bar {
   background: none; 
   background-color: var(--lightBlue);
