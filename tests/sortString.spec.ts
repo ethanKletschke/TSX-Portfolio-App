@@ -18,7 +18,10 @@ describe("sortString()", () => {
   });
 
   it("Sorts a string case-insensitively", () => {
-    expect(sortString("baBaCac")).to.match(/aaabbcc/i, "The string should be sorted regardless of case.")
+    expect(sortString("baBaCac")).to.match(
+      /aaabbcc/i, 
+      "The string should be sorted regardless of case."
+    );
   });
 
   it("Sorts a string's alphanumeric characters in between any special characters", () => {
@@ -32,7 +35,10 @@ describe("sortString()", () => {
     
     // Regex modified by ChatGPT: https://chatgpt.com/s/t_689afb3f9ae081918aeb3b5485e48ab5
     tests.forEach((test: string) => {
-      expect(sortString(test)).to.match(/^([^\p{L}\p{N}]*)[\p{L}\p{N}]*([^\p{L}\p{N}]*)$/iu, "The string should have alphanumeric characters in between special characters");
+      expect(sortString(test)).to.match(
+        /^([^\p{L}\p{N}]*)[\p{L}\p{N}]*([^\p{L}\p{N}]*)$/iu, 
+        "The string should have alphanumeric characters in between special characters"
+      );
     })
   })
 });
