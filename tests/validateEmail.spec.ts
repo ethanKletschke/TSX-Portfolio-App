@@ -20,7 +20,7 @@ describe('validateEmail()', () => {
   it("Returns \"false\" when given an invalid email", () => {
     const tests: testTuple<string, boolean>[] = [
       ["hehe@notvalid", false],
-      ["fudgethis@localhost", false], // Doesn't accept localhost "emails"
+      ["fudgethis@localhost", false], // Doesn't accept localhost addresses
       ["heowjoid@", false],
       ["Hi :)", false]
     ];
