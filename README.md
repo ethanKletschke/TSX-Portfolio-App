@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `0.23.0`
+- Version: `0.24.0`
 - Environment(s): Ubuntu (WSL)
 - License: Modified MIT (See below)
 
