@@ -9,6 +9,7 @@
   text-align: center;
   margin: auto;
   outline: 2pt outset;
+  margin-top: 1em;
 }
 
 .btn:active {
