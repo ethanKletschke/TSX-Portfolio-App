@@ -1,0 +1,21 @@
+.dialogDiv {
+  border: 1pt solid;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.alertBox,
+.confirmBox,
+.formBox {
+  margin: auto;
+  width: 30%;
+  padding: 2em;
+  border: 2pt solid var(--lightBlue);
+  box-shadow: 10px 10px 10px var(--black);
+}
+
+.alertBox::backdrop,
+.confirmBox::backdrop,
+.formBox::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}

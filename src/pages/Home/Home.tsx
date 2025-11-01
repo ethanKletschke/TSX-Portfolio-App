@@ -29,6 +29,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link to="/dialogs">
+              Dialog Box Demo
+            </Link>            
+          </li>
+          <li>
             <Link to="/dice">
               Dice Rolling
             </Link>
