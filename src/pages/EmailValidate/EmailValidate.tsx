@@ -1,8 +1,8 @@
 import { useState } from "react";
+import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import validateEmail from "../../funcs/validateEmail";
-import Footer from "../../comps/Footer/Footer";
 import styles from "./EmailValidate.module.css";
 
 // Email Validator page
