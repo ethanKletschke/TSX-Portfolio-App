@@ -31,7 +31,11 @@ export default function SentSort() {
       </Header>
 
       <article id="main-body">
-        <img src="/Sort.png" alt="Sort Image" className={styles.img} />
+        <img 
+          src="/Sort.png" 
+          alt="Image of someone sorting similar shapes together" 
+          className={styles.img} 
+        />
 
         <form onSubmit={handleSubmit}>
           {/* Sentence Input */}
@@ -56,6 +60,7 @@ export default function SentSort() {
           {/* Output */}
           <fieldset>
             <legend>Output</legend>
+            
             <label htmlFor="sorted">Sorted Sentence:</label>
             <output name="sorted" id="sorted">
               {/* Display the sorted sentence or a placeholder if the state is empty. */}

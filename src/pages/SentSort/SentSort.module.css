@@ -1,6 +1,10 @@
+/* Styling for sorting image */
 .img {
+  /* Center the image */
   margin: auto;
   display: block;
+
+  /* Give it rounded borders */
   border: none;
   border-radius: 25pt;
 }
