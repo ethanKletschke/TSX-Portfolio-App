@@ -1,14 +1,14 @@
 import styles from "./SkillMeter.module.css";
 
-type meterProps = {
+// Props for the skill meter
+type SkillMeterProps = {
   value: number;
   lblText: string;
   htmlID: string;
 };
 
-
-// Defines a progress bar that displays my confidence in a programming language
-export default function SkillMeter({ value, lblText, htmlID }: meterProps) {
+// Defines a meter that displays my confidence in a programming language
+export default function SkillMeter({ value, lblText, htmlID }: SkillMeterProps) {
   // Declare a variable to hold the meter value 
   let mtrVal: number = 0;
   // The message to display after the meter (e.g. "")
@@ -17,6 +17,8 @@ export default function SkillMeter({ value, lblText, htmlID }: meterProps) {
   // Set the bar value to 50 if it's too high or too low.
   mtrVal = (value > 100 || value < 0) ? 50 : value;
 
+  // Set the value of the meter message depending on 
+  // the value passed to the component.
   if (mtrVal >= 0 && mtrVal < 25) {
     mtrMsg = "Need to (re)learn";
   } else if (mtrVal >= 25 && mtrVal < 50) {
@@ -26,6 +28,7 @@ export default function SkillMeter({ value, lblText, htmlID }: meterProps) {
   } else if (mtrVal >= 75 && mtrVal <= 100) {
     mtrMsg = "Very Confident";
   } else {
+    // Code should not hit this.
     mtrMsg = "Invalid";
   }
 
