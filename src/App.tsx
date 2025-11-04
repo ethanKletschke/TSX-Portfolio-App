@@ -11,28 +11,25 @@ import SentSort from "./pages/SentSort/SentSort.tsx";
 
 export default function App() {
   return (
-    <>
-      {/* Different routes for components. */}
-      <Routes>
-        {/* Route Index */}
-        <Route path="/" element={<Home />} />
-        {/* About Me Page */}
-        <Route path="/aboutMe" element={<AboutMe />} />
-        {/* Sentence Sort */}
-        <Route path="/sentenceSort" element={<SentSort />} />
-        {/* Consecutive Summation */}
-        <Route path="/consecutiveSum" element={<ConsecSum />} />
-        {/* Sort Objects */}
-        <Route path="/objSort" element={<ObjSort />} />
-        {/* Email Validator */}
-        <Route path="/email" element={<EmailValidate />} />
-        {/* Dice Rolling */}
-        <Route path="/dice" element={<DiceRoll />} />
-        {/* Dialog Box Demo */}
-        <Route path="/dialogs" element={<DialogsDemo />} />
-        {/* 404 Page */}
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </>
+    <Routes>
+      {/* Route Index */}
+      <Route path="/" element={<Home />} />
+      {/* About Me Page */}
+      <Route path="/aboutMe" element={<AboutMe />} />
+      {/* Sentence Sort */}
+      <Route path="/sentenceSort" element={<SentSort />} />
+      {/* Consecutive Summation */}
+      <Route path="/consecutiveSum" element={<ConsecSum />} />
+      {/* Sort Objects */}
+      <Route path="/objSort" element={<ObjSort />} />
+      {/* Email Validator */}
+      <Route path="/email" element={<EmailValidate />} />
+      {/* Dice Rolling */}
+      <Route path="/dice" element={<DiceRoll />} />
+      {/* Dialog Box Demo */}
+      <Route path="/dialogs" element={<DialogsDemo />} />
+      {/* 404 Page */}
+      <Route path="*" element={<NoPage />} />
+    </Routes>
   )
 }
