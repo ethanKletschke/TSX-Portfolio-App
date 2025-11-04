@@ -28,6 +28,7 @@ Previous versions remain under the standard MIT License.
     - [About Me](#about-me)
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
+    - [Stopwatch Page](#stopwatch-page)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
     - [Object Sort (WIP)](#object-sort-wip)
@@ -87,6 +88,11 @@ Where:
 On this page, you can validate an entered email address, and the app will automatically
 validate the email as you type it using a custom RegEx instead of the browser's built-in
 `email` input validator.
+
+### Stopwatch Page
+
+A simple page containing a stopwatch (measured in seconds only) 
+and a time log for it.
 
 ### Sentence Sorting
 
