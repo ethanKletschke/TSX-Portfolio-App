@@ -1,11 +1,16 @@
-/* Footer styles */
+/* Footer Styling */
 .foot {
   text-align: center;
+
   background-color: var(--lightBlue);
   color: var(--blue);
+
   padding: 1.2em;
+
+  /* Fix the footer at the bottom of the page regardless of scrolling */
+  position: fixed;
   bottom: 0;
   left: 0; 
-  position: fixed;
-  width: 100%;
+
+  width: 100%; /* Full-width */
 }

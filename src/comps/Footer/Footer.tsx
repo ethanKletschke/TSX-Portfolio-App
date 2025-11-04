@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 
+// Copyright footer
 export default function Footer() {
   return (
     <footer className={styles.foot}>
