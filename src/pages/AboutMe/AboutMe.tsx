@@ -5,20 +5,26 @@ import SkillMeter from "../../comps/SkillMeter/SkillMeter";
 import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {
+  // Define a function that finds my age
   const age = (birthDate: Date): number => {
     const today = new Date();
 
+    // Get the approx. age
     let age = today.getFullYear() - birthDate.getFullYear();
 
+    // Check if the birthday has passed
     const hasHadBirthdayThisYear =
       today.getMonth() > birthDate.getMonth() ||
       (today.getMonth() === birthDate.getMonth() &&
         today.getDate() >= birthDate.getDate());
 
+    // If the birthday hasn't passed
     if (!hasHadBirthdayThisYear) {
+      // Subtract 1
       age--;
     }
 
+    // Return the age
     return age;
   }
 
@@ -62,13 +68,13 @@ export default function AboutMe() {
             <SkillMeter lblText="HTML" value={80} htmlID="html" />
             <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
             <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
-            <SkillMeter lblText="CSS" value={60} htmlID="css" />
-            <SkillMeter lblText="React" value={55} htmlID="react" />
-            <SkillMeter lblText="PostgreSQL" value={50} htmlID="pgsql" />
+            <SkillMeter lblText="React" value={60} htmlID="react" />
+            <SkillMeter lblText="CSS" value={55} htmlID="css" />
+            <SkillMeter lblText="Git" value={45} htmlID="git" />
             <SkillMeter lblText="Java" value={45} htmlID="java" />
             <SkillMeter lblText="PHP" value={45} htmlID="php" />
+            <SkillMeter lblText="PostgreSQL" value={45} htmlID="pgsql" />
             <SkillMeter lblText="Database Normalisation" value={33} htmlID="db-norm" />
-            <SkillMeter lblText="Git" value={30} htmlID="git" />
             <SkillMeter lblText="GitHub Automation" value={20} htmlID="github-auto" />
             <SkillMeter lblText="MySQL" value={5} htmlID="mysql" />
           </article>
