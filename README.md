@@ -41,12 +41,14 @@ Previous versions remain under the standard MIT License.
 
 ### Running the App
 
-- For the heavily tested "dev" version:
-  1. Run `npm run dev` in the project folder.
+For the heavily tested "dev" version:
 
-- For the (currently untested) production version:
-  1. Run `npm run build` to build the production version of the app.
-  2. Run `npm run preview` to run the production version.
+1. Run `npm run dev` in the project folder.
+
+For the (currently untested) production version:
+
+1. Run `npm run build` to build the production version of the app.
+2. Run `npm run preview` to run the production version.
 
 ## Pages
 
