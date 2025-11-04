@@ -9,13 +9,14 @@ export default function NoPage() {
     <main>
       {/* Header component */}
       <Header>
-        Oops! 404 Error.
+        Oops! Error 404...
       </Header>
 
       {/* Main page body */}
       <article id="main-body">
         <p className={styles.notExist}>
-          This page does not exist. Please go back to <Link to="/">the home page</Link>!
+          This page does not exist.<br />
+          <Link to="/">Go back to the home page</Link>?
         </p>
 
         <hr /> 
