@@ -10,6 +10,7 @@ A TypeScript React app used as my portfolio
   - Node.js
   - React (TypeScript)
   - Vite
+  - Windows Subsystem for Linux (WSL)
 - License: Modified MIT (See below)
 
 As of version 0.22.0, this project is licensed under a modified MIT License that prohibits AI training.
