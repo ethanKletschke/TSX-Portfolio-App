@@ -10,10 +10,10 @@ A TypeScript React app used as my portfolio
 As of version 0.22.0, this project is licensed under a modified MIT License that prohibits AI training.
 Previous versions remain under the standard MIT License.
 
-## Table of Contents:
+## Table of Contents
 
 - [Ethan K.'s TypeScript Portfolio](#ethan-ks-typescript-portfolio)
-  - [Table of Contents:](#table-of-contents)
+  - [Table of Contents](#table-of-contents)
   - [Using the App](#using-the-app)
     - [Requirements to Run](#requirements-to-run)
     - [Installation](#installation)
