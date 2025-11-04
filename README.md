@@ -4,7 +4,12 @@ A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
 - Version: `0.24.0`
-- Environment(s): Ubuntu (WSL)
+- Development Environment: Ubuntu (WSL)
+- Technologies used:
+  - NPM
+  - Node.js
+  - React (TypeScript)
+  - Vite
 - License: Modified MIT (See below)
 
 As of version 0.22.0, this project is licensed under a modified MIT License that prohibits AI training.
