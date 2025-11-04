@@ -70,9 +70,9 @@ $$
 
 Where:
 
-- "$val$" is the current value (initially 0).
-- "$new$" is the number the user provided.
-- "$step$" is the step provided by the user.
+- "`val`" is the current value (initially 0).
+- "`new`" is the number the user provided.
+- "`step`" is the step provided by the user.
 
 ### Custom Email Validator
 
