@@ -1,6 +1,6 @@
 /* Dice Image */
 .dieImg {
-  border: 2pt solid grey;
+  border: 2pt solid #d1d1d1;
 
   /* Makes the die image centered on the screen. */
   margin: auto;

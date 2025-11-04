@@ -4,6 +4,7 @@ import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import styles from "./DiceRoll.module.css";
 
+// Dice roll page
 export default function DiceRoll() {
   // Source of the die face image
   const [imgSrc, setImgSrc] = useState<string>("DiceQuestion.png");
@@ -14,7 +15,7 @@ export default function DiceRoll() {
   // Sum of rolls
   const [totalOfRolls, setTotalOfRolls] = useState<number>(0);
 
-  // Die faces type alias.
+  // Die face values as a type alias.
   type dieFaces = 1 | 2 | 3 | 4 | 5 | 6;
 
   const handleDiceRollClick = () => {
@@ -72,6 +73,7 @@ export default function DiceRoll() {
           Roll Dice
         </button>
 
+        {/* Value Refresh Button */}
         <button onClick={refreshVals}>
           Refresh Values
         </button>
