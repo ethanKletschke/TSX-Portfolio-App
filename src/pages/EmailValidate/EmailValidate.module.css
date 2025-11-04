@@ -1,15 +1,20 @@
 /* Label for form output. */
 .out-lbl {
-  font-weight: bold; /* Bold font */
-  text-decoration: underline; /* Underline font */
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Mail icon */
 .mailImg {
+  /* Give the image square-like dimensions */
   width: 18.75em; /* 300px */
   height: 18.75em; /* 300px */
+  
+  /* Center image on the page */
   margin: auto;
   display: block;
+
+  /* Rounded borders */
   border: 1pt solid;
   border-radius: 50pt;
 }

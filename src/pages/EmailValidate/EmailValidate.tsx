@@ -34,13 +34,13 @@ export default function EmailValidate() {
             name="email-addr"
             id="email-addr"
             value={email || ""}
-            onChange={handleEmailChange} // attach the email change handler
+            onChange={handleEmailChange} // attach the email onChange handler
             placeholder="Email to Validate..."
           />
 
           {/* Email output  */}
           <label htmlFor="email-output" className={styles["out-lbl"]}>Is the email valid?</label>&nbsp;
-          {/* Output if the email is valid or not as the user types */}
+          {/* Output if the email is valid or not as the user types (yes or no) */}
           <output name="email-output" htmlFor="email-addr">{(validateEmail(email) ? "Yes" : "No")}</output>
         </form>
 
