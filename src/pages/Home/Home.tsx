@@ -53,6 +53,11 @@ export default function Home() {
               Sort Objects
             </Link>
           </li>
+          <li>
+            <Link to="/stopwatch">
+              Stopwatch
+            </Link>
+          </li>
         </ul>
       </article>
 

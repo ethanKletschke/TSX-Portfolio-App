@@ -1,3 +1,4 @@
+import Footer from "../../comps/Footer/Footer";
 import Header from "../../comps/Header/Header";
 
 export default function StopwatchPage() {
@@ -6,6 +7,12 @@ export default function StopwatchPage() {
       <Header>
         Stopwatch Example
       </Header>
+
+      <article id="main-body">
+
+      </article>
+
+      <Footer />
     </main>
   );
 }
