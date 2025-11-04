@@ -13,14 +13,17 @@ export default function DialogsDemo() {
       </Header>
 
       <article id="main-body">
+        {/* Alert Box */}
         <AlertBox alertTitle="Alert">
           This is an alert!
         </AlertBox>
 
+        {/* Confirm Box */}
         <ConfirmBox>
           Are you sure you want to do an action?
         </ConfirmBox>
 
+        {/* Form Box */}
         <FormBox />
 
         <GoHomeBtn />
