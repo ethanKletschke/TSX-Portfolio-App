@@ -5,6 +5,8 @@ A TypeScript React app used as my portfolio
 - Author: Ethan Kletschke
 - Version: `0.25.0`
 - Development Environment: Ubuntu (WSL)
+  - Tested on Mozilla Firefox and MS Edge
+    - Screenshots taken from output on Firefox
 - Technologies used:
   - NPM
   - Node.js
@@ -64,6 +66,8 @@ For the (currently untested) production version:
 A page discussing me and my confidence in my skills. The skills are displayed as a
 meter from 1% to 100%.
 
+![Output Screenshot](./README_screenshots/About.png)
+
 ### Consecutive Summation
 
 On this page, you can input a number to add to a previous number (starting at 0)
@@ -83,16 +87,28 @@ Where:
 - "`new`" is the number the user provided.
 - "`step`" is the step provided by the user.
 
+Example of output:
+
+![Screenshot of Output](./README_screenshots/Sum.png)
+
 ### Custom Email Validator
 
 On this page, you can validate an entered email address, and the app will automatically
 validate the email as you type it using a custom RegEx instead of the browser's built-in
 `email` input validator.
 
+Example of output:
+
+![Email output screenshot](./README_screenshots/Email.png)
+
 ### Stopwatch Page
 
 A simple page containing a stopwatch (measured in seconds only) 
 and a time log for it.
+
+Example of output on Firefox after pressing "Start", "Log", and "Stop":
+
+![Output Screenshot](./README_screenshots/Stopwatch.png)
 
 ### Sentence Sorting
 
@@ -100,15 +116,27 @@ On this page, you can enter a sentence, and the program will sort that sentence
 by its individual letters (case- and accent-insensitive).  
 For example, `Letters` would be sorted as `eeLrstt`.
 
+Example of Output:
+
+![Output screenshot](./README_screenshots/LettersSorted.png)
+
 ### Dice Roll
 
 When you click on a button, rolls the die, and displays the die face, along with
 averages and totals for your roll streak.
 
+Example of Output:
+
+![Output screenshot](./README_screenshots/Dice.png)
+
 ### Object Sort (WIP)
 
 Input four text values, store it internally as an object, and sort the objects
 by one of the four text values.
+
+Page looks like this at the moment:
+
+![Screenshot of Output](./README_screenshots/SortObj.png)
 
 ### Dialog Box Demo
 
@@ -120,3 +148,11 @@ A small page demonstrating fully-styled dialog boxes of 3 types:
    - A box with a short confirmation message, along with "Yes" and "No" buttons. 
 3. Form Box
    - A confirm box with a simple form.
+
+Page by Default:
+
+![Output screenshot](./README_screenshots/DialogBoxDefault.png)
+
+After opening alert box:
+
+![Output screenshot](./README_screenshots/AlertBox.png)
