@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `0.24.0`
+- Version: `0.25.0`
 - Development Environment: Ubuntu (WSL)
 - Technologies used:
   - NPM
