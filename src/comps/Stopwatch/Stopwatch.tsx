@@ -22,9 +22,8 @@ export default function Stopwatch() {
   // Starts the timer
   const handleStart = () => {
     // If already running
-    if (startTimeRef.current !== null) {
-      return; // Do not run again
-    }
+    if (isRunning)
+      return; // Don't run the function
 
     // Set start time to "now minus elapsedBeforePause"
     // so the timer resumes from where it left off
@@ -77,7 +76,7 @@ export default function Stopwatch() {
     // If the timer's start time is not null
     if (startTimeRef.current !== null) {
       // Store total time elapsed so far for resuming later
-      elapsedBeforePauseRef.current = Date.now() - startTimeRef.current;
+      elapsedBeforePauseRef.current = now - startTimeRef.current;
     }
   };
 
@@ -100,8 +99,10 @@ export default function Stopwatch() {
       
 
       <div id={styles.btnWrap}>
-        <button onClick={handleStart}>Start</button>
-        <button onClick={handlePause}>Pause</button>
+        <button onClick={handleStart} disabled={isRunning}>
+          {elapsedBeforePauseRef.current > 0 ? "Resume" : "Start"}
+        </button>
+        <button onClick={handlePause} disabled={!isRunning}>Pause</button>
         <button onClick={handleStop}>Stop</button>
         <button onClick={handleLog}>Log</button>
         <button onClick={handleClear}>Clear</button>
