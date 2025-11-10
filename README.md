@@ -35,6 +35,7 @@ Previous versions remain under the standard MIT License.
     - [Dice Roll](#dice-roll)
     - [Object Sort (WIP)](#object-sort-wip)
     - [Dialog Box Demo](#dialog-box-demo)
+  - [Planned Future Features](#planned-future-features)
 
 ## Using the App
 
@@ -156,3 +157,10 @@ Page by Default:
 After opening alert box:
 
 ![Output screenshot](./README_screenshots/AlertBox.png)
+
+## Planned Future Features
+
+- Letter repetition page
+  - Simply repeats a string's letters up to its index number, e.g., `Heyo` would become
+    `HHeHeyHeyo`. Inspiration came from an annoying bug I get when typing on my phone
+    sometimes. 
