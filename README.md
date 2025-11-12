@@ -31,7 +31,7 @@ Previous versions remain under the standard MIT License.
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
-    - [Letter Repetition](#letter-repetition)
+    - [Letter Repetition (WIP)](#letter-repetition-wip)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
     - [Object Sort (WIP)](#object-sort-wip)
@@ -112,11 +112,11 @@ Example of output on Firefox after pressing "Start", "Log", and "Stop":
 
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
-### Letter Repetition
+### Letter Repetition (WIP)
 
 A VERY simple page that just takes a word and builds a new string where each character is repeated 
 up to its index in the word.  
-For example, `Hey there` will become `HHeHey
+For example, `hey there buddy` will become `hheheytththethertherebbubudbuddbuddy`.
 
 ### Sentence Sorting
 
@@ -150,7 +150,7 @@ Page looks like this at the moment:
 
 A small page demonstrating fully-styled dialog boxes of 3 types:
 
-1. Alert Box  
+1. Alert Box
    - A box with a short message and an "OK" button.
 2. Confirm Box
    - A box with a short confirmation message, along with "Yes" and "No" buttons. 
