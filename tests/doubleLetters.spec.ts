@@ -17,5 +17,16 @@ describe("doubleLetters()", function () {
 
   it("Returns an empty string when passed an empty string", function () {
     expect(doubleLetters("")).to.equal("", "String should be empty");
-  })
+  });
+
+  it("Ignores whitespace", function () {
+    expect(doubleLetters("Hey There")).to.not.match(/\s/g, "There should be no whitespace in the resultant string.");
+  });
+
+  it("Restarts the chain when encountering whitespace", function () {
+    expect(doubleLetters("hey there buddy")).to.equal(
+      "hheheytththethertherebbubudbuddbuddy", 
+      "The letter repetition chain must reset when encountering whitespace"
+    );
+  });
 });

@@ -31,6 +31,7 @@ Previous versions remain under the standard MIT License.
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
+    - [Letter Repetition](#letter-repetition)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
     - [Object Sort (WIP)](#object-sort-wip)
@@ -111,6 +112,12 @@ Example of output on Firefox after pressing "Start", "Log", and "Stop":
 
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
+### Letter Repetition
+
+A VERY simple page that just takes a word and builds a new string where each character is repeated 
+up to its index in the word.  
+For example, `Hey there` will become `HHeHey
+
 ### Sentence Sorting
 
 On this page, you can enter a sentence, and the program will sort that sentence
@@ -160,7 +167,4 @@ After opening alert box:
 
 ## Planned Future Features
 
-- Letter repetition page
-  - Simply repeats a string's letters up to its index number, e.g., `Heyo` would become
-    `HHeHeyHeyo`. Inspiration came from an annoying bug I get when typing on my phone
-    sometimes. 
+- None at the moment.
