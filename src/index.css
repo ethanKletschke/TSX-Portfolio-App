@@ -117,7 +117,8 @@ main button {
 }
 
 main form input[type=submit]:hover,
-main form input[type=button]:hover {
+main form input[type=button]:hover,
+main form button[type=button]:hover {
   background-color: var(--blue);
   color: var(--lightBlue);
 }
