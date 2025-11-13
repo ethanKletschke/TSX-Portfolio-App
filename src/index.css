@@ -74,7 +74,6 @@ main button {
 main form input::placeholder,
 main form input::-webkit-input-placeholder,
 main form input::-moz-placeholder {
-  font-style: italic;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -147,6 +146,7 @@ main form label {
 /* Output elements in forms */
 main form output {
   font-style: italic;
+  display: block;
 }
 
 /* Horizontal Rules */
