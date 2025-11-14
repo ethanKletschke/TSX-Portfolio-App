@@ -30,6 +30,7 @@ export default function EmailValidate() {
         <form onSubmit={(e) => e.preventDefault() /*  */}>
           <label htmlFor="email-addr">Enter Email Below:</label>
           <input 
+            autoComplete="email" // Provide email autocompletion
             type="text"
             name="email-addr"
             id="email-addr"

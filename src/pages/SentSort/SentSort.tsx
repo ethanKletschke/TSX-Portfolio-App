@@ -45,6 +45,7 @@ export default function SentSort() {
             {/* Input for Sentence */}
             <label htmlFor="sentence">Sentence to sort:</label>
             <input 
+              autoComplete="off"
               type="text" 
               id="sentence" 
               name="sentence"

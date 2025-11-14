@@ -9,6 +9,7 @@ import NoPage from "./pages/NoPage/NoPage.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
+import LetterRepetition from "./pages/LetterRepetition/LetterRepetition.tsx";
 
 export default function App() {
   return (
@@ -31,6 +32,8 @@ export default function App() {
       <Route path="/dialogs" element={<DialogsDemo />} />
       {/* Stopwatch page */}
       <Route path="/stopwatch" element={<StopwatchPage />} />
+      {/* Letter Repetition */}
+      <Route path="/letterRep" element={<LetterRepetition />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>
