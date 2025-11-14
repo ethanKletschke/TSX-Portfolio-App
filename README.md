@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `0.25.0`
+- Version: `0.26.0`
 - Development Environment: Ubuntu (WSL)
   - Tested on Mozilla Firefox and MS Edge
     - Screenshots taken from output on Firefox
@@ -31,7 +31,7 @@ Previous versions remain under the standard MIT License.
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
-    - [Letter Repetition (WIP)](#letter-repetition-wip)
+    - [Letter Repetition](#letter-repetition)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
     - [Object Sort (WIP)](#object-sort-wip)
@@ -112,7 +112,7 @@ Example of output on Firefox after pressing "Start", "Log", and "Stop":
 
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
-### Letter Repetition (WIP)
+### Letter Repetition
 
 A VERY simple page that just takes a word and builds a new string where each character is repeated 
 up to its index in the word.  
