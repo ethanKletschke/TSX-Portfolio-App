@@ -44,6 +44,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link to="/letterRep">
+              Letter Repetition
+            </Link>
+          </li>
+          <li>
             <Link to="/sentenceSort">
               Sort a Sentence
             </Link>
