@@ -1,0 +1,117 @@
+.form {
+  margin: 0.5em;
+}
+
+.form input,
+.form select,
+.form textarea,
+.form button {
+
+}
+
+.submitBtn {
+  
+}
+
+/* Target all forms under <main> */
+.form {
+  margin: 0.5em;
+}
+
+/* All input fields */
+.form input, 
+.form select,
+.form textarea,
+.form button {
+  width: 100%;
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  display: inline-block;
+  /* Ensures consistent input text fonts. */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Placeholder text */
+.form input::placeholder,
+.form input::-webkit-input-placeholder,
+.form input::-moz-placeholder {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Form Text Areas */
+.form textarea {
+  /* 
+    Ensures the user can resize the textarea
+    (only vertically) if its content gets too 
+    lengthy.
+  */
+  resize: vertical; 
+  height: 10em; /* Initial Height */
+  background-color: var(--white);
+  border: var(--inputBorder);
+}
+
+.form textarea:focus {
+  outline: 2pt solid darkblue;
+}
+
+/* Input fields except submit button */
+.form input:not([type=submit]),
+.form select {
+  border: var(--inputBorder);
+  border-radius: 4pt;
+  box-sizing: border-box;
+}
+
+/* Input fields with focus */
+.form input:not([type=submit],[type=button]):focus,
+.form button:focus,
+.form select:focus {
+  outline: 2pt outset lightgray;
+  border: var(--inputBorder);
+}
+
+/* Buttons */
+.form input[type=submit],
+.form input[type=button],
+main button {
+  background-color: var(--lightBlue);
+  color: var(--blue);
+  border: none;
+  border-radius: 4pt;
+  cursor: pointer;
+}
+
+.form input[type=submit]:hover,
+.form input[type=button]:hover,
+.form button[type=button]:hover {
+  background-color: var(--blue);
+  color: var(--lightBlue);
+}
+
+.form > fieldset {
+  border: 2pt ridge var(--lightBlue);
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.form > fieldset > legend {
+  padding: 0 0.5em;
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.form label {
+  width: 100%;
+  display: block;
+  padding: 0.2em;
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+/* Output elements in forms */
+.form output {
+  font-style: italic;
+  display: block;
+}

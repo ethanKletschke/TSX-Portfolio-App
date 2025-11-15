@@ -27,7 +27,7 @@ export default function EmailValidate() {
 
       {/* Main Page Body */}
       <article id="main-body">
-        <form onSubmit={(e) => e.preventDefault() /*  */}>
+        <form onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="email-addr">Enter Email Below:</label>
           <input 
             autoComplete="email" // Provide email autocompletion
