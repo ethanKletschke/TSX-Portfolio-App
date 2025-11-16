@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import styles from "./Stopwatch.module.css";
 
 export default function Stopwatch() {
-  const startTimeRef = useRef<number | null>(null); 
+  const startTimeRef = useRef<number | null>(null);
   const animFrameRef = useRef<number>(null);
   const elapsedBeforePauseRef = useRef<number>(0);
 
@@ -18,7 +18,7 @@ export default function Stopwatch() {
       cancelAnimationFrame(animFrameRef.current as number);
     };
   }, []); // Runs once on mount
-  
+
   // Starts the timer
   const handleStart = () => {
     // If already running
@@ -32,16 +32,16 @@ export default function Stopwatch() {
     // Store the ID of the animation frame in a ref
     animFrameRef.current = requestAnimationFrame(updateTimer);
   };
-  
+
   // Updates the timer
   const updateTimer = useCallback(() => {
     setNow(Date.now()); // Triggers a UI update
     // Store the ID of the animation frame in a ref
     animFrameRef.current = requestAnimationFrame(updateTimer);
   }, []); // No dependencies
-  
+
   let timeElapsed = 0;
-  
+
   // If the time started (isn't null)
   if (startTimeRef.current !== null) {
     // Get the time elapsed in seconds
@@ -50,17 +50,16 @@ export default function Stopwatch() {
     // If stopped/cleared, show what we had before pausing
     timeElapsed = elapsedBeforePauseRef.current / 1000;
   }
-  
+
   const handleLog = () => {
+    if (timeElapsed === 0)
+      return;
+
     // Store the log. This will also append it to the list.
     setLogs(prev => [...prev, timeElapsed.toFixed(2)])
 
     // Log the current elapsed time 
     console.log(timeElapsed.toFixed(2));
-  };
-
-  const handleStop = () => {
-    cancelAnimationFrame(animFrameRef.current as number);
   };
 
   const handlePause = () => {
@@ -84,39 +83,39 @@ export default function Stopwatch() {
   const handleClear = () => {
     // Stop the timer
     cancelAnimationFrame(animFrameRef.current as number);
-    
+    setIsRunning(false);
+
     startTimeRef.current = null;
     elapsedBeforePauseRef.current = 0;
-    
+
     setNow(Date.now());
     setLogs([]); // Empty the logs
   };
 
   return (
-    <div className={styles.stopwatchWrapper}>
+    <>
       <h3>Stopwatch</h3>
       <p>Seconds passed: {timeElapsed.toFixed(2)} seconds</p>
-      
 
-      <div id={styles.btnWrap}>
+      <div className={styles.btnWrap}>
         <button onClick={handleStart} disabled={isRunning}>
           {elapsedBeforePauseRef.current > 0 ? "Resume" : "Start"}
         </button>
         <button onClick={handlePause} disabled={!isRunning}>Pause</button>
-        <button onClick={handleStop}>Stop</button>
         <button onClick={handleLog}>Log</button>
         <button onClick={handleClear}>Clear</button>
       </div>
 
       <h3>Log</h3>
 
-      <ul id="stopwatch-logs">
+      <ul className={styles.stopwatchLogs}>
         {logs.map((log, logIndex) => (
           <li key={logIndex}>
-            {log}
+            {/* e.g.: Lap 1: 6.00s */}
+            Lap {logIndex + 1}: {log}s
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }
