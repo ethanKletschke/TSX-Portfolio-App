@@ -1,24 +1,24 @@
-#btnWrap {
+.btnWrap {
   display: flex;
 }
 
-#btnWrap > button {
+.btnWrap > button {
   border-radius: 0;
   border: 1pt solid var(--blue);
   border-right: none;
 }
 
-#btnWrap > button:last-child {
+.btnWrap > button:last-child {
   border-right: 1pt solid var(--blue); 
 }
 
 @media screen and (max-width: 600px) {
-  #btnWrap {
+  .btnWrap {
     flex-direction: column;
     margin: 1em 0;
   } 
 
-  #btnWrap > button {
+  .btnWrap > button {
     border-right: 1pt solid var(--blue);
     margin: 0;
   }
