@@ -118,6 +118,9 @@ A VERY simple page that just takes a word and builds a new string where each cha
 up to its index in the word.  
 For example, `hey there buddy` will become `hheheytththethertherebbubudbuddbuddy`.
 
+Example of Output:
+![Output Screenshot](./README_screenshots/Repeated.png)
+
 ### Sentence Sorting
 
 On this page, you can enter a sentence, and the program will sort that sentence
