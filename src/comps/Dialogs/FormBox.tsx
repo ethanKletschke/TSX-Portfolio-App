@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import styles from "./Dialogs.module.css";
+import Form from "../Form/Form";
 
 export default function FormBox() {
   // States
@@ -65,9 +66,9 @@ export default function FormBox() {
 
         <hr />
 
-        <form
-          method="dialog" // Dialog closes on submit
-          onSubmit={handleSubmit}
+        <Form
+          dialog // Dialog closes on submit
+          submitHandler={handleSubmit}
         >
           <fieldset>
             <legend>Personal Details</legend>
@@ -128,7 +129,7 @@ export default function FormBox() {
             type="button"
             value="Cancel"
           />
-        </form>
+        </Form>
       </dialog>
     </div>
   );

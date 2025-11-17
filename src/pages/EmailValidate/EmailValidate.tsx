@@ -33,8 +33,7 @@ export default function EmailValidate() {
       {/* Main Page Body */}
       <article id="main-body">
         <Form 
-          submitHandler={handleSubmit} 
-          hasSubmit={false}
+          submitHandler={handleSubmit}
         >
           <label htmlFor="email-addr">Enter Email Below:</label>
           <input 
