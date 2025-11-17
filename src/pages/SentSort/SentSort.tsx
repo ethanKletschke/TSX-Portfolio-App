@@ -4,6 +4,7 @@ import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
 import sortString from "../../funcs/sortString.ts";
 import styles from "./SentSort.module.css";
+import Form from "../../comps/Form/Form.tsx";
 
 export default function SentSort() {
   // The sentence to sort
@@ -37,7 +38,7 @@ export default function SentSort() {
           className={styles.img} 
         />
 
-        <form onSubmit={handleSubmit}>
+        <Form submitHandler={handleSubmit}>
           {/* Sentence Input */}
           <fieldset>
             <legend>Enter Sentence</legend>
@@ -68,7 +69,7 @@ export default function SentSort() {
               {sortedSentence || "Please enter a sentence!"}
             </output>
           </fieldset>
-        </form>
+        </Form>
 
         {/* Button to go to the index route. */}
         <GoHomeBtn />

@@ -4,8 +4,14 @@
 
 .btnWrap > button {
   border-radius: 0;
+  flex: 1;
   border: 1pt solid var(--blue);
   border-right: none;
+  background-color: var(--lightBlue);
+  color: var(--blue);
+  padding: 0.5em;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btnWrap > button:last-child {

@@ -3,6 +3,7 @@ import Footer from "../../comps/Footer/Footer.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
 import doubleLetters from "../../funcs/doubleLetters.ts";
+import Form from "../../comps/Form/Form.tsx";
 
 export default function LetterRepetition() {
   const [input, setInput] = useState<string>("");
@@ -41,7 +42,7 @@ export default function LetterRepetition() {
       </Header>
 
       <article id="main-body">
-        <form onSubmit={handleSubmit}>
+        <Form submitHandler={handleSubmit}>
           <fieldset>
             <legend>Letter Repetition</legend>
 
@@ -79,7 +80,7 @@ export default function LetterRepetition() {
           >
             Clear
           </button>
-        </form>
+        </Form>
 
         <hr />
         
