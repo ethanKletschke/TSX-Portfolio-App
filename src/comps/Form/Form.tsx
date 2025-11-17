@@ -8,9 +8,11 @@ type FormProps = {
   children: React.ReactNode;
   // Submit button text
   submitBtnText?: string;
+  // Does the form have a submit btn?
+  hasSubmit: boolean;
 };
 
-export default function Form({ submitHandler, children, submitBtnText }: FormProps) {
+export default function Form({ submitHandler, children, submitBtnText, hasSubmit }: FormProps) {
   // Default form submit handler if one isn't supplied
   const defaultHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,9 +26,11 @@ export default function Form({ submitHandler, children, submitBtnText }: FormPro
       {/* Form controls, i.e., input elements */}
       {children}
 
-      <button className={styles.submitBtn} type="submit">
-        {submitBtnText || "Submit"}
-      </button>
+      {hasSubmit && (
+        <button className={styles.submitBtn} type="submit">
+          {submitBtnText || "Submit"}
+        </button>
+      )}
     </form>
   );
 }

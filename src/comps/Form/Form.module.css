@@ -2,17 +2,6 @@
   margin: 0.5em;
 }
 
-.form input,
-.form select,
-.form textarea,
-.form button {
-
-}
-
-.submitBtn {
-  
-}
-
 /* Target all forms under <main> */
 .form {
   margin: 0.5em;
@@ -71,10 +60,10 @@
   border: var(--inputBorder);
 }
 
-/* Buttons */
+/* Form Buttons */
 .form input[type=submit],
 .form input[type=button],
-main button {
+.form button {
   background-color: var(--lightBlue);
   color: var(--blue);
   border: none;
@@ -105,7 +94,7 @@ main button {
 .form label {
   width: 100%;
   display: block;
-  padding: 0.2em;
+  padding: 0.2em ;
   text-decoration: underline;
   color: var(--blue);
 }

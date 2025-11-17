@@ -4,11 +4,16 @@ import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import validateEmail from "../../funcs/validateEmail";
 import styles from "./EmailValidate.module.css";
+import Form from "../../comps/Form/Form";
 
 // Email Validator page
 export default function EmailValidate() {
   // Store email in state.
   const [email, setEmail] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
 
   // Email input change handler
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -27,7 +32,10 @@ export default function EmailValidate() {
 
       {/* Main Page Body */}
       <article id="main-body">
-        <form onSubmit={(e) => e.preventDefault()}>
+        <Form 
+          submitHandler={handleSubmit} 
+          hasSubmit={false}
+        >
           <label htmlFor="email-addr">Enter Email Below:</label>
           <input 
             autoComplete="email" // Provide email autocompletion
@@ -43,7 +51,7 @@ export default function EmailValidate() {
           <label htmlFor="email-output" className={styles["out-lbl"]}>Is the email valid?</label>&nbsp;
           {/* Output if the email is valid or not as the user types (yes or no) */}
           <output name="email-output" htmlFor="email-addr">{(validateEmail(email) ? "Yes" : "No")}</output>
-        </form>
+        </Form>
 
         {/* Button to return to index route */}
         <GoHomeBtn />
