@@ -2,6 +2,7 @@ import { useState } from "react";
 import Footer from "../../comps/Footer/Footer.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
+import Form from "../../comps/Form/Form.tsx";
 
 export default function ConsecSum() {
   // Current value
@@ -43,7 +44,7 @@ export default function ConsecSum() {
 
       {/* Main page body */}
       <article id="main-body">
-        <form onSubmit={handleSubmit}>
+        <Form submitHandler={handleSubmit}>
           {/* Output Fieldset */}
           <fieldset>
             <legend>Consecutive Summation</legend>
@@ -81,7 +82,7 @@ export default function ConsecSum() {
             {/* Submit button */}
             <input type="submit" value={`Add ${numToAdd} to ${value}, ${step} time(s)`} />
           </fieldset>
-        </form>
+        </Form>
 
         {/* Button to return to index route */}
         <GoHomeBtn />

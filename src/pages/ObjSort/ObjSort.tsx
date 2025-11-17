@@ -1,4 +1,5 @@
 import Footer from "../../comps/Footer/Footer.tsx";
+import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
 import WorkInProg from "../../comps/WorkInProg/WorkInProg.tsx";
@@ -24,9 +25,11 @@ export default function ObjSort() {
         {/* Indicate the page is a WIP */}
         <WorkInProg />
 
-        <form onSubmit={handleSubmit}>
-
-        </form>
+        <Form submitHandler={handleSubmit}>
+          <button type="submit">
+            Submit
+          </button>
+        </Form>
 
         {/* Button to return to index route */}
         <GoHomeBtn />
