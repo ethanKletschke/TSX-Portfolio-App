@@ -165,7 +165,7 @@ Page by Default:
 
 ![Output screenshot](./README_screenshots/DialogBoxDefault.png)
 
-After opening alert box:
+After opening the alert box:
 
 ![Output screenshot](./README_screenshots/AlertBox.png)
 
