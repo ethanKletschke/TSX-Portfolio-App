@@ -6,13 +6,10 @@ type FormProps = {
   submitHandler?: FormEventHandler<HTMLFormElement>;
   // The child elements of the component, i.e. the form controls.
   children: React.ReactNode;
-  // Submit button text
-  submitBtnText?: string;
-  // Does the form have a submit btn?
-  hasSubmit: boolean;
+  dialog?: boolean; // Is the form in a dialog?
 };
 
-export default function Form({ submitHandler, children, submitBtnText, hasSubmit }: FormProps) {
+export default function Form({ submitHandler, children, dialog }: FormProps) {
   // Default form submit handler if one isn't supplied
   const defaultHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -20,17 +17,13 @@ export default function Form({ submitHandler, children, submitBtnText, hasSubmit
   
   return (
     <form 
+      autoComplete="off"
       className={styles.form}
+      method={(dialog) ? "dialog" : "get"}
       onSubmit={submitHandler || defaultHandleSubmit}
     >
       {/* Form controls, i.e., input elements */}
       {children}
-
-      {hasSubmit && (
-        <button className={styles.submitBtn} type="submit">
-          {submitBtnText || "Submit"}
-        </button>
-      )}
     </form>
   );
 }
