@@ -4,6 +4,10 @@ export default function sortObjects<T, K extends keyof T>(
   prop: K, 
   desc: boolean = false
 ): T[] {
+  if (objs.length === 0) {
+    return objs;
+  }
+
   return objs.sort((a, b) => {
     // Store the property values
     const valA: T[K] = a[prop], valB: T[K] = b[prop];
