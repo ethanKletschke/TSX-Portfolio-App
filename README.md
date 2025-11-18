@@ -43,7 +43,8 @@ Previous versions remain under the standard MIT License.
 
 ### Requirements to Run
 
-- NPM v22 and above
+- NPM v11 and above
+- Node.js v22 and above
 
 ### Installation
 
