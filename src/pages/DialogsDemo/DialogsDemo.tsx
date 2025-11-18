@@ -4,6 +4,7 @@ import FormBox from "../../comps/Dialogs/FormBox";
 import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
+import MainBody from "../../comps/MainBody/MainBody";
 
 export default function DialogsDemo() {
   return (
@@ -12,7 +13,7 @@ export default function DialogsDemo() {
         Dialog Box Demo
       </Header>
 
-      <article id="main-body">
+      <MainBody>
         {/* Alert Box */}
         <AlertBox alertTitle="Alert">
           This is an alert!
@@ -27,7 +28,7 @@ export default function DialogsDemo() {
         <FormBox />
 
         <GoHomeBtn />
-      </article>
+      </MainBody>
 
       <Footer />
     </main>

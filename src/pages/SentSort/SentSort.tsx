@@ -5,6 +5,7 @@ import Header from "../../comps/Header/Header.tsx";
 import sortString from "../../funcs/sortString.ts";
 import styles from "./SentSort.module.css";
 import Form from "../../comps/Form/Form.tsx";
+import MainBody from "../../comps/MainBody/MainBody.tsx";
 
 export default function SentSort() {
   // The sentence to sort
@@ -31,7 +32,7 @@ export default function SentSort() {
         Sort a Sentence
       </Header>
 
-      <article id="main-body">
+      <MainBody>
         <img 
           src="/Sort.png" 
           alt="Image of someone sorting similar shapes together" 
@@ -73,7 +74,7 @@ export default function SentSort() {
 
         {/* Button to go to the index route. */}
         <GoHomeBtn />
-      </article>
+      </MainBody>
 
       {/* Page footer */}
       <Footer />

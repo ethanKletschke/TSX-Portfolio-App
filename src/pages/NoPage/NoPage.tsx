@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../comps/Footer/Footer";
 import Header from "../../comps/Header/Header";
 import styles from "./NoPage.module.css";
+import MainBody from "../../comps/MainBody/MainBody";
 
 // Page displayed when a route isn't found
 export default function NoPage() {
@@ -13,14 +14,14 @@ export default function NoPage() {
       </Header>
 
       {/* Main page body */}
-      <article id="main-body">
+      <MainBody>
         <p className={styles.notExist}>
           This page does not exist.<br />
           <Link to="/">Go back to the home page</Link>?
         </p>
 
         <hr /> 
-      </article>
+      </MainBody>
 
       {/* Footer component */}
       <Footer />

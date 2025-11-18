@@ -2,6 +2,7 @@ import Footer from "../../comps/Footer/Footer.tsx";
 import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
+import MainBody from "../../comps/MainBody/MainBody.tsx";
 import WorkInProg from "../../comps/WorkInProg/WorkInProg.tsx";
 import sortObject from "../../funcs/sortObjects.ts";
 
@@ -21,7 +22,7 @@ export default function ObjSort() {
       </Header>
 
       {/* Main page body */}
-      <article id="main-body">
+      <MainBody>
         {/* Indicate the page is a WIP */}
         <WorkInProg />
 
@@ -33,7 +34,7 @@ export default function ObjSort() {
 
         {/* Button to return to index route */}
         <GoHomeBtn />
-      </article>
+      </MainBody>
 
       {/* Footer component */}
       <Footer />
