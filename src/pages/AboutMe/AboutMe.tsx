@@ -1,6 +1,7 @@
 import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
+import MainBody from "../../comps/MainBody/MainBody";
 import SkillMeter from "../../comps/SkillMeter/SkillMeter";
 import styles from "./AboutMe.module.css";
 
@@ -34,7 +35,7 @@ export default function AboutMe() {
         About Me
       </Header>
 
-      <article id="main-body">
+      <MainBody>
         <section className={styles["body-section"]}>
           <header>
             <h2>Who am I?</h2>
@@ -79,7 +80,7 @@ export default function AboutMe() {
             <SkillMeter lblText="MySQL" value={5} htmlID="mysql" />
           </article>
         </section>
-      </article>
+      </MainBody>
 
       <GoHomeBtn />
 

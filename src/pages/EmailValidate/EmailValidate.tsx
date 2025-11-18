@@ -5,6 +5,7 @@ import Header from "../../comps/Header/Header";
 import validateEmail from "../../funcs/validateEmail";
 import styles from "./EmailValidate.module.css";
 import Form from "../../comps/Form/Form";
+import MainBody from "../../comps/MainBody/MainBody";
 
 // Email Validator page
 export default function EmailValidate() {
@@ -31,7 +32,7 @@ export default function EmailValidate() {
       <img src="/Mail.png" alt="Mail logo" className={styles.mailImg} />
 
       {/* Main Page Body */}
-      <article id="main-body">
+      <MainBody>
         <Form submitHandler={handleSubmit}>
           <label htmlFor="email-addr">Enter Email Below:</label>
           <input 
@@ -52,7 +53,7 @@ export default function EmailValidate() {
 
         {/* Button to return to index route */}
         <GoHomeBtn />
-      </article>
+      </MainBody>
 
       {/* Footer component */}
       <Footer />

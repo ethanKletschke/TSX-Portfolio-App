@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../../comps/Header/Header";
 import Footer from "../../comps/Footer/Footer";
 import styles from "./Home.module.css";
+import MainBody from "../../comps/MainBody/MainBody";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Header>
 
       {/* Main body of output. */}
-      <article id="main-body">
+      <MainBody>
         {/* Header with instruction */}
         <h2 className={styles.heading}>Select a Page to Go To</h2>
 
@@ -64,7 +65,7 @@ export default function Home() {
             </Link>
           </li>
         </ul>
-      </article>
+      </MainBody>
 
       {/* Footer for page, with copyright info */}
       <Footer />

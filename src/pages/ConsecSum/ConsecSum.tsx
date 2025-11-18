@@ -3,6 +3,7 @@ import Footer from "../../comps/Footer/Footer.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
 import Form from "../../comps/Form/Form.tsx";
+import MainBody from "../../comps/MainBody/MainBody.tsx";
 
 export default function ConsecSum() {
   // Current value
@@ -43,7 +44,7 @@ export default function ConsecSum() {
       </Header>
 
       {/* Main page body */}
-      <article id="main-body">
+      <MainBody>
         <Form submitHandler={handleSubmit}>
           {/* Output Fieldset */}
           <fieldset>
@@ -86,7 +87,7 @@ export default function ConsecSum() {
 
         {/* Button to return to index route */}
         <GoHomeBtn />
-      </article>
+      </MainBody>
 
       {/* Footer Component */}
       <Footer />

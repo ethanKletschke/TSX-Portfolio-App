@@ -3,6 +3,7 @@ import Footer from "../../comps/Footer/Footer";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import styles from "./DiceRoll.module.css";
+import MainBody from "../../comps/MainBody/MainBody";
 
 // Dice roll page
 export default function DiceRoll() {
@@ -58,7 +59,7 @@ export default function DiceRoll() {
       </Header>
 
       {/* Main page body */}
-      <article id="main-body">
+      <MainBody>
         {/* Dice Image */}
         <img
           src={imgSrc || "DiceQuestion.png"}
@@ -90,7 +91,7 @@ export default function DiceRoll() {
 
         {/* Button to return to index route */}
         <GoHomeBtn />
-      </article>
+      </MainBody>
 
       {/* Footer component */}
       <Footer />
