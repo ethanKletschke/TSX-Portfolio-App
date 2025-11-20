@@ -107,6 +107,8 @@ Example of output:
 
 ### Stopwatch Page
 
+_Idea Credit: ChatGPT_
+
 A simple page containing a stopwatch (measured in seconds only) 
 and a time log for it.
 
@@ -115,6 +117,8 @@ Example of output on Firefox after pressing "Start", "Log", and "Stop":
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
 ### Letter Repetition
+
+_Idea Credit: My hilariously slow phone_
 
 A VERY simple page that just takes a word and builds a new string where each character is repeated 
 up to its index in the word.  
