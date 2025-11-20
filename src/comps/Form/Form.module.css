@@ -40,6 +40,12 @@
   border: var(--inputBorder);
 }
 
+/* Readonly textareas with focus */
+.form textarea:read-only:focus {
+  /* Prevents user from thinking they can edit a readonly textarea */
+  outline: none;
+}
+
 .form textarea:focus {
   outline: 2pt solid darkblue;
 }
