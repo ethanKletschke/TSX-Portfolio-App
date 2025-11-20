@@ -99,7 +99,7 @@ Example of output:
 
 On this page, you can validate an entered email address, and the app will automatically
 validate the email as you type it using a custom RegEx instead of the browser's built-in
-`email` input validator.
+`email` input validator. Supports `email` autocomplete.
 
 Example of output:
 
