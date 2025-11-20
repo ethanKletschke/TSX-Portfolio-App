@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "../../comps/Footer/Footer.tsx";
 import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
@@ -8,8 +9,6 @@ import sortObject from "../../funcs/sortObjects.ts";
 
 // Object Sorting Component
 export default function ObjSort() {
-<<<<<<< HEAD
-=======
   // The class for the object(s) to sort
   class Person {
     private id: number;
@@ -82,13 +81,10 @@ export default function ObjSort() {
     setToSortBy(e.target.value as FieldsToSortBy);
   };
 
->>>>>>> 53c9f25 (feat(ui): Finish ObjSort Page)
   // Submit event handler
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Prevent page refresh on form submission
     e.preventDefault();
-<<<<<<< HEAD
-=======
   };
 
   const handleSortClick = () => {
@@ -107,7 +103,6 @@ export default function ObjSort() {
     }
 
     setOutputTxt(toOutput); 
->>>>>>> 53c9f25 (feat(ui): Finish ObjSort Page)
   };
 
   return (
@@ -123,11 +118,6 @@ export default function ObjSort() {
         <WorkInProg />
 
         <Form submitHandler={handleSubmit}>
-<<<<<<< HEAD
-          <button type="submit">
-            Submit
-          </button>
-=======
           <fieldset>
             <legend>Create Object</legend>
 
@@ -219,7 +209,6 @@ export default function ObjSort() {
           </fieldset>
 
           <button type="button" onClick={handleClear}>Reset</button>
->>>>>>> 53c9f25 (feat(ui): Finish ObjSort Page)
         </Form>
 
         {/* Button to return to index route */}
