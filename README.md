@@ -151,9 +151,17 @@ Example of Output:
 Input four text values, store it internally as an object, and sort the objects
 by one of the four text values.
 
-Page looks like this at the moment:
+Output for `Create` (after 2 objects are created):
 
-![Screenshot of Output](./README_screenshots/SortObj.png)
+![Output 1](./README_screenshots/SortObj1.png)
+
+Output for `Sort` after choosing to sort by last name:
+
+![Output 2](./README_screenshots/SortObj2.png)
+
+Output after clearing:
+
+![Output 3](./README_screenshots/SortObjCleared.png)
 
 ### Dialog Box Demo
 
