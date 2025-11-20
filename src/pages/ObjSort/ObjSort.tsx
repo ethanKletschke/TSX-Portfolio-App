@@ -4,7 +4,6 @@ import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
 import MainBody from "../../comps/MainBody/MainBody.tsx";
-import WorkInProg from "../../comps/WorkInProg/WorkInProg.tsx";
 import sortObject from "../../funcs/sortObjects.ts";
 
 // Object Sorting Component
@@ -114,8 +113,6 @@ export default function ObjSort() {
 
       {/* Main page body */}
       <MainBody>
-        {/* Indicate the page is a WIP */}
-        <WorkInProg />
 
         <Form submitHandler={handleSubmit}>
           <fieldset>
