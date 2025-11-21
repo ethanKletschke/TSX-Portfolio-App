@@ -1,4 +1,8 @@
 export default function numeronym(word: string): string {
+  if (word.length <= 2) {
+    return word;
+  }
+
   let result: string = "";
   
   result = word.charAt(0); // First letter
