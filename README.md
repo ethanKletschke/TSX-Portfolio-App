@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio
 
 - Author: Ethan Kletschke
-- Version: `1.0.0`
+- Version: `1.1.0`
 - Development Environment: Ubuntu (WSL)
   - Tested on Mozilla Firefox and MS Edge
     - Screenshots taken from output on Firefox
@@ -13,11 +13,11 @@ A TypeScript React app used as my portfolio
   - React (TypeScript)
   - Vite
   - Windows Subsystem for Linux (WSL)
-  - ChatGPT _**(for problem-solving only)**_
+  - ChatGPT _**(for problem-solving and ideas only)**_
 - License: Modified MIT (See below)
 
-As of version 0.22.0, this project is licensed under a modified MIT License that prohibits AI training.
-Previous versions remain under the standard MIT License.
+As of version 0.22.0, this project is licensed under a modified MIT License that
+prohibits AI training. Previous versions remain under the standard MIT License.
 
 ## Table of Contents
 
@@ -32,6 +32,7 @@ Previous versions remain under the standard MIT License.
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
+    - [Numeronym Generator](#numeronym-generator)
     - [Letter Repetition](#letter-repetition)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
@@ -65,10 +66,12 @@ For the (currently untested) production version:
 
 ## Pages
 
+Unless otherwise specified, all ideas were conceived by me.
+
 ### About Me
 
-A page discussing me and my confidence in my skills. The skills are displayed as a
-meter from 1% to 100%.
+A page discussing me and my confidence in my skills. The skills are displayed as
+a meter from 1% to 100%.
 
 ![Output Screenshot](./README_screenshots/About.png)
 
@@ -97,9 +100,9 @@ Example of output:
 
 ### Custom Email Validator
 
-On this page, you can validate an entered email address, and the app will automatically
-validate the email as you type it using a custom RegEx instead of the browser's built-in
-`email` input validator. Supports `email` autocomplete.
+On this page, you can validate an entered email address, and the app will 
+automatically validate the email as you type it using a custom RegEx instead of 
+the browser's built-in `email` input validator. Supports `email` autocomplete.
 
 Example of output:
 
@@ -116,15 +119,29 @@ Example of output on Firefox after pressing "Start", "Log", and "Stop":
 
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
+### Numeronym Generator
+
+A page that generates a numeronym out of a word.  
+A numeronym is an abbreviation of a word (especially in IT
+documentation) that is made up of the word's first letter,
+its last letter, and the number of characters in between the
+first and last letters.  
+For example, `accessibility` would become `a11y`.
+
+Example of output for `internationalisation`:
+
+![Output](./README_screenshots/Numeronyms.png)
+
 ### Letter Repetition
 
 _Idea Credit: My hilariously slow phone_
 
-A VERY simple page that just takes a word and builds a new string where each character is repeated 
-up to its index in the word.  
+A simple page that just takes a word and builds a new string where each 
+character is repeated up to its index in the word.  
 For example, `hey there buddy` will become `hheheytththethertherebbubudbuddbuddy`.
 
 Example of Output:
+
 ![Output Screenshot](./README_screenshots/Repeated.png)
 
 ### Sentence Sorting

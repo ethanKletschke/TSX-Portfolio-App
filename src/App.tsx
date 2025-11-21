@@ -5,16 +5,17 @@ import DialogsDemo from "./pages/DialogsDemo/DialogsDemo.tsx";
 import DiceRoll from "./pages/DiceRoll/DiceRoll.tsx";
 import EmailValidate from "./pages/EmailValidate/EmailValidate.tsx";
 import Home from "./pages/Home/Home.tsx";
+import LetterRepetition from "./pages/LetterRepetition/LetterRepetition.tsx";
 import NoPage from "./pages/NoPage/NoPage.tsx";
+import Numeronyms from "./pages/Numeronyms/Numeronyms.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
-import LetterRepetition from "./pages/LetterRepetition/LetterRepetition.tsx";
 
 export default function App() {
   return (
     <Routes>
-      {/* Route Index */}
+      {/* Index Route */}
       <Route path="/" element={<Home />} />
       {/* About Me Page */}
       <Route path="/aboutMe" element={<AboutMe />} />
@@ -34,6 +35,8 @@ export default function App() {
       <Route path="/stopwatch" element={<StopwatchPage />} />
       {/* Letter Repetition */}
       <Route path="/letterRep" element={<LetterRepetition />} />
+      {/* Numeronym Page */}
+      <Route path="/numeronyms" element={<Numeronyms />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>
