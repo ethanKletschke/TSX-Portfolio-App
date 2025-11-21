@@ -14,7 +14,7 @@ import LetterRepetition from "./pages/LetterRepetition/LetterRepetition.tsx";
 export default function App() {
   return (
     <Routes>
-      {/* Route Index */}
+      {/* Index Route */}
       <Route path="/" element={<Home />} />
       {/* About Me Page */}
       <Route path="/aboutMe" element={<AboutMe />} />
@@ -34,6 +34,8 @@ export default function App() {
       <Route path="/stopwatch" element={<StopwatchPage />} />
       {/* Letter Repetition */}
       <Route path="/letterRep" element={<LetterRepetition />} />
+      {/* Numeronym Page */}
+      <Route path="/numeronyms" element={<NoPage />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>

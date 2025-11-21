@@ -50,6 +50,9 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link to="/numeronyms">Numeronyms</Link>
+          </li>
+          <li>
             <Link to="/sentenceSort">
               Sort a Sentence
             </Link>
