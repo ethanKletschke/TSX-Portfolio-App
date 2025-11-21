@@ -13,7 +13,7 @@ A TypeScript React app used as my portfolio
   - React (TypeScript)
   - Vite
   - Windows Subsystem for Linux (WSL)
-  - ChatGPT _**(for problem-solving only)**_
+  - ChatGPT _**(for problem-solving and ideas only)**_
 - License: Modified MIT (See below)
 
 As of version 0.22.0, this project is licensed under a modified MIT License that
