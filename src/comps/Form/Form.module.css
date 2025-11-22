@@ -116,6 +116,7 @@
   .form input:not([type=button],[type=submit]) {
     background-color: var(--dmBlack);
     border-color: grey;
+    color: var(--white);
   }
 
   .form fieldset legend {
