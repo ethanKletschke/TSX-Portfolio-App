@@ -36,7 +36,7 @@ prohibits AI training. Previous versions remain under the standard MIT License.
     - [Letter Repetition](#letter-repetition)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
-    - [Object Sort (WIP)](#object-sort-wip)
+    - [Object Sort](#object-sort)
     - [Dialog Box Demo](#dialog-box-demo)
 
 ## Using the App
@@ -162,7 +162,7 @@ Example of Output:
 
 ![Output screenshot](./README_screenshots/Dice.png)
 
-### Object Sort (WIP)
+### Object Sort
 
 Input four text values, store it internally as an object, and sort the objects
 by one of the four text values.
