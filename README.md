@@ -38,7 +38,6 @@ prohibits AI training. Previous versions remain under the standard MIT License.
     - [Dice Roll](#dice-roll)
     - [Object Sort (WIP)](#object-sort-wip)
     - [Dialog Box Demo](#dialog-box-demo)
-  - [Planned Future Features](#planned-future-features)
 
 ## Using the App
 
@@ -198,7 +197,3 @@ Page by Default:
 After opening the alert box:
 
 ![Output screenshot](./README_screenshots/AlertBox.png)
-
-## Planned Future Features
-
-- None at the moment.
