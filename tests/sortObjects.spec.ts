@@ -1,6 +1,7 @@
 import { expect } from "chai";
 import sortObjects from "../src/funcs/sortObjects.ts";
 
+// The class for objects to test
 class Person {
   private id: number;
   private fname: string;
