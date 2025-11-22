@@ -30,7 +30,15 @@ export default function LetterRepetition() {
     console.debug(`String submitted: ${input}`);
 
     // Repeat the letters as per the input from the user
-    setResult(doubleLetters(input));
+    const temp = doubleLetters(input);
+
+    if (temp.length >= 100) {
+      // [100 letters]...
+      setResult(temp.substring(0, 101) + "...");
+    } else {
+      // full output
+      setResult(temp);
+    }
 
     // Debug output for the result
     console.debug(`Repeated version: ${result}`);
@@ -57,6 +65,7 @@ export default function LetterRepetition() {
               placeholder="Text to modify..."
               type="text"
               value={input || ""}
+              maxLength={50}
             />
           </fieldset>
 
