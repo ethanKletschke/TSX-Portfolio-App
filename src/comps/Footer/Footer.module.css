@@ -13,3 +13,10 @@
 
   width: 100%; /* Full-width */
 }
+
+@media (prefers-color-scheme: dark) {
+  .foot {
+    background-color: grey;
+    color: var(--white)
+  }
+}

@@ -3,6 +3,7 @@
 }
 
 .btnWrap > button {
+  transition-duration: 0.3s; /* For hover animation */
   border-radius: 0;
   flex: 1;
   border: 1pt solid var(--blue);
@@ -14,8 +15,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.btnWrap > button:hover {
+  color: var(--lightBlue);
+  background-color: var(--blue);
+}
+
 .btnWrap > button:last-child {
-  border-right: 1pt solid var(--blue); 
+  border-right: 1pt solid; 
 }
 
 @media screen and (max-width: 600px) {
@@ -25,7 +31,24 @@
   } 
 
   .btnWrap > button {
-    border-right: 1pt solid var(--blue);
+    border-right: 1pt solid;
     margin: 0;
+  }
+
+  .btnWrap > button:not(:last-child) {
+    border-bottom: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .btnWrap > button {
+    color: var(--white);
+    background-color: grey;
+    border-color: var(--white);
+  }
+
+  .btnWrap > button:hover {
+    color: grey;
+    background-color: var(--white);
   }
 }

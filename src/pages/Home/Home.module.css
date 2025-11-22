@@ -4,13 +4,13 @@
 }
 
 /* Table of Contents */
-ul.toc {
+.toc {
   display: flex; /* Flex display */
   list-style-type: none; /* No list bullets */
   flex-direction: column; /* Vertical block list */
 }
 
-ul.toc > li {
+.toc > li {
   flex-grow: 1; /* Ensures the links stay the same size */
   text-align: center;
   border: var(--liBorder);
@@ -19,12 +19,17 @@ ul.toc > li {
 }
 
 /* Last list item */
-ul.toc > li:last-child {
+.toc > li:last-child {
   border-bottom: var(--liBorder); /* Adds a bottom border */
 }
 
-ul.toc > li > a {
+.toc > li > a {
   color: var(--black); /* Make link text black */
+  transition-duration: 0.3s;
+}
+
+.toc > li > a:hover {
+  font-size: 120%;
 }
 
 /* "Select page" heading */
@@ -32,4 +37,10 @@ ul.toc > li > a {
   text-decoration: underline;
   text-align: center;
   margin-bottom: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toc > li > a {
+    color: var(--white);
+  }
 }

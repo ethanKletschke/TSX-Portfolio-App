@@ -10,3 +10,10 @@
   font-weight: 800; /* Bolder font */
   text-decoration: underline;
 }
+
+@media (prefers-color-scheme: dark) {
+  .heading {
+    background-color: grey;
+    color: var(--white);
+  }
+}

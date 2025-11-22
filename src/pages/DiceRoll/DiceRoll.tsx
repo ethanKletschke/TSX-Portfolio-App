@@ -4,6 +4,7 @@ import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
 import styles from "./DiceRoll.module.css";
 import MainBody from "../../comps/MainBody/MainBody";
+import Form from "../../comps/Form/Form";
 
 // Dice roll page
 export default function DiceRoll() {
@@ -67,25 +68,30 @@ export default function DiceRoll() {
           className={styles.dieImg}
         />
 
-        {/* Dice Roll Button */}
-        <button
-          onClick={handleDiceRollClick}
-        >
-          Roll Dice
-        </button>
+        <Form submitHandler={e => e.preventDefault()}>
 
-        {/* Value Refresh Button */}
-        <button onClick={refreshVals}>
-          Refresh Values
-        </button>
+          {/* Dice Roll Button */}
+          <button
+            onClick={handleDiceRollClick}
+            type="button"
+          >
+            Roll Dice
+          </button>
 
-        {/* Die roll log */}
-        <textarea
-          className={styles.rollLog}
-          value={log || ""}
-          placeholder="Roll Log..."
-          readOnly
-        />
+          {/* Value Refresh Button */}
+          <button onClick={refreshVals}
+          type="button">
+            Refresh Values
+          </button>
+
+          {/* Die roll log */}
+          <textarea
+            className={styles.rollLog}
+            value={log || ""}
+            placeholder="Roll Log..."
+            readOnly
+          />
+        </Form>
 
         <hr />
 
