@@ -10,7 +10,7 @@ describe("doubleLetters()", function () {
       ["Heyo", "HHeHeyHeyo"]
     ];
 
-    tests.forEach((test: testTuple<string, string>) => {
+    tests.forEach(test => {
       expect(doubleLetters(test[0])).to.equal(test[1], "Each letter must repeat up to its index");
     })
   });

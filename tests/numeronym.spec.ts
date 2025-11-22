@@ -37,7 +37,7 @@ describe("numeronym()", function () {
     ];
     
     tests.forEach(test => {
-      expect(numeronym(test[0])).to.equal(test[1])
+      expect(numeronym(test[0])).to.equal(test[1], "Should generate a correct numeronym");
     });
   });
 });

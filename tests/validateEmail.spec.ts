@@ -12,7 +12,7 @@ describe('validateEmail()', () => {
     ];
 
     // Test each value individually
-    tests.forEach((test: testTuple<string, boolean>) => {
+    tests.forEach(test => {
       expect(validateEmail(test[0]), "Email should be valid").to.be.true;
     });
   });
@@ -25,7 +25,7 @@ describe('validateEmail()', () => {
       ["Hi :)", false]
     ];
 
-    tests.forEach((test: testTuple<string, boolean>) => {
+    tests.forEach(test => {
       expect(validateEmail(test[0]), "Email should be invalid").to.be.false;
     });
   });
