@@ -12,6 +12,13 @@
   margin-top: 1em;
 }
 
-.btn:active {
+.btn:hover {
   outline: 2pt inset;
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn {
+    background-color: grey;
+    color: var(--white)
+  }
 }

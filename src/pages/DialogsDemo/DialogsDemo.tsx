@@ -16,7 +16,7 @@ export default function DialogsDemo() {
       <MainBody>
         {/* Alert Box */}
         <AlertBox alertTitle="Alert">
-          This is an alert!
+          <p>This is an alert!</p>
         </AlertBox>
 
         {/* Confirm Box */}
