@@ -72,12 +72,11 @@ export default function AboutMe() {
             <SkillMeter lblText="React" value={65} htmlID="react" />
             <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
             <SkillMeter lblText="CSS" value={55} htmlID="css" />
+            <SkillMeter lblText="Database Normalisation" value={55} htmlID="db-norm" />
+            <SkillMeter lblText="PostgreSQL" value={50} htmlID="pgsql" />
             <SkillMeter lblText="Java" value={45} htmlID="java" />
             <SkillMeter lblText="PHP" value={45} htmlID="php" />
-            <SkillMeter lblText="PostgreSQL" value={45} htmlID="pgsql" />
-            <SkillMeter lblText="Database Normalisation" value={33} htmlID="db-norm" />
             <SkillMeter lblText="GitHub Automation" value={20} htmlID="github-auto" />
-            <SkillMeter lblText="MySQL" value={5} htmlID="mysql" />
           </article>
         </section>
       </MainBody>
