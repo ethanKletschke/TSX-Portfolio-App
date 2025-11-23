@@ -68,10 +68,10 @@ export default function AboutMe() {
           <article>
             <SkillMeter lblText="HTML" value={80} htmlID="html" />
             <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
+            <SkillMeter lblText="Git" value={65} htmlID="git" />
+            <SkillMeter lblText="React" value={65} htmlID="react" />
             <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
-            <SkillMeter lblText="React" value={60} htmlID="react" />
             <SkillMeter lblText="CSS" value={55} htmlID="css" />
-            <SkillMeter lblText="Git" value={45} htmlID="git" />
             <SkillMeter lblText="Java" value={45} htmlID="java" />
             <SkillMeter lblText="PHP" value={45} htmlID="php" />
             <SkillMeter lblText="PostgreSQL" value={45} htmlID="pgsql" />
