@@ -10,11 +10,11 @@ import sortObject from "../../funcs/sortObjects.ts";
 export default function ObjSort() {
   // The class for the object(s) to sort
   class Person {
-    private id: number;
+    private id: string;
     private fname: string;
     private lname: string;
 
-    constructor(id: number, fname: string, lname: string) {
+    constructor(id: string, fname: string, lname: string) {
       this.id = id;
       this.fname = fname;
       this.lname = lname;
@@ -42,6 +42,7 @@ export default function ObjSort() {
   const [toSortBy, setToSortBy] = useState<FieldsToSortBy | "">(""); // Field to sort by
   const [outputTxt, setOutputTxt] = useState<string>(""); // the Output Text
   const [objs, setObjs] = useState<Person[]>([]); // Object array to sort
+  const [previousObj, setPreviousObj] = useState<string>("");
 
   const handleIdChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setId(e.target.value);
@@ -61,10 +62,13 @@ export default function ObjSort() {
       return;
     }
     // Create a new Person object with the values entered by the user.
-    const p = new Person(Number(id), fname, lname);
+    const p = new Person(id, fname, lname);
 
     // Append the new person to the array of objects.
     setObjs(prev => [...prev, p]);
+
+    // Set the previously made object as state
+    setPreviousObj(`ID${p.personID}: ${p.firstName} ${p.lastName}\n`)
   };
 
   const handleClear = () => {
@@ -73,11 +77,13 @@ export default function ObjSort() {
     setLname("");
     setToSortBy("");
     setOutputTxt("");
+    setPreviousObj("");
     setObjs([]);
   }
 
   const handleSortByChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setToSortBy(e.target.value as FieldsToSortBy);
+    console.debug(e.target.value);
   };
 
   // Submit event handler
@@ -93,6 +99,7 @@ export default function ObjSort() {
     if (objs.length === 0) {
       toOutput = "No people were made yet!";
     } else {
+      console.debug(toSortBy);
       // Sort the array of objects with my own function
       const sorted = sortObject(objs, (toSortBy as FieldsToSortBy));
 
@@ -155,6 +162,14 @@ export default function ObjSort() {
               value={lname}
             />
 
+            <label htmlFor="prev-obj">Previously created person:</label>
+            <output
+              id="prev-obj"
+              name="prev-obj"
+            >
+              {previousObj || "None yet"}
+            </output>
+
             <button
               onClick={handleCreateClick}
               type="button"
@@ -178,7 +193,7 @@ export default function ObjSort() {
               <option value="" disabled>Select a Field...</option>
 
               {/* Actual options */}
-              <option value="personId">Person ID</option>
+              <option value="personID">Person ID</option>
               <option value="fname">First Name</option>
               <option value="lname">Last Name</option>
             </select>
