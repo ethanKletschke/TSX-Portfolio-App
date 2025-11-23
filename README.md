@@ -1,11 +1,11 @@
 # Ethan K.'s TypeScript Portfolio
 
-A TypeScript React app used as my portfolio
+A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `1.2.0`
+- Version: `1.2.2`
 - Development Environment: Ubuntu (WSL)
-  - Tested on Mozilla Firefox and MS Edge
+  - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox in light mode
 - Technologies used:
   - NPM
@@ -23,6 +23,7 @@ prohibits AI training. Previous versions remain under the standard MIT License.
 
 - [Ethan K.'s TypeScript Portfolio](#ethan-ks-typescript-portfolio)
   - [Table of Contents](#table-of-contents)
+  - [About the App](#about-the-app)
   - [Using the App](#using-the-app)
     - [Requirements to Run](#requirements-to-run)
     - [Installation](#installation)
@@ -39,6 +40,15 @@ prohibits AI training. Previous versions remain under the standard MIT License.
     - [Object Sort](#object-sort)
     - [Dialog Box Demo](#dialog-box-demo)
 
+## About the App
+
+This is a portfolio app written purely in TypeScript and React. The backend and
+frontend are purely just React. No databases or server involved.
+
+This app has a few pages that demonstrate different concepts and ideas I wanted
+to program. The app is also fully styled and has dark mode capabilities.  
+Each page is described briefly in this README.
+
 ## Using the App
 
 ### Requirements to Run
@@ -49,7 +59,7 @@ prohibits AI training. Previous versions remain under the standard MIT License.
 ### Installation
 
 1. Clone the repository.
-2. Use `cd` to go to the repository folder
+2. Use `cd` to navigate to the repository folder
 3. Run `npm install` to download all the dependencies.
 
 ### Running the App
