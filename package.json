@@ -9,7 +9,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "tsx node_modules/mocha/bin/mocha 'tests/**/*.spec.ts'",
-    "syncJson": "npm i --package-lock-only"
+    "syncJson": "npm i --package-lock-only",
+    "checkDeps": "npx depcheck"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -24,6 +25,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^5.1.1",
     "chai": "^6.2.1",
+    "depcheck": "^1.4.7",
     "globals": "^16.5.0",
     "mocha": "^11.7.5",
     "ts-node": "^10.9.2",
