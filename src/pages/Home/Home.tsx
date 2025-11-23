@@ -32,7 +32,7 @@ export default function Home() {
           <li>
             <Link to="/dialogs">
               Dialog Box Demo
-            </Link>            
+            </Link>
           </li>
           <li>
             <Link to="/dice">
@@ -50,7 +50,9 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link to="/numeronyms">Numeronyms</Link>
+            <Link to="/numeronyms">
+              Numeronyms
+            </Link>
           </li>
           <li>
             <Link to="/sentenceSort">
