@@ -43,10 +43,10 @@ export default function AboutMe() {
           <article>
             <p>
               I, Ethan Kletschke, am a(n)&nbsp;
-              {age(new Date("2006-12-06"))}-year-old aspiring Web Developer 
-              with experience dating back to high school with both software 
-              and web apps. I'm mostly interested in web development, but am well-versed in 
-              a wide variety of programming languages related to software and web apps, 
+              {age(new Date("2006-12-06"))}-year-old aspiring Web Developer
+              with experience dating back to high school with both software
+              and web apps. I'm mostly interested in web development, but am well-versed in
+              a wide variety of programming languages related to software and web apps,
               particularly:
             </p>
             <ul>

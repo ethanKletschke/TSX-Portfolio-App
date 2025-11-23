@@ -26,7 +26,6 @@ export default function AlertBox({ children, alertTitle }: AlertBoxProps) {
       <dialog
         className={styles.alertBox}
         ref={dialogRef}
-        
       >
         {alertTitle && (
           <>

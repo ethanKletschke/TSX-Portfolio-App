@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Footer from "../../comps/Footer/Footer.tsx";
+import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
-import doubleLetters from "../../funcs/doubleLetters.ts";
-import Form from "../../comps/Form/Form.tsx";
 import MainBody from "../../comps/MainBody/MainBody.tsx";
+import doubleLetters from "../../funcs/doubleLetters.ts";
 
 export default function LetterRepetition() {
   const [input, setInput] = useState<string>("");
@@ -32,6 +32,7 @@ export default function LetterRepetition() {
     // Repeat the letters as per the input from the user
     const temp = doubleLetters(input);
 
+    // Overflow cutoff
     if (temp.length >= 100) {
       // [100 letters]...
       setResult(temp.substring(0, 101) + "...");
@@ -56,7 +57,7 @@ export default function LetterRepetition() {
             <legend>Letter Repetition</legend>
 
             <label htmlFor="modify-input">Text to Modify</label>
-            <input 
+            <input
               autoComplete="off"
               autoFocus
               id="modify-input"
@@ -74,7 +75,7 @@ export default function LetterRepetition() {
 
             {/* Output */}
             <label htmlFor="out">Repeated Result</label>
-            <output 
+            <output
               htmlFor="modify-input"
               id="out"
               name="out"
@@ -84,7 +85,7 @@ export default function LetterRepetition() {
           </fieldset>
 
           <input type="submit" value="Repeat!" />
-          <button 
+          <button
             onClick={handleClear}
             type="button"
           >
@@ -93,10 +94,9 @@ export default function LetterRepetition() {
         </Form>
 
         <hr />
-        
+
         <GoHomeBtn />
       </MainBody>
-
 
       <Footer />
     </main>

@@ -1,7 +1,7 @@
 // Credit: https://chatgpt.com/s/t_68ac09182a6c8191b1ff20515e426fea
 export default function sortObjects<T, K extends keyof T>(
-  objs: T[], 
-  prop: K, 
+  objs: T[],
+  prop: K,
   desc: boolean = false
 ): T[] {
   if (objs.length === 0) {
@@ -26,6 +26,6 @@ export default function sortObjects<T, K extends keyof T>(
 
     // Sorts either in descending or ascending order depending on 
     // the "desc" parameter
-    return desc ? -comparison: comparison;
+    return desc ? -comparison : comparison;
   });
 }

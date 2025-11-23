@@ -2,10 +2,10 @@
 export default function sortString(str: string): string {
   // Return the argument if it is an empty string.
   if (str === "") return str;
-  
+
   // Convert the string into a character array.
   const tempArr: string[] = str.split('');
-  
+
   // Sort the character array case- and accent-insensitively.
   tempArr.sort((a: string, b: string) => a.localeCompare(b, undefined, { sensitivity: "base" }));
 

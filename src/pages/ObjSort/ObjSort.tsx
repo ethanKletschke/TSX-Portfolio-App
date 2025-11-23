@@ -88,8 +88,8 @@ export default function ObjSort() {
 
   const handleSortClick = () => {
     // Output string to display
-    let toOutput: string = ""; 
-    
+    let toOutput: string = "";
+
     if (objs.length === 0) {
       toOutput = "No people were made yet!";
     } else {
@@ -101,7 +101,7 @@ export default function ObjSort() {
       });
     }
 
-    setOutputTxt(toOutput); 
+    setOutputTxt(toOutput);
   };
 
   return (
@@ -155,7 +155,7 @@ export default function ObjSort() {
               value={lname}
             />
 
-            <button 
+            <button
               onClick={handleCreateClick}
               type="button"
             >
@@ -169,7 +169,7 @@ export default function ObjSort() {
             <legend>Output</legend>
 
             <label htmlFor="sort-by">Sort By:</label>
-            <select 
+            <select
               onChange={handleSortByChange}
               required
               value={toSortBy}
@@ -182,7 +182,7 @@ export default function ObjSort() {
               <option value="fname">First Name</option>
               <option value="lname">Last Name</option>
             </select>
-            
+
             {/* Submit Button */}
             <button type="button"
               onClick={handleSortClick}>
@@ -197,8 +197,8 @@ export default function ObjSort() {
                 </span>
               )}
             </label>
-            <textarea 
-              name="output-text" 
+            <textarea
+              name="output-text"
               id="output-text"
               value={outputTxt}
               readOnly

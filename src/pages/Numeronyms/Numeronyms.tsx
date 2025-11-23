@@ -33,15 +33,15 @@ export default function Numeronyms() {
             <legend>Numeronym Input</legend>
 
             <label htmlFor="numeronym-in">Word to shorten:</label>
-            <input 
-              type="text" 
-              name="numeronym-in" 
+            <input
+              type="text"
+              name="numeronym-in"
               id="numeronym-in"
               value={numeronymInput}
               onChange={handleChange}
               minLength={3}
             />
-            
+
             <button type="submit">
               Create Numeronym
             </button>
@@ -51,7 +51,7 @@ export default function Numeronyms() {
             <legend>Output</legend>
 
             <label htmlFor="numeronym-out">Generated Numeronym</label>
-            <output 
+            <output
               htmlFor="numeronym-in"
               id="numeronym-out"
             >
@@ -64,6 +64,6 @@ export default function Numeronyms() {
       </MainBody>
 
       <Footer />
-    </main> 
+    </main>
   );
 }

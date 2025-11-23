@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Footer from "../../comps/Footer/Footer";
+import Form from "../../comps/Form/Form";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
+import MainBody from "../../comps/MainBody/MainBody";
 import validateEmail from "../../funcs/validateEmail";
 import styles from "./EmailValidate.module.css";
-import Form from "../../comps/Form/Form";
-import MainBody from "../../comps/MainBody/MainBody";
 
 // Email Validator page
 export default function EmailValidate() {
@@ -35,7 +35,7 @@ export default function EmailValidate() {
       <MainBody>
         <Form submitHandler={handleSubmit}>
           <label htmlFor="email-addr">Enter Email Below:</label>
-          <input 
+          <input
             autoComplete="email" // Provide email autocompletion
             type="text"
             name="email-addr"

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Footer from "../../comps/Footer/Footer.tsx";
+import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
 import Header from "../../comps/Header/Header.tsx";
-import Form from "../../comps/Form/Form.tsx";
 import MainBody from "../../comps/MainBody/MainBody.tsx";
 
 export default function ConsecSum() {
@@ -31,7 +31,7 @@ export default function ConsecSum() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Prevent default submit behaviour (page refresh on submit)
     e.preventDefault();
-    
+
     // Set the current value to the number entered by the user multiplied by the step.
     setValue(() => value + (numToAdd * step));
   };

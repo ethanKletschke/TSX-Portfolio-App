@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
-import styles from "./Dialogs.module.css";
 import Form from "../Form/Form";
+import styles from "./Dialogs.module.css";
 
 export default function FormBox() {
   // States

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Footer from "../../comps/Footer/Footer";
+import Form from "../../comps/Form/Form";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
 import Header from "../../comps/Header/Header";
-import styles from "./DiceRoll.module.css";
 import MainBody from "../../comps/MainBody/MainBody";
-import Form from "../../comps/Form/Form";
+import styles from "./DiceRoll.module.css";
 
 // Dice roll page
 export default function DiceRoll() {
@@ -79,8 +79,10 @@ export default function DiceRoll() {
           </button>
 
           {/* Value Refresh Button */}
-          <button onClick={refreshVals}
-          type="button">
+          <button
+            onClick={refreshVals}
+            type="button"
+          >
             Refresh Values
           </button>
 

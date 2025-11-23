@@ -13,7 +13,7 @@ export default function StopwatchPage() {
 
       <MainBody>
         {/* Stopwatch Component with buttons and headings */}
-        <Stopwatch/>
+        <Stopwatch />
 
         <hr />
 

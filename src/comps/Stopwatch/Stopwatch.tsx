@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./Stopwatch.module.css";
 
 export default function Stopwatch() {

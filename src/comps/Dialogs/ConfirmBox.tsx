@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import styles from "./Dialogs.module.css";
 
-type ConfirmBoxProps = { 
+type ConfirmBoxProps = {
   children: string; // Body text
 };
 
@@ -56,7 +56,7 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
         Open Confirm Modal
       </button>
 
-      <dialog 
+      <dialog
         aria-modal="true"
         className={styles.confirmBox}
         onClose={handleClose}

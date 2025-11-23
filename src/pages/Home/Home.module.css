@@ -5,26 +5,33 @@
 
 /* Table of Contents */
 .toc {
-  display: flex; /* Flex display */
-  list-style-type: none; /* No list bullets */
-  flex-direction: column; /* Vertical block list */
+  /* Flex display */
+  display: flex;
+  /* No list bullets */
+  list-style-type: none;
+  /* Vertical block list */
+  flex-direction: column;
 }
 
 .toc > li {
-  flex-grow: 1; /* Ensures the links stay the same size */
+  /* Ensures the links stay the same size */
+  flex-grow: 1;
   text-align: center;
   border: var(--liBorder);
-  border-bottom: none; /* Prevent clashing top and bottom borders */
+  /* Prevent clashing top and bottom borders */
+  border-bottom: none;
   padding: 1em;
 }
 
 /* Last list item */
 .toc > li:last-child {
-  border-bottom: var(--liBorder); /* Adds a bottom border */
+  /* Adds a bottom border */
+  border-bottom: var(--liBorder);
 }
 
 .toc > li > a {
-  color: var(--black); /* Make link text black */
+  /* Make link text black */
+  color: var(--black);
   transition-duration: 0.3s;
 }
 
