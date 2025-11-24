@@ -34,6 +34,14 @@ export default function ConsecSum() {
     setValue(prev => prev + (numToAdd * step));
   };
 
+  // Clear Form handler
+  const handleClear = () => {
+    // Reset the values
+    setValue(0);
+    setNumToAdd(0);
+    setStep(0);
+  };
+
   return (
     <main>
       {/* Header Component */}
@@ -53,6 +61,7 @@ export default function ConsecSum() {
               {value.toLocaleString()}
             </output>
           </fieldset>
+
           {/* Input Fieldset */}
           <fieldset>
             <legend>Input</legend>
@@ -60,7 +69,7 @@ export default function ConsecSum() {
             <label htmlFor="numAdd">Number to Add</label>
             <input
               autoComplete="off"
-              type="text"
+              type="number"
               name="numAdd"
               id="numAdd"
               // Value via state (or 1 if state evaluates to false).
@@ -68,22 +77,31 @@ export default function ConsecSum() {
               onChange={handleChangeNumAdd} // Attach the number add event handler.
               required
             />
+
             {/* Number of times to add the number */}
             <label htmlFor="step">Step:</label>
             <input
               autoComplete="off"
-              type="text"
+              type="number"
               name="step"
               id="step"
               value={step}
               onChange={handleChangeStep}
               required
             />
+
             {/* Submit button */}
-            <input 
-              type="submit" 
-              value={`Add ${numToAdd.toLocaleString()} to ${value.toLocaleString()}, ${step.toLocaleString()} time(s)`} 
-            />
+            <button type="submit">
+              Add {numToAdd.toLocaleString()} to {value.toLocaleString()}, {step.toLocaleString()} time(s)
+            </button>
+
+            {/* clear button */}
+            <button 
+              type="button"
+              onClick={handleClear}
+            >
+              Clear
+            </button>
           </fieldset>
         </Form>
 
