@@ -9,21 +9,19 @@ export default function ConsecSum() {
   // Current value
   const [value, setValue] = useState<number>(0);
   // The number to add
-  const [numToAdd, setNumToAdd] = useState<number>(1);
+  const [numToAdd, setNumToAdd] = useState<number>(0);
   // The number of times to add the number above
-  const [step, setStep] = useState<number>(1);
+  const [step, setStep] = useState<number>(0);
 
   // Handler for changing the "Number to Add" field
   const handleChangeNumAdd = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Cast the input to a number and set the state of that number.
-    // No need for error handling, as this handler targets a number <input>
     setNumToAdd(Number(e.target.value));
   };
 
   // Handles the change in step
   const handleChangeStep = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Cast the input to a number and set the state for the step.
-    // No need for error handling, as this handler targets a number <input>
     setStep(Number(e.target.value));
   };
 
@@ -33,7 +31,7 @@ export default function ConsecSum() {
     e.preventDefault();
 
     // Set the current value to the number entered by the user multiplied by the step.
-    setValue(() => value + (numToAdd * step));
+    setValue(prev => prev + (numToAdd * step));
   };
 
   return (
@@ -51,7 +49,9 @@ export default function ConsecSum() {
             <legend>Consecutive Summation</legend>
 
             <label htmlFor="currentVal">Current Value</label>
-            <output id="currentVal" name="currentVal">{value || 0}</output>
+            <output id="currentVal" name="currentVal">
+              {value.toLocaleString()}
+            </output>
           </fieldset>
           {/* Input Fieldset */}
           <fieldset>
@@ -59,29 +59,31 @@ export default function ConsecSum() {
 
             <label htmlFor="numAdd">Number to Add</label>
             <input
-              type="number"
+              autoComplete="off"
+              type="text"
               name="numAdd"
               id="numAdd"
               // Value via state (or 1 if state evaluates to false).
-              value={numToAdd || 1}
+              value={numToAdd}
               onChange={handleChangeNumAdd} // Attach the number add event handler.
-              min={1}
-              // Max input value is 999,999
-              max={999_999}
+              required
             />
             {/* Number of times to add the number */}
             <label htmlFor="step">Step:</label>
             <input
-              type="number"
+              autoComplete="off"
+              type="text"
               name="step"
               id="step"
-              value={step || 1}
+              value={step}
               onChange={handleChangeStep}
-              min={1}
-              max={100}
+              required
             />
             {/* Submit button */}
-            <input type="submit" value={`Add ${numToAdd} to ${value}, ${step} time(s)`} />
+            <input 
+              type="submit" 
+              value={`Add ${numToAdd.toLocaleString()} to ${value.toLocaleString()}, ${step.toLocaleString()} time(s)`} 
+            />
           </fieldset>
         </Form>
 
