@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import numeronym from "../src/funcs/numeronym.ts";
-import TestTuple from "./testTuple.ts";
+import TestTuple from "./TestTuple.ts";
 
 describe("numeronym()", function () {
   it("Returns the two letters in lowercase with numbers in between them", function () {

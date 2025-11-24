@@ -1,10 +1,10 @@
 import { expect } from "chai";
 import doubleLetters from "../src/funcs/doubleLetters.ts";
-import testTuple from "./testTuple.ts";
+import TestTuple from "./TestTuple.ts";
 
 describe("doubleLetters()", function () {
   it("Takes a word and builds a new string where each character is repeated up to its index in the word", function () {
-    const tests: testTuple<string, string>[] = [
+    const tests: TestTuple<string, string>[] = [
       ["Letters", "LLeLetLettLetteLetterLetters"],
       ["Hi", "HHi"],
       ["Heyo", "HHeHeyHeyo"]

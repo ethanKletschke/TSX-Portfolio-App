@@ -1,17 +1,17 @@
 import { expect } from "chai";
 import sortString from "../src/funcs/sortString.ts";
-import testTuple from "./testTuple.ts";
+import TestTuple from "./TestTuple.ts";
 
 describe("sortString()", () => {
   it("Sorts a string alphabetically", () => {
     // Declare an array of test tuples
-    const tests: testTuple[] = [
+    const tests: TestTuple[] = [
       ["babacac", "aaabbcc"],
       ["cacabak", "aaabcck"],
       ["crack their back", "aabcccehikkrrt"]
     ];
 
-    tests.forEach((test: testTuple) => {
+    tests.forEach((test: TestTuple) => {
       // Test the first tuple value (the actual value) against the second tuple (expected value)
       expect(sortString(test[0])).to.equal(test[1], "The string should be sorted in alphabetical order.");
     });
