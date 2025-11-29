@@ -1,9 +1,7 @@
 import { useState } from "react";
-import Footer from "../../comps/Footer/Footer.tsx";
 import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
-import Header from "../../comps/Header/Header.tsx";
-import MainBody from "../../comps/MainBody/MainBody.tsx";
+import Page from "../../comps/Page/Page.tsx";
 
 export default function ConsecSum() {
   // Current value
@@ -43,74 +41,63 @@ export default function ConsecSum() {
   };
 
   return (
-    <main>
-      {/* Header Component */}
-      <Header>
-        Consecutive Summation
-      </Header>
+    <Page headerText="Consecutive Summation">
+      <Form submitHandler={handleSubmit}>
+        {/* Output Fieldset */}
+        <fieldset>
+          <legend>Consecutive Summation</legend>
 
-      {/* Main page body */}
-      <MainBody>
-        <Form submitHandler={handleSubmit}>
-          {/* Output Fieldset */}
-          <fieldset>
-            <legend>Consecutive Summation</legend>
+          <label htmlFor="currentVal">Current Value</label>
+          <output id="currentVal" name="currentVal">
+            {value.toLocaleString()}
+          </output>
+        </fieldset>
 
-            <label htmlFor="currentVal">Current Value</label>
-            <output id="currentVal" name="currentVal">
-              {value.toLocaleString()}
-            </output>
-          </fieldset>
+        {/* Input Fieldset */}
+        <fieldset>
+          <legend>Input</legend>
 
-          {/* Input Fieldset */}
-          <fieldset>
-            <legend>Input</legend>
+          <label htmlFor="numAdd">Number to Add</label>
+          <input
+            autoComplete="off"
+            type="number"
+            name="numAdd"
+            id="numAdd"
+            // Value via state (or 1 if state evaluates to false).
+            value={numToAdd}
+            onChange={handleChangeNumAdd} // Attach the number add event handler.
+            required
+          />
 
-            <label htmlFor="numAdd">Number to Add</label>
-            <input
-              autoComplete="off"
-              type="number"
-              name="numAdd"
-              id="numAdd"
-              // Value via state (or 1 if state evaluates to false).
-              value={numToAdd}
-              onChange={handleChangeNumAdd} // Attach the number add event handler.
-              required
-            />
+          {/* Number of times to add the number */}
+          <label htmlFor="step">Step:</label>
+          <input
+            autoComplete="off"
+            type="number"
+            name="step"
+            id="step"
+            value={step}
+            onChange={handleChangeStep}
+            required
+          />
 
-            {/* Number of times to add the number */}
-            <label htmlFor="step">Step:</label>
-            <input
-              autoComplete="off"
-              type="number"
-              name="step"
-              id="step"
-              value={step}
-              onChange={handleChangeStep}
-              required
-            />
+          {/* Submit button */}
+          <button type="submit">
+            Add {numToAdd.toLocaleString()} to {value.toLocaleString()}, {step.toLocaleString()} time(s)
+          </button>
 
-            {/* Submit button */}
-            <button type="submit">
-              Add {numToAdd.toLocaleString()} to {value.toLocaleString()}, {step.toLocaleString()} time(s)
-            </button>
+          {/* clear button */}
+          <button
+            type="button"
+            onClick={handleClear}
+          >
+            Clear
+          </button>
+        </fieldset>
+      </Form>
 
-            {/* clear button */}
-            <button 
-              type="button"
-              onClick={handleClear}
-            >
-              Clear
-            </button>
-          </fieldset>
-        </Form>
-
-        {/* Button to return to index route */}
-        <GoHomeBtn />
-      </MainBody>
-
-      {/* Footer Component */}
-      <Footer />
-    </main>
+      {/* Button to return to index route */}
+      <GoHomeBtn />
+    </Page>
   );
 }

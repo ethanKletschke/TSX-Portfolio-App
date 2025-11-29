@@ -1,10 +1,8 @@
 import { useState } from "react";
-import Footer from "../../comps/Footer/Footer.tsx";
 import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
-import Header from "../../comps/Header/Header.tsx";
-import MainBody from "../../comps/MainBody/MainBody.tsx";
 import doubleLetters from "../../funcs/doubleLetters.ts";
+import Page from "../../comps/Page/Page.tsx";
 
 export default function LetterRepetition() {
   const [input, setInput] = useState<string>("");
@@ -46,59 +44,51 @@ export default function LetterRepetition() {
   };
 
   return (
-    <main>
-      <Header>
-        Letter Repetition
-      </Header>
+    <Page headerText="Letter Repetition">
+      <Form submitHandler={handleSubmit}>
+        <fieldset>
+          <legend>Letter Repetition</legend>
 
-      <MainBody>
-        <Form submitHandler={handleSubmit}>
-          <fieldset>
-            <legend>Letter Repetition</legend>
+          <label htmlFor="modify-input">Text to Modify</label>
+          <input
+            autoComplete="off"
+            autoFocus
+            id="modify-input"
+            name="modify-input"
+            onChange={handleInputChange}
+            placeholder="Text to modify..."
+            type="text"
+            value={input || ""}
+            maxLength={50}
+          />
+        </fieldset>
 
-            <label htmlFor="modify-input">Text to Modify</label>
-            <input
-              autoComplete="off"
-              autoFocus
-              id="modify-input"
-              name="modify-input"
-              onChange={handleInputChange}
-              placeholder="Text to modify..."
-              type="text"
-              value={input || ""}
-              maxLength={50}
-            />
-          </fieldset>
+        <fieldset>
+          <legend>Output</legend>
 
-          <fieldset>
-            <legend>Output</legend>
-
-            {/* Output */}
-            <label htmlFor="out">Repeated Result</label>
-            <output
-              htmlFor="modify-input"
-              id="out"
-              name="out"
-            >
-              {result || "Not modified yet"}
-            </output>
-          </fieldset>
-
-          <input type="submit" value="Repeat!" />
-          <button
-            onClick={handleClear}
-            type="button"
+          {/* Output */}
+          <label htmlFor="out">Repeated Result</label>
+          <output
+            htmlFor="modify-input"
+            id="out"
+            name="out"
           >
-            Clear
-          </button>
-        </Form>
+            {result || "Not modified yet"}
+          </output>
+        </fieldset>
 
-        <hr />
+        <input type="submit" value="Repeat!" />
+        <button
+          onClick={handleClear}
+          type="button"
+        >
+          Clear
+        </button>
+      </Form>
 
-        <GoHomeBtn />
-      </MainBody>
+      <hr />
 
-      <Footer />
-    </main>
+      <GoHomeBtn />
+    </Page>
   );
 }

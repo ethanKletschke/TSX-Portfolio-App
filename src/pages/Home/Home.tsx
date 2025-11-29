@@ -1,79 +1,66 @@
 import { Link } from "react-router-dom";
-import Header from "../../comps/Header/Header";
-import Footer from "../../comps/Footer/Footer";
 import styles from "./Home.module.css";
-import MainBody from "../../comps/MainBody/MainBody";
+import Page from "../../comps/Page/Page";
 
 export default function Home() {
   return (
-    <main>
-      {/* Main header component */}
-      <Header>
-        Ethan Kletschke's Portfolio
-      </Header>
+    <Page headerText="Ethan Kletschke's Portfolio">
+      {/* Header with instruction */}
+      <h2 className={styles.heading}>Select a Page to Go To</h2>
 
-      {/* Main body of output. */}
-      <MainBody>
-        {/* Header with instruction */}
-        <h2 className={styles.heading}>Select a Page to Go To</h2>
-
-        {/* Table of contents */}
-        <ul className={styles.toc}>
-          <li>
-            <Link to="/aboutMe">
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link to="/consecutiveSum">
-              Consecutive Summation
-            </Link>
-          </li>
-          <li>
-            <Link to="/dialogs">
-              Dialog Box Demo
-            </Link>
-          </li>
-          <li>
-            <Link to="/dice">
-              Dice Rolling
-            </Link>
-          </li>
-          <li>
-            <Link to="/email">
-              Email Validator
-            </Link>
-          </li>
-          <li>
-            <Link to="/letterRep">
-              Letter Repetition
-            </Link>
-          </li>
-          <li>
-            <Link to="/numeronyms">
-              Numeronyms
-            </Link>
-          </li>
-          <li>
-            <Link to="/sentenceSort">
-              Sort a Sentence
-            </Link>
-          </li>
-          <li>
-            <Link to="/objSort">
-              Sort Objects
-            </Link>
-          </li>
-          <li>
-            <Link to="/stopwatch">
-              Stopwatch
-            </Link>
-          </li>
-        </ul>
-      </MainBody>
-
-      {/* Footer for page, with copyright info */}
-      <Footer />
-    </main>
+      {/* Table of contents */}
+      <ul className={styles.toc}>
+        <li>
+          <Link to="/aboutMe">
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link to="/consecutiveSum">
+            Consecutive Summation
+          </Link>
+        </li>
+        <li>
+          <Link to="/dialogs">
+            Dialog Box Demo
+          </Link>
+        </li>
+        <li>
+          <Link to="/dice">
+            Dice Rolling
+          </Link>
+        </li>
+        <li>
+          <Link to="/email">
+            Email Validator
+          </Link>
+        </li>
+        <li>
+          <Link to="/letterRep">
+            Letter Repetition
+          </Link>
+        </li>
+        <li>
+          <Link to="/numeronyms">
+            Numeronyms
+          </Link>
+        </li>
+        <li>
+          <Link to="/sentenceSort">
+            Sort a Sentence
+          </Link>
+        </li>
+        <li>
+          <Link to="/objSort">
+            Sort Objects
+          </Link>
+        </li>
+        <li>
+          <Link to="/stopwatch">
+            Stopwatch
+          </Link>
+        </li>
+      </ul>
+    </Page>
   );
 }

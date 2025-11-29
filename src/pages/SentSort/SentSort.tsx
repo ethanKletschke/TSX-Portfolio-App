@@ -1,11 +1,9 @@
 import { useState } from "react";
-import Footer from "../../comps/Footer/Footer.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
-import Header from "../../comps/Header/Header.tsx";
 import sortString from "../../funcs/sortString.ts";
 import styles from "./SentSort.module.css";
 import Form from "../../comps/Form/Form.tsx";
-import MainBody from "../../comps/MainBody/MainBody.tsx";
+import Page from "../../comps/Page/Page.tsx";
 
 export default function SentSort() {
   // The sentence to sort
@@ -27,57 +25,48 @@ export default function SentSort() {
   }
 
   return (
-    <main>
-      <Header>
-        Sort a Sentence
-      </Header>
+    <Page headerText="Sort a Sentence">
+      <img
+        src="/Sort.png"
+        alt="Image of someone sorting similar shapes together"
+        className={styles.img}
+      />
 
-      <MainBody>
-        <img
-          src="/Sort.png"
-          alt="Image of someone sorting similar shapes together"
-          className={styles.img}
-        />
+      <Form submitHandler={handleSubmit}>
+        {/* Sentence Input */}
+        <fieldset>
+          <legend>Enter Sentence</legend>
 
-        <Form submitHandler={handleSubmit}>
-          {/* Sentence Input */}
-          <fieldset>
-            <legend>Enter Sentence</legend>
+          {/* Input for Sentence */}
+          <label htmlFor="sentence">Sentence to sort:</label>
+          <input
+            autoComplete="off"
+            type="text"
+            id="sentence"
+            name="sentence"
+            value={sentence || ""}
+            onChange={handleSentenceChange}
+            placeholder="Enter sentence..."
+          />
 
-            {/* Input for Sentence */}
-            <label htmlFor="sentence">Sentence to sort:</label>
-            <input
-              autoComplete="off"
-              type="text"
-              id="sentence"
-              name="sentence"
-              value={sentence || ""}
-              onChange={handleSentenceChange}
-              placeholder="Enter sentence..."
-            />
+          {/* Sort button */}
+          <input type="submit" value="Sort!" />
+        </fieldset>
 
-            {/* Sort button */}
-            <input type="submit" value="Sort!" />
-          </fieldset>
+        {/* Output */}
+        <fieldset>
+          <legend>Output</legend>
 
-          {/* Output */}
-          <fieldset>
-            <legend>Output</legend>
+          <label htmlFor="sorted">Sorted Sentence:</label>
+          <output name="sorted" id="sorted">
+            {/* Display the sorted sentence or a placeholder if the state is empty. */}
+            {sortedSentence || "Please enter a sentence!"}
+          </output>
+        </fieldset>
+      </Form>
 
-            <label htmlFor="sorted">Sorted Sentence:</label>
-            <output name="sorted" id="sorted">
-              {/* Display the sorted sentence or a placeholder if the state is empty. */}
-              {sortedSentence || "Please enter a sentence!"}
-            </output>
-          </fieldset>
-        </Form>
-
-        {/* Button to go to the index route. */}
-        <GoHomeBtn />
-      </MainBody>
-
-      {/* Page footer */}
-      <Footer />
-    </main>
+      {/* Button to go to the index route. */}
+      <GoHomeBtn />
+    </Page>
   );
 }

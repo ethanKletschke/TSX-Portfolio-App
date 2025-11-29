@@ -1,30 +1,17 @@
 import { Link } from "react-router-dom";
-import Footer from "../../comps/Footer/Footer";
-import Header from "../../comps/Header/Header";
 import styles from "./NoPage.module.css";
-import MainBody from "../../comps/MainBody/MainBody";
+import Page from "../../comps/Page/Page";
 
 // Page displayed when a route isn't found
 export default function NoPage() {
   return (
-    <main>
-      {/* Header component */}
-      <Header>
-        Oops! Error 404...
-      </Header>
+    <Page headerText="Oops! Error 404...">
+      <p className={styles.notExist}>
+        This page does not exist.<br />
+        <Link to="/">Go back to the home page</Link>?
+      </p>
 
-      {/* Main page body */}
-      <MainBody>
-        <p className={styles.notExist}>
-          This page does not exist.<br />
-          <Link to="/">Go back to the home page</Link>?
-        </p>
-
-        <hr /> 
-      </MainBody>
-
-      {/* Footer component */}
-      <Footer />
-    </main>
+      <hr /> 
+    </Page>
   );
 }
