@@ -1,9 +1,7 @@
 import { useState } from "react";
-import Footer from "../../comps/Footer/Footer";
 import Form from "../../comps/Form/Form";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Header from "../../comps/Header/Header";
-import MainBody from "../../comps/MainBody/MainBody";
+import Page from "../../comps/Page/Page";
 import styles from "./DiceRoll.module.css";
 
 // Dice roll page
@@ -53,56 +51,45 @@ export default function DiceRoll() {
   };
 
   return (
-    <main>
-      {/* Main header component */}
-      <Header>
-        Dice Rolling
-      </Header>
+    <Page headerText="Dice Rolling">
+      {/* Dice Image */}
+      <img
+        src={imgSrc || "DiceQuestion.png"}
+        alt="Die Face"
+        className={styles.dieImg}
+      />
 
-      {/* Main page body */}
-      <MainBody>
-        {/* Dice Image */}
-        <img
-          src={imgSrc || "DiceQuestion.png"}
-          alt="Die Face"
-          className={styles.dieImg}
+      <Form submitHandler={e => e.preventDefault()}>
+
+        {/* Dice Roll Button */}
+        <button
+          onClick={handleDiceRollClick}
+          type="button"
+        >
+          Roll Dice
+        </button>
+
+        {/* Value Refresh Button */}
+        <button
+          onClick={refreshVals}
+          type="button"
+        >
+          Refresh Values
+        </button>
+
+        {/* Die roll log */}
+        <textarea
+          className={styles.rollLog}
+          value={log || ""}
+          placeholder="Roll Log..."
+          readOnly
         />
+      </Form>
 
-        <Form submitHandler={e => e.preventDefault()}>
+      <hr />
 
-          {/* Dice Roll Button */}
-          <button
-            onClick={handleDiceRollClick}
-            type="button"
-          >
-            Roll Dice
-          </button>
-
-          {/* Value Refresh Button */}
-          <button
-            onClick={refreshVals}
-            type="button"
-          >
-            Refresh Values
-          </button>
-
-          {/* Die roll log */}
-          <textarea
-            className={styles.rollLog}
-            value={log || ""}
-            placeholder="Roll Log..."
-            readOnly
-          />
-        </Form>
-
-        <hr />
-
-        {/* Button to return to index route */}
-        <GoHomeBtn />
-      </MainBody>
-
-      {/* Footer component */}
-      <Footer />
-    </main>
+      {/* Button to return to index route */}
+      <GoHomeBtn />
+    </Page>
   );
 }

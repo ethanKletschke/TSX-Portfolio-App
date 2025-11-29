@@ -1,10 +1,8 @@
 import { useState } from "react";
-import Footer from "../../comps/Footer/Footer";
 import Form from "../../comps/Form/Form";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Header from "../../comps/Header/Header";
-import MainBody from "../../comps/MainBody/MainBody";
 import numeronym from "../../funcs/numeronym";
+import Page from "../../comps/Page/Page";
 
 export default function Numeronyms() {
   // State
@@ -22,48 +20,40 @@ export default function Numeronyms() {
   };
 
   return (
-    <main>
-      <Header>
-        Numeronym Generator
-      </Header>
+    <Page headerText="Numeric Acronym Generator">
+      <Form submitHandler={handleSubmit}>
+        <fieldset>
+          <legend>Input</legend>
 
-      <MainBody>
-        <Form submitHandler={handleSubmit}>
-          <fieldset>
-            <legend>Numeronym Input</legend>
+          <label htmlFor="numeronym-in">Word to shorten:</label>
+          <input
+            type="text"
+            name="numeronym-in"
+            id="numeronym-in"
+            value={numeronymInput}
+            onChange={handleChange}
+            minLength={3}
+          />
 
-            <label htmlFor="numeronym-in">Word to shorten:</label>
-            <input
-              type="text"
-              name="numeronym-in"
-              id="numeronym-in"
-              value={numeronymInput}
-              onChange={handleChange}
-              minLength={3}
-            />
+          <button type="submit">
+            Create Numeric Acronym
+          </button>
+        </fieldset>
 
-            <button type="submit">
-              Create Numeronym
-            </button>
-          </fieldset>
+        <fieldset>
+          <legend>Output</legend>
 
-          <fieldset>
-            <legend>Output</legend>
+          <label htmlFor="numeronym-out">Generated Acronym</label>
+          <output
+            htmlFor="numeronym-in"
+            id="numeronym-out"
+          >
+            {out || "No acronym generated yet"}
+          </output>
+        </fieldset>
+      </Form>
 
-            <label htmlFor="numeronym-out">Generated Numeronym</label>
-            <output
-              htmlFor="numeronym-in"
-              id="numeronym-out"
-            >
-              {out || "No Numeronym generated yet"}
-            </output>
-          </fieldset>
-        </Form>
-
-        <GoHomeBtn />
-      </MainBody>
-
-      <Footer />
-    </main>
+      <GoHomeBtn />
+    </Page>
   );
 }

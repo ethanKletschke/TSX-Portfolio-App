@@ -1,10 +1,8 @@
 import { useState } from "react";
-import Footer from "../../comps/Footer/Footer.tsx";
 import Form from "../../comps/Form/Form.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
-import Header from "../../comps/Header/Header.tsx";
-import MainBody from "../../comps/MainBody/MainBody.tsx";
 import sortObject from "../../funcs/sortObjects.ts";
+import Page from "../../comps/Page/Page.tsx";
 
 // Object Sorting Component
 export default function ObjSort() {
@@ -112,123 +110,113 @@ export default function ObjSort() {
   };
 
   return (
-    <main>
-      {/* Main header component */}
-      <Header>
-        Object Sort
-      </Header>
+    <Page headerText="Object Sort">
 
-      {/* Main page body */}
-      <MainBody>
 
-        <Form submitHandler={handleSubmit}>
-          <fieldset>
-            <legend>Create Object</legend>
+      <Form submitHandler={handleSubmit}>
+        <fieldset>
+          <legend>Create Object</legend>
 
-            <label htmlFor="personId">
-              ID (3-digits)
-            </label>
-            <input
-              id="personId"
-              name="personId"
-              onChange={handleIdChange}
-              maxLength={3}
-              pattern="[0-9][0-9][0-9]"
-              placeholder="ID#"
-              required
-              type="text"
-              value={id}
-            />
+          <label htmlFor="personId">
+            ID (3-digits)
+          </label>
+          <input
+            id="personId"
+            name="personId"
+            onChange={handleIdChange}
+            maxLength={3}
+            pattern="[0-9][0-9][0-9]"
+            placeholder="ID#"
+            required
+            type="text"
+            value={id}
+          />
 
-            <label htmlFor="fname">First Name</label>
-            <input
-              id="fname"
-              name="fname"
-              onChange={handleFnameChange}
-              placeholder="First name..."
-              required
-              type="text"
-              value={fname}
-            />
+          <label htmlFor="fname">First Name</label>
+          <input
+            id="fname"
+            name="fname"
+            onChange={handleFnameChange}
+            placeholder="First name..."
+            required
+            type="text"
+            value={fname}
+          />
 
-            <label htmlFor="lname">Last Name</label>
-            <input
-              id="lname"
-              name="lname"
-              onChange={handleLnameChange}
-              placeholder="Last name..."
-              required
-              type="text"
-              value={lname}
-            />
+          <label htmlFor="lname">Last Name</label>
+          <input
+            id="lname"
+            name="lname"
+            onChange={handleLnameChange}
+            placeholder="Last name..."
+            required
+            type="text"
+            value={lname}
+          />
 
-            <label htmlFor="prev-obj">Previously created person:</label>
-            <output
-              id="prev-obj"
-              name="prev-obj"
-            >
-              {previousObj || "None yet"}
-            </output>
+          <label htmlFor="prev-obj">Previously created person:</label>
+          <output
+            id="prev-obj"
+            name="prev-obj"
+          >
+            {previousObj || "None yet"}
+          </output>
 
-            <button
-              onClick={handleCreateClick}
-              type="button"
-            >
-              Create
-            </button>
+          <button
+            onClick={handleCreateClick}
+            type="button"
+          >
+            Create
+          </button>
 
-          </fieldset>
+        </fieldset>
 
-          {/* Output */}
-          <fieldset>
-            <legend>Output</legend>
+        {/* Output */}
+        <fieldset>
+          <legend>Output</legend>
 
-            <label htmlFor="sort-by">Sort By:</label>
-            <select
-              onChange={handleSortByChange}
-              required
-              value={toSortBy}
-            >
-              {/* Placeholder option */}
-              <option value="" disabled>Select a Field...</option>
+          <label htmlFor="sort-by">Sort By:</label>
+          <select
+            onChange={handleSortByChange}
+            required
+            value={toSortBy}
+          >
+            {/* Placeholder option */}
+            <option value="" disabled>Select a Field...</option>
 
-              {/* Actual options */}
-              <option value="personID">Person ID</option>
-              <option value="fname">First Name</option>
-              <option value="lname">Last Name</option>
-            </select>
+            {/* Actual options */}
+            <option value="personID">Person ID</option>
+            <option value="fname">First Name</option>
+            <option value="lname">Last Name</option>
+          </select>
 
-            {/* Submit Button */}
-            <button type="button"
-              onClick={handleSortClick}>
-              Sort
-            </button>
+          {/* Submit Button */}
+          <button type="button"
+            onClick={handleSortClick}>
+            Sort
+          </button>
 
-            <label htmlFor="output-text">
-              {/* e.g. People sorted by key "personId" */}
-              People{toSortBy && (
-                <span>
-                  &nbsp;sorted by key "<code>{toSortBy}</code>":
-                </span>
-              )}
-            </label>
-            <textarea
-              name="output-text"
-              id="output-text"
-              value={outputTxt}
-              readOnly
-            />
-          </fieldset>
+          <label htmlFor="output-text">
+            {/* e.g. People sorted by key "personId" */}
+            People{toSortBy && (
+              <span>
+                &nbsp;sorted by key "<code>{toSortBy}</code>":
+              </span>
+            )}
+          </label>
+          <textarea
+            name="output-text"
+            id="output-text"
+            value={outputTxt}
+            readOnly
+          />
+        </fieldset>
 
-          <button type="button" onClick={handleClear}>Reset</button>
-        </Form>
+        <button type="button" onClick={handleClear}>Reset</button>
+      </Form>
 
-        {/* Button to return to index route */}
-        <GoHomeBtn />
-      </MainBody>
-
-      {/* Footer component */}
-      <Footer />
-    </main>
+      {/* Button to return to index route */}
+      <GoHomeBtn />
+    </Page>
   );
 }
