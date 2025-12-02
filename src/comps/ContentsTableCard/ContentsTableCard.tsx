@@ -1,14 +1,15 @@
 import { type CardProps } from "../../compProps/CardProps";
 import styles from "./ContentsTableCard.module.css";
 
-// Define own CardProps without an imgSrc replace it with an iconSrc
-type ContentsTableCardProps = Omit<CardProps, "imgSrc"> & { iconSrc: string };
+// Define own CardProps without children JSX
+type ContentsTableCardProps = Omit<CardProps, "children">;
 
-export default function ContentsTableCard({ title, iconSrc }: ContentsTableCardProps) {
+export default function ContentsTableCard({ title, icon, subtitle }: ContentsTableCardProps) {
   return (
     <div className={styles.contentCard}>
-      <img src={iconSrc} alt="Icon" />
+      <p className={styles.icon}>{icon}</p>
       <h3>{title || "Contents"}</h3>
+      <p>{subtitle || "Subtitle"}</p>
     </div>
   );
 }

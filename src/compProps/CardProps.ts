@@ -1,5 +1,6 @@
 export type CardProps = {
   title: string; // Card title
-  imgSrc?: string; // Source to card image
+  subtitle?: string; // Card subtitle
+  icon?: string; // Source to card image
   children?: string; // Card children components
 };
