@@ -5,7 +5,7 @@ import Page from "../../comps/Page/Page";
 export default function Home() {
   return (
     <Page headerText="Ethan Kletschke's Portfolio">
-      {/* Header with instruction */}
+      {/* Heading with instruction */}
       <h2 className={styles.heading}>Select a Page to Go To</h2>
 
       {/* Table of contents */}
