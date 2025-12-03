@@ -1,3 +1,18 @@
 .contentCard {
+  text-align: center;
+  border: 1pt solid;
+  padding: 0.5em;
+}
+
+.contentCard h3 {
+  text-decoration: underline;
+}
+
+.contentCard .icon {
+  font-size: 1.6em;
+  color: var(--dblue);
+}
+
+.contentCard .subtitle {
   
 }
