@@ -3,10 +3,10 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.1.0`
+- Version: `2.2.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
-    - Screenshots taken from output on Firefox in light mode
+    - Screenshots taken from output on Firefox
 - Technologies used:
   - NPM
   - Node.js
@@ -33,12 +33,13 @@ prohibits AI training. Previous versions remain under the standard MIT License.
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
-    - [Numeronym Generator](#numeronym-generator)
+    - [Numeric Acronym Generator](#numeric-acronym-generator)
     - [Letter Repetition](#letter-repetition)
     - [Sentence Sorting](#sentence-sorting)
     - [Dice Roll](#dice-roll)
     - [Object Sort](#object-sort)
     - [Dialog Box Demo](#dialog-box-demo)
+  - [Credits](#credits)
 
 ## About the App
 
@@ -46,8 +47,8 @@ This is a portfolio app written purely in TypeScript and React. The backend and
 frontend are purely just React. No databases or server involved.
 
 This app has a few pages that demonstrate different concepts and ideas I wanted
-to program. The app is also fully styled and has dark mode capabilities.  
-Each page is described briefly in this README.
+to program. The app is also fully styled. Each page is described briefly in this
+README.
 
 ## Using the App
 
@@ -128,10 +129,10 @@ Example of output on Firefox after pressing "Start", "Log", and "Stop":
 
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
-### Numeronym Generator
+### Numeric Acronym Generator
 
-A page that generates a numeronym out of a word.  
-A numeronym is an abbreviation of a word (especially in IT
+A page that generates a numeric acronym out of a word.  
+A numeric acronym is an abbreviation of a word (especially in IT
 documentation) that is made up of the word's first letter,
 its last letter, and the number of characters in between the
 first and last letters.  
@@ -207,3 +208,12 @@ Page by Default:
 After opening the alert box:
 
 ![Output screenshot](./README_screenshots/AlertBox.png)
+
+## Credits
+
+- W3Schools helped as a brief guide.
+- MDN Web Docs helped for more detailed explanations.
+- ChatGPT helped for a couple ideas and _**some**_ problem solving.
+- Special thanks to:
+  - Sabrielle, my girlfriend, for the continued support and for helping me with
+    colour scheme tips (love you bae! &hearts;)
