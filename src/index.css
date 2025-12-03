@@ -6,9 +6,6 @@
   --black: #212529;
   --inputBorder: 1.5pt solid;
   --orange: #eda659;
-
-  /* Dark Mode */
-  --dmBlack: #353535;
 }
 
 /* all elements */
@@ -50,15 +47,4 @@ main {
   margin-bottom: 3em;
   /* Compensate for fixed footer */
   padding-bottom: 1em;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dmBlack);
-    color: var(--white)
-  }
-
-  a {
-    color: var(--lightBlue);
-  }
 }

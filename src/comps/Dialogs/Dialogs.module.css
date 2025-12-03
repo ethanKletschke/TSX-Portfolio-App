@@ -45,22 +45,3 @@
   background-color: var(--blue);
   transition-duration: 0.2s;
 }
-
-@media (prefers-color-scheme: dark) {
-  .alertBox,
-  .confirmBox,
-  .formBox {
-    border-color: grey;
-    background-color: var(--dmBlack);
-  }
-  
-  .dialogDiv button {
-    background-color: grey;
-    color: var(--white);
-  }
-  
-  .dialogDiv button:hover {
-    color: grey;
-    background-color: var(--white);
-  }
-}
