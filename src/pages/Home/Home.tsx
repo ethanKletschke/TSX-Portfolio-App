@@ -4,7 +4,6 @@ import Page from "../../comps/Page/Page";
 import sortObjects from "../../funcs/sortObjects";
 import styles from "./Home.module.css";
 
-
 export default function Home() {
   const links: CardObj[] = [
     {
