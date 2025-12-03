@@ -1,11 +1,11 @@
 :root {
   /* Light Mode Variables (Used across all CSS files) */
-  --lightBlue: #7ec5ff;
-  --blue: #003ace;
+  --mainColour: #A9DEF9;
   --white: #f8f8f8;
   --black: #212529;
   --inputBorder: 1.5pt solid;
   --orange: #eda659;
+  --dblue: #355070;
 }
 
 /* all elements */
@@ -40,7 +40,7 @@ body {
 
 /* All links on the page */
 a {
-  color: var(--blue);
+  color: var(--black);
 }
 
 main {

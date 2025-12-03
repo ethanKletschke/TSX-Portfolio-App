@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  border: 1pt solid var(--blue);
+  border: 1pt solid var(--black);
   align-content: space-evenly;
 }
 

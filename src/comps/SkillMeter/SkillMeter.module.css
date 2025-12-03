@@ -48,16 +48,16 @@
 /* Webkit */
 .mtr::-webkit-meter-bar {
   background: none; 
-  background-color: var(--lightBlue);
+  background-color: var(--mainColour);
   border: 1.2pt solid;
 }
 
 .mtr::-webkit-meter-optimum-value {
   background: none;
-  background-color: var(--blue)
+  background-color: var(--black)
 }
 
 .mtr::-moz-meter-bar {
   background: none;
-  background-color: var(--blue);
+  background-color: var(--black);
 }
