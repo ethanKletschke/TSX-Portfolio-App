@@ -1,3 +1,12 @@
 .contentsTable {
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  border: 1pt solid var(--blue);
+  align-content: space-evenly;
+}
+
+.contentsTable > div {
+  align-self: center;
+  border: 1pt solid var(--)
 }
