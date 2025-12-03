@@ -29,7 +29,7 @@ export default function Home() {
       route: "/dice",
       title: "Dice Rolling",
       icon: "⚂",
-      subtitle: "Roll dice"
+      subtitle: "Roll dice, just for fun"
     },
     {
       route: "/email",
