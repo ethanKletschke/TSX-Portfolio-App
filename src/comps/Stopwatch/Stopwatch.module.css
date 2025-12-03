@@ -39,16 +39,3 @@
     border-bottom: none;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .btnWrap > button {
-    color: var(--white);
-    background-color: grey;
-    border-color: var(--white);
-  }
-
-  .btnWrap > button:hover {
-    color: grey;
-    background-color: var(--white);
-  }
-}

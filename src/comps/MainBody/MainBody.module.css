@@ -9,9 +9,3 @@
   border: 1pt solid var(--lightBlue);
   margin: 0.4em;
 }
-
-@media (prefers-color-scheme: dark) {
-  .main-body > hr {
-    border-color: grey;
-  }
-}

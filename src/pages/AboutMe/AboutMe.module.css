@@ -14,9 +14,3 @@
 .body-section h2 {
   text-align: center;
 }
-
-@media (prefers-color-scheme: dark) {
-  .body-section {
-    border-color: grey;
-  }
-}
