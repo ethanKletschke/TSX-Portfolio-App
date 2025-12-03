@@ -6,6 +6,6 @@
 
 /* Horizontal Rules */
 .main-body > hr {
-  border: 1pt solid var(--lightBlue);
+  border: 1pt solid var(--mainColour);
   margin: 0.4em;
 }

@@ -10,7 +10,7 @@
   margin: auto;
   width: 30%;
   padding: 2em;
-  border: 2pt solid var(--lightBlue);
+  border: 2pt solid var(--mainColour);
   box-shadow: 10px 10px 10px var(--black);
 }
 
@@ -28,8 +28,8 @@
 
 /* All buttons */
 .dialogDiv button {
-  background-color: var(--lightBlue);
-  color: var(--blue);
+  background-color: var(--mainColour);
+  color: var(--black);
   border: none;
   border-radius: 4pt;
   cursor: pointer;
@@ -41,7 +41,7 @@
 }
 
 .dialogDiv button:hover {
-  color: var(--lightBlue);
-  background-color: var(--blue);
+  color: var(--mainColour);
+  background-color:  var(--dblue);
   transition-duration: 0.2s;
 }

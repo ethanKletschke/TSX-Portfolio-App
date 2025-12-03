@@ -32,7 +32,7 @@
   resize: vertical; 
   height: 10em; /* Initial Height */
   background-color: var(--white);
-  border: var(--inputBorder) var(--lightBlue);
+  border: var(--inputBorder) var(--mainColour);
 }
 
 /* Readonly textareas with focus */
@@ -48,7 +48,7 @@
 /* Input fields except submit button */
 .form input:not([type=submit]),
 .form select {
-  border: var(--inputBorder) var(--lightBlue);
+  border: var(--inputBorder) var(--mainColour);
   border-radius: 4pt;
   box-sizing: border-box;
 }
@@ -58,36 +58,38 @@
 .form button:focus,
 .form select:focus {
   outline: 2pt outset lightgray;
-  border: var(--inputBorder) var(--lightBlue);
+  border: var(--inputBorder) var(--mainColour);
 }
 
 /* Form Buttons */
 .form input[type=submit],
 .form input[type=button],
 .form button {
-  background-color: var(--lightBlue);
-  color: var(--blue);
+  background-color: var(--mainColour);
+  color: var(--back);
   border: none;
   border-radius: 4pt;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 
 .form input[type=submit]:hover,
 .form input[type=button]:hover,
-.form button[type=button]:hover {
-  background-color: var(--blue);
-  color: var(--lightBlue);
+.form button[type=button]:hover,
+.form button[type=submit]:hover {
+  background-color: var(--dblue);
+  color: var(--mainColour);
 }
 
 .form > fieldset {
-  border: 2pt ridge var(--lightBlue);
+  border: 2pt ridge var(--mainColour);
   padding: 1em;
   margin-bottom: 0.5em;
 }
 
 .form > fieldset > legend {
   padding: 0 0.5em;
-  color: var(--blue);
+  color: var(--black);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -97,7 +99,7 @@
   display: block;
   padding: 0.2em ;
   text-decoration: underline;
-  color: var(--blue);
+  color: var(--black);
   font-weight: bold;
 }
 
