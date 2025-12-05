@@ -1,21 +1,19 @@
-import Page from "../../comps/Page/Page";
-
-interface BasicCard {
-  title: string;
-}
+import Page from "../../comps/Page/Page.tsx";
+import Card from "../../comps/Card/Card.tsx";
 
 export default function CardsDemo() {
-  const basicCards: BasicCard[] = [
-    {
-      title: "Paris"
-    }
-  ];
-
   return (
     <Page headerText="Cards Demo">
-      <h2>Basic Cards</h2>
+      <section>
+        <h2>Basic Cards</h2>
+
+      </section>
 
       <hr />
+
+      <section>
+        <h2>User Cards</h2>
+      </section>
     </Page>
   );
 }
