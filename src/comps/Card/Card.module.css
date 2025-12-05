@@ -1,0 +1,27 @@
+/* Actual card (wrapper div) */
+.card {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.card > * {
+  margin: 0;
+}
+
+/* Card header */
+.card > header {
+  color: var(--dblue);
+  background-color: var(--mainColour);
+}
+
+/* Card body */
+.card > section {
+<<<<<<< HEAD
+  /* Override the 0px margin set in a previous rule */
+  margin: 0.5em;
+  
+=======
+
+>>>>>>> 5a9c322 (wip(feat): Start Card component)
+}

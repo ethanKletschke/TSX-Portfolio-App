@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.3.0`
+- Version: `2.4.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -24,6 +24,8 @@ prohibits AI training. Previous versions remain under the standard MIT License.
 - [Ethan K.'s TypeScript Portfolio](#ethan-ks-typescript-portfolio)
   - [Table of Contents](#table-of-contents)
   - [About the App](#about-the-app)
+    - [Features](#features)
+    - [Planned Features](#planned-features)
   - [Using the App](#using-the-app)
     - [Requirements to Run](#requirements-to-run)
     - [Installation](#installation)
@@ -49,6 +51,19 @@ frontend are purely just React. No databases or server involved.
 This app has a few pages that demonstrate different concepts and ideas I wanted
 to program. The app is also fully styled. Each page is described briefly in this
 README.
+
+### Features
+
+- Comprehensive styling via CSS
+- User interface made up almost entirely of custom components
+- Mocha testing
+
+### Planned Features
+
+- Full Jest testing
+- Page demonstrating different types of cards
+- A page with a styled &lt;select&gt; element
+- An advanced modal example demonstrating the use of `forwardRef()`.
 
 ## Using the App
 
@@ -76,7 +91,11 @@ For the (currently untested) production version:
 
 ## Pages
 
-Unless otherwise specified, all ideas were conceived by me.
+Unless otherwise specified, all ideas were conceived by me.  
+The home page shown below features links to each of the pages discussed in this
+section.
+
+<!-- TODO => Add screenshot -->
 
 ### About Me
 
@@ -211,8 +230,8 @@ After opening the alert box:
 
 ## Credits
 
-- W3Schools helped as a brief guide.
-- MDN Web Docs helped for more detailed explanations.
+- W3Schools helped as a brief guide/refresher.
+- MDN Web Docs helped for more detailed explanations and guides.
 - ChatGPT helped for a couple ideas and _**some**_ problem solving.
 - Special thanks to:
   - Sabrielle, my girlfriend, for the continued support and for helping me with
