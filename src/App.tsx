@@ -11,6 +11,7 @@ import Numeronyms from "./pages/Numeronyms/Numeronyms.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
+import CardsDemo from "./pages/CardsDemo/CardsDemo.tsx";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
       <Route path="/letterRep" element={<LetterRepetition />} />
       {/* Numeronym Page */}
       <Route path="/numeronyms" element={<Numeronyms />} />
+      <Route path="/cards" element={<CardsDemo />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>

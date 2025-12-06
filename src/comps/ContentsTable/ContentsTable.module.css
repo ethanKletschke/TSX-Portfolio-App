@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  /* border: 1pt solid var(--dblue); */
   align-content: space-evenly;
   gap: 1em;
   align-items: stretch;

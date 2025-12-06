@@ -66,6 +66,12 @@ export default function Home() {
       icon: "🕑",
       subtitle: "A simple stopwatch"
     },
+    {
+      route: "/cards",
+      title: "Cards Demo",
+      icon: "🂡",
+      subtitle: "A demo of simple user cards"
+    }
   ];
 
   const sortedLinks = sortObjects(links, "title");

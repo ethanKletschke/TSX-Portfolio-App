@@ -1,0 +1,21 @@
+.figure {
+  /* Center the figure on the page */
+  margin: auto;
+  width: 80%;
+  border: 3pt ridge aliceblue;
+  margin-bottom: 1em;
+}
+
+.figure > img {
+  /* Center the image */
+  margin: auto;
+  width: 100%;
+  display: block;
+}
+
+.figure > figcaption {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--black);
+  background-color: aliceblue;
+}

@@ -1,0 +1,28 @@
+/* Actual card (wrapper div) */
+.card {
+  width: 90%;
+  border: 2pt solid var(--dblue);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card header and footer styling */
+.card > header,
+.card > footer {
+  color: var(--dblue);
+  background-color: var(--mainColour);
+  padding: 1em;
+  text-align: center;
+}
+
+/* Card header */
+.card > header,
+.card > footer {
+  margin: 0;
+}
+
+/* Card body */
+.card > section {
+  margin: 1em;
+  flex-grow: 1;
+}

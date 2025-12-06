@@ -6,6 +6,13 @@
   --inputBorder: 1.5pt solid;
   --orange: #eda659;
   --dblue: #355070;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 720px) {
+  :root {
+    font-size: .8em;
+  }
 }
 
 /* all elements */
