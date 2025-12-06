@@ -52,12 +52,12 @@ export default function CardsDemo() {
       </section>
 
       <hr />
-
+{/* 
       <section>
         <h2>User Cards</h2>
       </section>
 
-      <hr />
+      <hr /> */}
 
       <GoHomeBtn />
     </Page>

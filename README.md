@@ -32,6 +32,7 @@ prohibits AI training. Previous versions remain under the standard MIT License.
     - [Running the App](#running-the-app)
   - [Pages](#pages)
     - [About Me](#about-me)
+    - [Cards Demo (WIP)](#cards-demo-wip)
     - [Consecutive Summation](#consecutive-summation)
     - [Custom Email Validator](#custom-email-validator)
     - [Stopwatch Page](#stopwatch-page)
@@ -62,7 +63,7 @@ README.
 
 - Full Jest testing
 - Page demonstrating different types of cards
-- A page with a styled &lt;select&gt; element
+- A page with a styled &lt;select&gt; element (combo box)
 - An advanced modal example demonstrating the use of `forwardRef()`.
 
 ## Using the App
@@ -95,7 +96,7 @@ Unless otherwise specified, all ideas were conceived by me.
 The home page shown below features links to each of the pages discussed in this
 section.
 
-<!-- TODO => Add screenshot -->
+![Output](./README_screenshots/Home.png)
 
 ### About Me
 
@@ -103,6 +104,13 @@ A page discussing me and my confidence in my skills. The skills are displayed as
 a meter from 1% to 100%.
 
 ![Output Screenshot](./README_screenshots/About.png)
+
+### Cards Demo (WIP)
+
+A small page demonstrating fully styled "Card" components, currently only basic
+cards about famous landmarks.
+
+![Output](./README_screenshots/CardsBasic.png)
 
 ### Consecutive Summation
 
@@ -144,7 +152,7 @@ _Idea Credit: ChatGPT_
 A simple page containing a stopwatch (measured in seconds only) 
 and a time log for it.
 
-Example of output on Firefox after pressing "Start", "Log", and "Stop":
+Example of output on Firefox:
 
 ![Output Screenshot](./README_screenshots/Stopwatch.png)
 
@@ -159,7 +167,7 @@ For example, `accessibility` would become `a11y`.
 
 Example of output for `internationalisation`:
 
-![Output](./README_screenshots/Numeronyms.png)
+![Output](./README_screenshots/NumericAcronyms.png)
 
 ### Letter Repetition
 
@@ -199,15 +207,16 @@ by one of the four text values.
 
 Output for `Create` (after 2 objects are created):
 
-![Output 1](./README_screenshots/SortObj1.png)
+![Output 1](./README_screenshots/SortObjInput1.png)
+![Output 2](README_screenshots/SortObjInput2.png)
 
 Output for `Sort` after choosing to sort by last name:
 
-![Output 2](./README_screenshots/SortObj2.png)
+![Output 3](./README_screenshots/SortObj.png)
 
 Output after clearing:
 
-![Output 3](./README_screenshots/SortObjCleared.png)
+![Output 4](./README_screenshots/SortObjCleared.png)
 
 ### Dialog Box Demo
 
