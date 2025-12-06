@@ -3,8 +3,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   align-content: space-evenly;
-  gap: 0.7em;
-  align-items: stretch;
-  justify-items: stretch;
-  justify-content: stretch;
+  gap: 2em;
+}
+
+@media screen and (max-width: 720px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

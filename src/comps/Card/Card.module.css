@@ -1,27 +1,28 @@
 /* Actual card (wrapper div) */
 .card {
-  display: block;
-  margin: auto;
-  width: 40%;
+  width: 90%;
+  border: 2pt solid var(--dblue);
+  display: flex;
+  flex-direction: column;
 }
 
-.card > * {
-  margin: 0;
+/* Card header and footer styling */
+.card > header,
+.card > footer {
+  color: var(--dblue);
+  background-color: var(--mainColour);
+  padding: 1em;
+  text-align: center;
 }
 
 /* Card header */
-.card > header {
-  color: var(--dblue);
-  background-color: var(--mainColour);
+.card > header,
+.card > footer {
+  margin: 0;
 }
 
 /* Card body */
 .card > section {
-<<<<<<< HEAD
-  /* Override the 0px margin set in a previous rule */
-  margin: 0.5em;
-  
-=======
-
->>>>>>> 5a9c322 (wip(feat): Start Card component)
+  margin: 1em;
+  flex-grow: 1;
 }
