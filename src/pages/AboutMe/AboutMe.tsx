@@ -26,6 +26,36 @@ export default function AboutMe() {
     return age;
   }
 
+  // Languages I'm good at
+  const goodLangs = [
+    "JavaScript",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "PostgreSQL"
+  ].sort(); // Sort it alphabetically
+
+  // Things I experimented with
+  const experimentedWith = [
+    "Bootstrap 4",
+    "Bootstrap 5",
+    "GnuCOBOL",
+    "C++",
+    "C#",
+    "C",
+    "Fortran 90",
+    "Perl",
+    "Java",
+    "PHP"
+  ].sort();
+
+  const concepts = [
+    "Responsive Web Design (RWD)",
+    "Accessibility in web development",
+    "Good programming practices",
+    "Version control with Git"
+  ].sort();
+
   return (
     <Page headerText="About Me">
       <section className={styles["body-section"]}>
@@ -38,15 +68,31 @@ export default function AboutMe() {
             aspiring Web Developer with experience dating back to high school with
             both software and web applications and theory.<br />
             I'm mostly interested in web development, but am well-versed in
-            a wide variety of programming languages related to software and web apps,
-            particularly:
+            a wide variety of concepts related to software applications,
+            web pages, web applications, database design and development, and basic UI
+            design.
           </p>
+
+          <p>I am confident in using the following languages and frameworks:</p>
           <ul>
-            <li>React</li>
-            <li>TypeScript/JavaScript</li>
-            <li>Java</li>
-            <li>PHP</li>
-            <li>SQL (PostgreSQL mostly)</li>
+            {/* List the languages I'm good at */}
+            {goodLangs.map((val, index) => {
+              return <li key={index}>{val}</li>;
+            })}
+          </ul>
+
+          <p>I have also previously experimented with the following to various degrees:</p>
+          <ul>
+            {experimentedWith.map((val, index) => (
+              <li key={index}>{val}</li>
+            ))}
+          </ul>
+
+          <p>Lastly, I am well-versed in the following concepts:</p>
+          <ul>
+            {concepts.map((val, index) => (
+              <li key={index}>{val}</li>
+            ))}
           </ul>
         </article>
       </section>
@@ -65,9 +111,7 @@ export default function AboutMe() {
           <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
           <SkillMeter lblText="CSS" value={55} htmlID="css" />
           <SkillMeter lblText="Database Normalisation" value={55} htmlID="db-norm" />
-          <SkillMeter lblText="PostgreSQL" value={50} htmlID="pgsql" />
-          <SkillMeter lblText="Java" value={45} htmlID="java" />
-          <SkillMeter lblText="PHP" value={45} htmlID="php" />
+          <SkillMeter lblText="PostgreSQL" value={45} htmlID="pgsql" />
           <SkillMeter lblText="GitHub Automation" value={20} htmlID="github-auto" />
         </article>
       </section>
