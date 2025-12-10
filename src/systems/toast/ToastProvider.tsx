@@ -33,9 +33,12 @@ export function ToastProvider({ children }: ToastProviderProps) {
   }, []);
 
   const addToast = useCallback((message: string, options?: ToastOptions) => {
+    // Generate a UUID for the toast
     const id = crypto.randomUUID();
+    // Store the duration as the specified duration or 3 seconds
     const duration = options?.duration ?? 3000;
 
+    // Instantiate the new toast
     const newToast: ToastObj = {
       id,
       message,
@@ -43,12 +46,16 @@ export function ToastProvider({ children }: ToastProviderProps) {
       variant: options?.variant ?? "default"
     };
 
+    // Append the new toast to the toasts list
     setToasts(prev => [...prev, newToast]);
 
+    // Set the timeout for the toast
     const timer = window.setTimeout(() => {
+      // Delete the toast
       removeToast(id);
     }, duration);
 
+    // Store the timer in the timers map ref.
     timers.current.set(id, timer);
   }, [removeToast]);
 
