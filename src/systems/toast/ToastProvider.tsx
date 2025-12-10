@@ -62,6 +62,8 @@ export function ToastProvider({ children }: ToastProviderProps) {
 
   return (
     <ToastContext.Provider value={{ addToast, removeToast, toasts }}>
+      {children}
+      
       <ToastPortal>
         <div className={styles.toastRoot}>
           {toasts.map(toast => (
