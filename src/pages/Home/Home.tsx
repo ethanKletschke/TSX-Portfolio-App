@@ -1,6 +1,6 @@
-import type { CardObj } from "../../comps/ContentsTable/ContentsTable";
-import ContentsTable from "../../comps/ContentsTable/ContentsTable";
-import Page from "../../comps/Page/Page";
+import type { CardObj } from "../../comps/general_UI/layout/ContentsTable/ContentsTable.tsx";
+import ContentsTable from "../../comps/general_UI/layout/ContentsTable/ContentsTable.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 import sortObjects from "../../funcs/sortObjects";
 import styles from "./Home.module.css";
 

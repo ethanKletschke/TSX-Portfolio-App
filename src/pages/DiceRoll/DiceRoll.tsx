@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Form from "../../comps/Form/Form";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Page from "../../comps/Page/Page";
+import Form from "../../comps/general_UI/Form/Form";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 import styles from "./DiceRoll.module.css";
 
 // Dice roll page

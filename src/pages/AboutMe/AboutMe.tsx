@@ -1,6 +1,6 @@
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Page from "../../comps/Page/Page";
-import SkillMeter from "../../comps/SkillMeter/SkillMeter";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
+import Page from "../../comps/general_UI/layout/Page/Page";
+import SkillMeter from "../../comps/general_UI/SkillMeter/SkillMeter";
 import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {

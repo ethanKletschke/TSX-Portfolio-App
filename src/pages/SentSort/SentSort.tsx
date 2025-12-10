@@ -1,9 +1,9 @@
 import { useState } from "react";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import sortString from "../../funcs/sortString.ts";
 import styles from "./SentSort.module.css";
-import Form from "../../comps/Form/Form.tsx";
-import Page from "../../comps/Page/Page.tsx";
+import Form from "../../comps/general_UI/Form/Form.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 export default function SentSort() {
   // The sentence to sort

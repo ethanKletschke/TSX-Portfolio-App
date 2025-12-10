@@ -1,4 +1,4 @@
-import type { DefaultCardProps } from "../../CompProps/DefaultCardProps";
+import type { DefaultCardProps } from "../../props/DefaultCardProps";
 import Figure from "../Figure/Figure";
 import styles from "./Card.module.css";
 

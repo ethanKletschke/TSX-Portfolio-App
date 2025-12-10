@@ -1,8 +1,8 @@
-import AlertBox from "../../comps/Dialogs/AlertBox";
-import ConfirmBox from "../../comps/Dialogs/ConfirmBox";
-import FormBox from "../../comps/Dialogs/FormBox";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Page from "../../comps/Page/Page";
+import AlertBox from "../../comps/general_UI/Dialogs/AlertBox";
+import ConfirmBox from "../../comps/general_UI/Dialogs/ConfirmBox";
+import FormBox from "../../comps/general_UI/Dialogs/FormBox";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
+import Page from "../../comps/general_UI/layout/Page/Page";
 
 export default function DialogsDemo() {
   return (

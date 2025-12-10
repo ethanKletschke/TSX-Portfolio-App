@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./NoPage.module.css";
-import Page from "../../comps/Page/Page";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 // Page displayed when a route isn't found
 export default function NoPage() {
