@@ -1,0 +1,9 @@
+.toastRoot {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  z-index: 9999;
+}

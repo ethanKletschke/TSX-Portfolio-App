@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/AboutMe/AboutMe.tsx";
+import CardsDemo from "./pages/CardsDemo/CardsDemo.tsx";
 import ConsecSum from "./pages/ConsecSum/ConsecSum.tsx";
 import DialogsDemo from "./pages/DialogsDemo/DialogsDemo.tsx";
 import DiceRoll from "./pages/DiceRoll/DiceRoll.tsx";
@@ -11,7 +12,6 @@ import Numeronyms from "./pages/Numeronyms/Numeronyms.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
-import CardsDemo from "./pages/CardsDemo/CardsDemo.tsx";
 
 export default function App() {
   return (
@@ -38,6 +38,7 @@ export default function App() {
       <Route path="/letterRep" element={<LetterRepetition />} />
       {/* Numeronym Page */}
       <Route path="/numeronyms" element={<Numeronyms />} />
+      {/* Cards Page */}
       <Route path="/cards" element={<CardsDemo />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
