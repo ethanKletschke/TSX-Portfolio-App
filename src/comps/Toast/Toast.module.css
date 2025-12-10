@@ -1,0 +1,27 @@
+.toast {
+  padding: 0.75em 1em;
+  border-radius: 2pt;
+  color: var(--white);
+  background-color: var(--dblue);
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.toast.success {
+  background-color: #ddffdd;
+  color: var(--black);
+}
+
+.toast.info {
+  background-color: var(--mainColour);
+  color: var(--black);
+}
+
+.toast.warning {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.toast.error {
+  background-color: crimson;
+}
