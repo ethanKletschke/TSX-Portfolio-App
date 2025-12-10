@@ -73,8 +73,10 @@ export function ToastProvider({ children }: ToastProviderProps) {
       
       <ToastPortal>
         <div className={styles.toastRoot}>
-          {toasts.map(toast => (
-            <Toast key={toast.id} message={toast.message} variant={toast.variant} />
+          {toasts.map((toast, index) => (
+            <span key={index} onClick={() => removeToast(toast.id)}>
+              <Toast key={toast.id} message={toast.message} variant={toast.variant} />
+            </span>
           ))}
         </div>
       </ToastPortal>

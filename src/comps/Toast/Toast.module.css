@@ -1,10 +1,11 @@
 .toast {
   padding: 0.75em 1em;
-  border-radius: 2pt;
+  border-radius: 4pt;
   color: var(--white);
   background-color: var(--dblue);
   cursor: pointer;
   font-size: 0.9em;
+  text-align: center;
 }
 
 .toast.success {
@@ -13,7 +14,7 @@
 }
 
 .toast.info {
-  background-color: var(--mainColour);
+  background-color: lightskyblue;
   color: var(--black);
 }
 
