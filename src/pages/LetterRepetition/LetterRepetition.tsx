@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Form from "../../comps/Form/Form.tsx";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
+import Form from "../../comps/general_UI/Form/Form.tsx";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import doubleLetters from "../../funcs/doubleLetters.ts";
-import Page from "../../comps/Page/Page.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 export default function LetterRepetition() {
   const [input, setInput] = useState<string>("");

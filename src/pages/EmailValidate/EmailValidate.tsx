@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Form from "../../comps/Form/Form";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
+import Form from "../../comps/general_UI/Form/Form";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
 import validateEmail from "../../funcs/validateEmail";
 import styles from "./EmailValidate.module.css";
-import Page from "../../comps/Page/Page";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 // Email Validator page
 export default function EmailValidate() {

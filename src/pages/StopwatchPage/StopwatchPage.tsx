@@ -1,6 +1,6 @@
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
-import Page from "../../comps/Page/Page";
-import Stopwatch from "../../comps/Stopwatch/Stopwatch";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
+import Stopwatch from "../../comps/general_UI/Stopwatch/Stopwatch";
 
 export default function StopwatchPage() {
   return (

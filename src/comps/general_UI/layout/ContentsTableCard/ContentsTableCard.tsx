@@ -1,4 +1,4 @@
-import { type DefaultCardProps } from "../../CompProps/DefaultCardProps";
+import type { DefaultCardProps } from "../../../props/DefaultCardProps";
 import styles from "./ContentsTableCard.module.css";
 
 // Define own DefaultCardProps without children JSX

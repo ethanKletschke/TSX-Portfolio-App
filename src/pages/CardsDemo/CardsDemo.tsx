@@ -1,8 +1,8 @@
-import Page from "../../comps/Page/Page.tsx";
-import Card from "../../comps/Card/Card.tsx";
-import CardGrid from "../../comps/CardGrid/CardGrid.tsx";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
-import WorkInProg from "../../comps/WorkInProg/WorkInProg.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
+import Card from "../../comps/cards/Card/Card.tsx";
+import CardGrid from "../../comps/cards/CardGrid/CardGrid.tsx";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
+import WorkInProg from "../../comps/general_UI/WorkInProg/WorkInProg.tsx";
 
 export default function CardsDemo() {
   return (

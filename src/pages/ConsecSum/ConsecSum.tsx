@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Form from "../../comps/Form/Form.tsx";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
-import Page from "../../comps/Page/Page.tsx";
+import Form from "../../comps/general_UI/Form/Form.tsx";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 export default function ConsecSum() {
   // Current value

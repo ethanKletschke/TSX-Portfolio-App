@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useToast } from "../../systems/toast/toast.context";
+import { useToast } from "../../../systems/toast/toast.context";
 import styles from "./Dialogs.module.css";
 
 type ConfirmBoxProps = {

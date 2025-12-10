@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Form from "../../comps/Form/Form";
-import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn";
+import Form from "../../comps/general_UI/Form/Form";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
 import numeronym from "../../funcs/numeronym";
-import Page from "../../comps/Page/Page";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 export default function Numeronyms() {
   // State
