@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useToast } from "../../systems/toast/toast.context";
 import styles from "./Dialogs.module.css";
 
 type ConfirmBoxProps = {
@@ -9,6 +10,8 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const openBtnRef = useRef<HTMLButtonElement>(null);
   const confirmBtnRef = useRef<HTMLButtonElement>(null);
+
+  const { addToast } = useToast();
 
   // Open dialog
   const openDialog = () => {
@@ -23,8 +26,10 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
   const handleConfirm = () => {
     // Close the dialog with the return value "Confirmed"
     dialogRef.current?.close("Confirmed");
-    // Displays an alert to show the user that something happened
-    alert("Confirmed!");
+    
+    // Displays a toast to show the user that something happened
+    addToast("Confirmed!", { variant: "success" })
+    
     // Log the return value ("Confirmed").
     console.debug(dialogRef.current?.returnValue);
   };
@@ -33,8 +38,8 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
   const handleDecline = () => {
     // Close the dialog with the return value "Denied"
     dialogRef.current?.close("Denied");
-    // Displays an alert to show the user that something happened
-    alert(dialogRef.current?.returnValue + "!");
+    // Displays a toast to show the user that something happened
+    addToast("Declined!", { variant: "error" });
     // Log the return value ("Denied").
     console.debug(dialogRef.current?.returnValue);
   }

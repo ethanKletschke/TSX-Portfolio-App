@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.4.1`
+- Version: `2.5.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -57,6 +57,7 @@ README.
 
 - Comprehensive styling via CSS
 - User interface made up almost entirely of custom components
+- A "toast system" for small, brief site notifications
 - Mocha testing
 
 ### Planned Features
@@ -174,7 +175,7 @@ Example of output for `internationalisation`:
 _Idea Credit: My hilariously slow phone_
 
 A simple page that just takes a word and builds a new string where each 
-character is repeated up to its index in the word.  
+word's character is repeated up to its index in the word.  
 For example, `hey there buddy` will become `hheheytththethertherebbubudbuddbuddy`.
 
 Example of Output:

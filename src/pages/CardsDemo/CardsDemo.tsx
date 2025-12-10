@@ -2,10 +2,12 @@ import Page from "../../comps/Page/Page.tsx";
 import Card from "../../comps/Card/Card.tsx";
 import CardGrid from "../../comps/CardGrid/CardGrid.tsx";
 import GoHomeBtn from "../../comps/GoHomeBtn/GoHomeBtn.tsx";
+import WorkInProg from "../../comps/WorkInProg/WorkInProg.tsx";
 
 export default function CardsDemo() {
   return (
     <Page headerText="Cards Demo">
+      <WorkInProg />
       <section>
         <h2>Basic Cards</h2>
 
