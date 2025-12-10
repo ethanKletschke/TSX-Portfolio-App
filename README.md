@@ -57,6 +57,7 @@ README.
 
 - Comprehensive styling via CSS
 - User interface made up almost entirely of custom components
+- A "toast system" for small, brief site notifications
 - Mocha testing
 
 ### Planned Features
