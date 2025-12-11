@@ -3,7 +3,6 @@ import CardGrid from "../../comps/cards/CardGrid/CardGrid.tsx";
 import UserCard from "../../comps/cards/UserCard/UserCard.tsx";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import Page from "../../comps/general_UI/layout/Page/Page.tsx";
-import WorkInProg from "../../comps/general_UI/WorkInProg/WorkInProg.tsx";
 
 interface UserCardObj {
   username: string;
@@ -27,7 +26,6 @@ export default function CardsDemo() {
 
   return (
     <Page headerText="Cards Demo">
-      <WorkInProg />
       <section>
         <h2>Basic Cards</h2>
 
