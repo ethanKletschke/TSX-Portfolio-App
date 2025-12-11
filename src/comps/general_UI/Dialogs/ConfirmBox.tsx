@@ -38,8 +38,10 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
   const handleDecline = () => {
     // Close the dialog with the return value "Denied"
     dialogRef.current?.close("Denied");
+
     // Displays a toast to show the user that something happened
     addToast("Declined!", { variant: "error" });
+    
     // Log the return value ("Denied").
     console.debug(dialogRef.current?.returnValue);
   }
@@ -58,7 +60,7 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
         onClick={openDialog}
         ref={openBtnRef}
       >
-        Open Confirm Modal
+        Open Confirmation Modal
       </button>
 
       <dialog
