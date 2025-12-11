@@ -11,9 +11,16 @@ export default function FormBox() {
 
   // Dialog element Ref
   const dialogRef = useRef<HTMLDialogElement>(null);
+  // FirstName Input Ref
+  const firstNameInputRef = useRef<HTMLInputElement>(null);
 
+  // Opens the form dialog box
   const openDialog = () => {
+    // Show the form dialog as a modal
     dialogRef.current?.showModal();
+
+    // Focus on the firstName input.
+    firstNameInputRef.current?.focus();
   };
 
   const closeFormDialog = () => {
@@ -21,10 +28,30 @@ export default function FormBox() {
     dialogRef.current?.close("Form dialog closed.");
   };
 
+  // Sets the value of fname.
+  const handleFnameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFname(e.target.value);
+  };
+  
+  // Sets the value of lname.
+  const handleLnameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLname(e.target.value);
+  };
+
+  // Sets the value of email.
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  // Sets the value of feedback.
+  const handleFeedbackChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setFeedback(e.target.value);
+  };
+
   const handleSubmit = () => {
     // No preventDefault() was used. This allows the dialog to close on submit.
     // Alert the user on submit
-    window.alert(`Feedback Submitted!\nName: ${fname} ${lname}\nEmail: ${email || "Not Specified"}`);
+    window.alert(`Feedback Submitted!\nName: ${fname} ${lname}\nEmail: ${email || "Not specified"}`);
 
     // Reset the values to clear the inputs when the form is submitted
     setFname("");
@@ -68,8 +95,9 @@ export default function FormBox() {
             <input
               id="fname"
               name="fname"
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFname(e.target.value)}
+              onChange={handleFnameChange}
               placeholder="First name..."
+              ref={firstNameInputRef}
               required
               type="text"
               value={fname || ""}
@@ -80,7 +108,7 @@ export default function FormBox() {
             <input
               id="lname"
               name="lname"
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setLname(e.target.value)}
+              onChange={handleLnameChange}
               placeholder="Last name..."
               required
               type="text"
@@ -90,9 +118,10 @@ export default function FormBox() {
             {/* Email input */}
             <label htmlFor="email">Email Address (optional)</label>
             <input
+              autoComplete="email"
               id="email"
               name="email"
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+              onChange={handleEmailChange}
               placeholder="Email..."
               type="email"
               value={email || ""}
@@ -103,7 +132,7 @@ export default function FormBox() {
             <textarea
               id="feedback"
               name="feedback"
-              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setFeedback(e.target.value)}
+              onChange={handleFeedbackChange}
               placeholder="Feedback..."
               required
               value={feedback || ""}
