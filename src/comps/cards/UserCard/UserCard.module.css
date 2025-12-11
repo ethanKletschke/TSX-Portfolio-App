@@ -1,0 +1,27 @@
+/* Actual card (wrapper div) */
+.userCard {
+  width: 90%;
+  border: 2pt solid var(--dblue);
+  text-align: center;
+}
+
+.userCard > img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 1pt solid var(--dblue);
+}
+
+.userCard > .textSection {
+  padding: 1em;
+}
+
+.userCard .display-name {
+  font-size: 1.5em;
+  color: var(--dblue);
+}
+
+.userCard .username {
+  font-size: 0.9em;
+  color: grey;
+}
