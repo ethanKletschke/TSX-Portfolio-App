@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.5.1`
+- Version: `2.6.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -65,7 +65,6 @@ README.
 ### Planned Features
 
 - Full Jest testing
-- Page demonstrating different types of cards
 - A page with a styled &lt;select&gt; element (combo box)
 - An advanced modal example demonstrating the use of `forwardRef()`.
 
