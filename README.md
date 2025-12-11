@@ -7,6 +7,8 @@ A TypeScript React app used as my portfolio.
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
+    - Please let me know about any styling abnormalities
+      on Webkit browsers (Especially Safari)
 - Technologies used:
   - NPM
   - Node.js
