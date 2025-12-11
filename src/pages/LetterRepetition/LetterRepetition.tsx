@@ -23,10 +23,6 @@ export default function LetterRepetition() {
     // Prevent form submission from refreshing the page.
     e.preventDefault();
 
-    // Debug output
-    console.debug("Submitted Letter Repetition.");
-    console.debug(`String submitted: ${input}`);
-
     // Repeat the letters as per the input from the user
     const temp = doubleLetters(input);
 
@@ -38,9 +34,6 @@ export default function LetterRepetition() {
       // full output
       setResult(temp);
     }
-
-    // Debug output for the result
-    console.debug(`Repeated version: ${result}`);
   };
 
   return (

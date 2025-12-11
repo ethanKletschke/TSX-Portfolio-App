@@ -29,9 +29,6 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
     
     // Displays a toast to show the user that something happened
     addToast("Confirmed!", { variant: "success" })
-    
-    // Log the return value ("Confirmed").
-    console.debug(dialogRef.current?.returnValue);
   };
 
   // Decline button click handler
@@ -41,9 +38,6 @@ export default function ConfirmBox({ children }: ConfirmBoxProps) {
 
     // Displays a toast to show the user that something happened
     addToast("Declined!", { variant: "error" });
-    
-    // Log the return value ("Denied").
-    console.debug(dialogRef.current?.returnValue);
   }
 
   const handleClose = () => {
