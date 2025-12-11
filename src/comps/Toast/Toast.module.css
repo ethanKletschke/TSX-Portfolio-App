@@ -14,7 +14,7 @@
 }
 
 .toast.info {
-  background-color: lightskyblue;
+  background-color: #1e8dd2;
   color: var(--black);
 }
 

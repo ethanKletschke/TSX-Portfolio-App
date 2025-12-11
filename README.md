@@ -3,10 +3,12 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.5.0`
+- Version: `2.5.1`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
+    - Please let me know about any styling abnormalities
+      on Webkit browsers (Especially Safari)
 - Technologies used:
   - NPM
   - Node.js
