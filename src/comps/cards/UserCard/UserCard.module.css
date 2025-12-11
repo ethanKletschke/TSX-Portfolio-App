@@ -7,17 +7,21 @@
 
 .userCard > img {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: auto;
   border: 1pt solid var(--dblue);
 }
 
-.userCard > .display-name {
+.userCard > .textSection {
+  padding: 1em;
+}
+
+.userCard .display-name {
   font-size: 1.5em;
   color: var(--dblue);
 }
 
-.userCard > .username {
+.userCard .username {
   font-size: 0.9em;
   color: grey;
 }

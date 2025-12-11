@@ -1,10 +1,30 @@
-import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 import Card from "../../comps/cards/Card/Card.tsx";
 import CardGrid from "../../comps/cards/CardGrid/CardGrid.tsx";
+import UserCard from "../../comps/cards/UserCard/UserCard.tsx";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 import WorkInProg from "../../comps/general_UI/WorkInProg/WorkInProg.tsx";
 
+interface UserCardObj {
+  username: string;
+  displayName: string;
+  imgSrc: string;
+}
+
 export default function CardsDemo() {
+  const userCards: UserCardObj[] = [
+    {
+      username: "anon_129099801",
+      displayName: "Anonymous",
+      imgSrc: "/AnonPFP.png"
+    },
+    {
+      username: "ethanKletschke",
+      displayName: "Ethan K.",
+      imgSrc: "/EthanPFP.jpg"
+    }
+  ];
+
   return (
     <Page headerText="Cards Demo">
       <WorkInProg />
@@ -54,12 +74,23 @@ export default function CardsDemo() {
       </section>
 
       <hr />
-{/* 
+
       <section>
         <h2>User Cards</h2>
+
+        <CardGrid>
+          {userCards.map((card, index) => (
+            <UserCard 
+              key={index} 
+              username={card.username} 
+              displayName={card.displayName} 
+              imgSrc={card.imgSrc}
+            />
+          ))}
+        </CardGrid>
       </section>
 
-      <hr /> */}
+      <hr />
 
       <GoHomeBtn />
     </Page>

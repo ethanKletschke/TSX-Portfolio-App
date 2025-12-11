@@ -21,8 +21,10 @@ export default function UserCard({ username, displayName, imgSrc }: UserCardProp
     <div className={styles.userCard}>
       <img src={imgSrc} alt={`${displayName}'s profile picture`} />
 
-      <p className={styles["display-name"]}>{displayName}</p>
-      <p className={styles["username"]}>@{username}</p>
+      <div className={styles.textSection}>
+        <p className={styles["display-name"]}>{displayName}</p>
+        <p className={styles["username"]}>@{username}</p>
+      </div>
     </div>
   );
 }
