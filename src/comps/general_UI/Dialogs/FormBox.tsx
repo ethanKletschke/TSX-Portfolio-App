@@ -14,14 +14,11 @@ export default function FormBox() {
 
   const openDialog = () => {
     dialogRef.current?.showModal();
-    console.debug("Form dialog opened.");
   };
 
   const closeFormDialog = () => {
     // Set the return value of the dialog and close it
     dialogRef.current?.close("Form dialog closed.");
-    // Log the return value.
-    console.debug(dialogRef.current?.returnValue);
   };
 
   const handleSubmit = () => {
@@ -34,11 +31,6 @@ export default function FormBox() {
     setLname("");
     setEmail("");
     setFeedback("");
-
-    console.debug(`First name: ${fname}`);
-    console.debug(`Last name: ${lname}`);
-    console.debug(`Email: ${email || "[nothing]"}`);
-    console.debug(`Feedback: ${feedback}`);
   };
 
   return (
@@ -49,7 +41,6 @@ export default function FormBox() {
       <button
         aria-label="Open feedback form dialog"
         onClick={openDialog}
-        role="button"
         type="button"
       >
         Open Form Dialog
@@ -57,7 +48,6 @@ export default function FormBox() {
 
       {/* Form Dialog Box */}
       <dialog
-        aria-modal="true"
         className={styles.formBox}
         onClose={closeFormDialog}
         ref={dialogRef}

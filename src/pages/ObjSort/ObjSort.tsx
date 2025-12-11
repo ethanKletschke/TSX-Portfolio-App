@@ -81,7 +81,6 @@ export default function ObjSort() {
 
   const handleSortByChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setToSortBy(e.target.value as FieldsToSortBy);
-    console.debug(e.target.value);
   };
 
   // Submit event handler
@@ -97,7 +96,6 @@ export default function ObjSort() {
     if (objs.length === 0) {
       toOutput = "No people were made yet!";
     } else {
-      console.debug(toSortBy);
       // Sort the array of objects with my own function
       const sorted = sortObject(objs, (toSortBy as FieldsToSortBy));
 
