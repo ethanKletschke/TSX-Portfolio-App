@@ -1,24 +1,28 @@
-import type { FormEventHandler } from "react";
+import type { FormEventHandler, ReactNode } from "react";
 import styles from "./Form.module.css";
 
 type FormProps = {
   // The form onSubmit handler
   submitHandler?: FormEventHandler<HTMLFormElement>;
   // The child elements of the component, i.e. the form controls.
-  children: React.ReactNode;
+  children: ReactNode;
   dialog?: boolean; // Is the form in a dialog?
 };
 
 export default function Form({ submitHandler, children, dialog }: FormProps) {
   // Default form submit handler if one isn't supplied
   const defaultHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Prevent page refresh on submit
     e.preventDefault();
   };
   
   return (
     <form 
+      // Prevents autocomplete by default.
       autoComplete="off"
       className={styles.form}
+      // Determines the method of the form. If it's a dialog,
+      // it will allow the form to close the dialog on submit.
       method={(dialog) ? "dialog" : "get"}
       onSubmit={submitHandler || defaultHandleSubmit}
     >
