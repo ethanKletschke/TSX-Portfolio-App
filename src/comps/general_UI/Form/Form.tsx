@@ -18,6 +18,7 @@ export default function Form({ submitHandler, children, dialog }: FormProps) {
   
   return (
     <form 
+      // Prevents autocomplete by default.
       autoComplete="off"
       className={styles.form}
       // Determines the method of the form. If it's a dialog,
