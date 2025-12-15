@@ -10,7 +10,7 @@
 .confirmBox,
 .formBox {
   margin: auto;
-  width: 30%;
+  width: 60%;
   padding: 2em;
   border: 2pt solid var(--mainColour);
   box-shadow: 10px 10px 10px var(--black);
