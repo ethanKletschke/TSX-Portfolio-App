@@ -1,5 +1,6 @@
 /* The actual go-home button */
 .btn {
+  transition-duration: 0.3s;
   border: none;
   border-radius: 0.3em;
   padding: 1em;

@@ -105,13 +105,13 @@ For the heavily tested "dev" version:
 
 1. Run `npm run dev` via a terminal in the project folder. This will run Vite's 
    development server in the terminal.
-2. Type `O` and press enter to open the app in your browser.
+2. Type `o` and press enter to open the app in your browser.
 
 For the seemingly identical production version:
 
 1. Run `npm run build` to build the production version of the app.
 2. Run `npm run preview` to run the built production app.
-3. Type `O` and press enter.
+3. Type `o` and press enter.
 
 I suggest just running the dev server, because this is quicker and easier to do.
 
