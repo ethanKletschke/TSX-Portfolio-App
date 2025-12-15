@@ -29,7 +29,6 @@ export default function CardsDemo() {
 
   return (
     <Page headerText="Cards Demo">
-      {/* TODO -> Add className to the <section> elements in order to center every <h2> */}
       <section className={styles.section}>
         <h2>Basic Cards</h2>
 
