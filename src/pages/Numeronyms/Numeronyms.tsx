@@ -6,7 +6,6 @@ import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 export default function Numeronyms() {
   // State
-  // TODO -> Rename to "acronym" and "setAcronym"
   const [acronym, setAcronym] = useState<string>(""); // Input from user
   const [out, setOut] = useState<string>(""); // output string
 
