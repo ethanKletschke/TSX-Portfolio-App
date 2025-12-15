@@ -40,4 +40,18 @@ describe("numeronym()", function () {
       expect(numeronym(test[0])).to.equal(test[1], "Should generate a correct numeronym");
     });
   });
+
+  it("Only makes a numeric acronym from the first letter up to the first whitespace", function () {
+    const tests: TestTuple[] = [
+      ["Hello", "h3o"],
+      ["hello there", "h3o"],
+      ["My name is tom", "my"],
+      ["Cinderella", "c8a"],
+      ["Cinderella slippers", "c8a"]
+    ];
+
+    tests.forEach(test => {
+      expect(numeronym(test[0])).to.equal(test[1], "Should skip the letters after the first whitespace");
+    })
+  });
 });

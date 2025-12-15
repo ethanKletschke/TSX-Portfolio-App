@@ -1,18 +1,19 @@
 export default function numeronym(word: string): string {
+  // stores only the first word entered up to the first whitespace or to the end of the string
+  let temp = word.slice(0, word.match(/\s/)?.index || word.length);
+
   // If the word only contains 2 or less characters
-  if (word.length <= 2) {
+  if (temp.length <= 2) {
     // Return the word as-is.
-    return word;
+    return temp.toLowerCase();
   }
 
   let result = "";
-  // stores only the first word entered up to the first whitespace.
-  let temp = word.slice(0, word.match(/\s/)?.index);
 
   // Build the numeric acronym
   result = temp.charAt(0); // Append the first letter
   result += String(temp.length - 2); // Count of every letter in between
-  result += temp.charAt(word.length - 1); // Last letter
+  result += temp.charAt(temp.length - 1); // Last letter
 
   // Convert to all lowercase and return the acronym.
   return result.toLowerCase();
