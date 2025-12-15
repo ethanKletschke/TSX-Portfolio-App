@@ -18,7 +18,7 @@ export default function CardsDemo() {
     {
       username: "anon_129099801",
       displayName: "Anonymous",
-      imgSrc: "/AnonPFP.png"
+      imgSrc: "/AnonPFP.jpg"
     },
     {
       username: "ethanKletschke",
