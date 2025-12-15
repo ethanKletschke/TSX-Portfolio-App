@@ -1,9 +1,11 @@
 import type { DefaultCardProps } from "../../../props/DefaultCardProps";
 import styles from "./ContentsTableCard.module.css";
 
-// TODO -> Remove "Omit" and define own card props for readability.
-// Define own DefaultCardProps without children JSX
-type ContentsTableCardProps = Omit<DefaultCardProps, "children">;
+type ContentsTableCardProps = {
+  title: string;
+  icon: string;
+  subtitle: string;
+};
 
 // A single grid card on the table of contents page
 export default function ContentsTableCard({ title, icon, subtitle }: ContentsTableCardProps) {
