@@ -1,4 +1,3 @@
-import type { DefaultCardProps } from "../../../props/DefaultCardProps";
 import styles from "./ContentsTableCard.module.css";
 
 type ContentsTableCardProps = {
