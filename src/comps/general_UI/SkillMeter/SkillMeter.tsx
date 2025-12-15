@@ -39,6 +39,7 @@ export default function SkillMeter({ value, lblText, htmlID }: SkillMeterProps) 
         {lblText}
       </label>
 
+      {/* Meter bar */}
       <meter
         className={styles.mtr}
         id={htmlID + "-meter"}
@@ -50,6 +51,7 @@ export default function SkillMeter({ value, lblText, htmlID }: SkillMeterProps) 
         {/* e.g. 45% */}
         {value}%
       </meter>
+      {/* Confidence level and percentage value. E.g.: Need to (re)learn (5%) */}
       <span className={styles.mtrLabel}>{mtrMsg || ""} ({value}%)</span>
     </div>
   );

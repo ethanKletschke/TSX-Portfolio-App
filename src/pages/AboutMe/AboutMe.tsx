@@ -8,18 +8,18 @@ export default function AboutMe() {
   const age = (birthDate: Date): number => {
     const today = new Date();
 
-    // Get the approx. age
+    // Get my approximate age
     let age = today.getFullYear() - birthDate.getFullYear();
 
-    // Check if the birthday has passed
+    // Check if my birthday has passed
     const hasHadBirthdayThisYear =
       today.getMonth() > birthDate.getMonth() ||
       (today.getMonth() === birthDate.getMonth() &&
         today.getDate() >= birthDate.getDate());
 
-    // If the birthday hasn't passed
+    // If my birthday hasn't passed
     if (!hasHadBirthdayThisYear) {
-      // Subtract 1
+      // Subtract 1 from my age 
       age--;
     }
     

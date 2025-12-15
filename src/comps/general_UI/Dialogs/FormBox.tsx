@@ -143,6 +143,7 @@ export default function FormBox() {
           <input type="submit" value="Submit" />
 
           {/* Cancel button */}
+          {/* TODO -> Convert into a normal <button> */}
           <input
             onClick={() => dialogRef.current?.close("User cancelled the dialog")}
             type="button"

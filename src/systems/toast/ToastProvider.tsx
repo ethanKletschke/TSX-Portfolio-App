@@ -69,12 +69,17 @@ export function ToastProvider({ children }: ToastProviderProps) {
 
   return (
     <ToastContext.Provider value={{ addToast, removeToast, toasts }}>
+      {/* Represents the <App> component. */}
       {children}
       
+      {/* The toast portal */}
       <ToastPortal>
+        {/* Toast container element */}
         <div className={styles.toastRoot}>
           {toasts.map((toast, index) => (
+            // Wrapper span enabling clicking to hide the toast
             <span key={index} onClick={() => removeToast(toast.id)}>
+              {/* Toast component */}
               <Toast key={toast.id} message={toast.message} variant={toast.variant} />
             </span>
           ))}

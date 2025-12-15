@@ -4,6 +4,7 @@ import UserCard from "../../comps/cards/UserCard/UserCard.tsx";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
+// A single user card represented as an object.
 interface UserCardObj {
   username: string;
   displayName: string;
@@ -11,6 +12,7 @@ interface UserCardObj {
 }
 
 export default function CardsDemo() {
+  // The user cards to display
   const userCards: UserCardObj[] = [
     {
       username: "anon_129099801",
@@ -26,9 +28,11 @@ export default function CardsDemo() {
 
   return (
     <Page headerText="Cards Demo">
+      {/* TODO -> Add className to the <section> elements in order to center every <h2> */}
       <section>
         <h2>Basic Cards</h2>
 
+        {/* Basic cards */}
         <CardGrid>
           <Card
             title="Paris"

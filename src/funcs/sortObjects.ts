@@ -1,8 +1,8 @@
 // Credit: https://chatgpt.com/s/t_68ac09182a6c8191b1ff20515e426fea
 export default function sortObjects<T, K extends keyof T>(
-  objs: T[],
-  prop: K,
-  desc: boolean = false
+  objs: T[], // the array to sort.
+  prop: K, // The property to sort by
+  desc: boolean = false // Sort in descending order?
 ): T[] {
   if (objs.length === 0) {
     return objs;

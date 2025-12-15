@@ -1,9 +1,11 @@
+/* Dialog component wrapper */
 .dialogDiv {
   border: 1pt solid;
   padding: 1em;
   margin: 1em 0;
 }
 
+/* Styling for all 3 dialog boxes */
 .alertBox,
 .confirmBox,
 .formBox {
@@ -20,6 +22,7 @@
   padding: 0.4em 0;
 }
 
+/* The backdrop for the dialogs */
 .alertBox::backdrop,
 .confirmBox::backdrop,
 .formBox::backdrop {
@@ -40,6 +43,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hovering over buttons within the dialog wrapper */
 .dialogDiv button:hover {
   color: var(--mainColour);
   background-color:  var(--dblue);

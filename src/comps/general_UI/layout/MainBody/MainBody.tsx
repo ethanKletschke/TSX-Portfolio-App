@@ -1,6 +1,7 @@
 import styles from "./MainBody.module.css";
 
 type MainBodyProps = {
+  // TODO -> Import "ReactNode" instead.
   children: React.ReactNode;
 };
 

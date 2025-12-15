@@ -1,3 +1,5 @@
+/* TODO -> change --black to --dblue across the entire file. */
+/* Button wrapper div */
 .btnWrap {
   display: flex;
 }
@@ -12,6 +14,7 @@
   color: var(--black);
   padding: 0.5em;
   cursor: pointer;
+  /* TODO -> Change to custom font */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,6 +27,8 @@
   border-right: 1pt solid; 
 }
 
+/* On smaller screens */
+/* TODO -> Change to 720px */
 @media screen and (max-width: 600px) {
   .btnWrap {
     flex-direction: column;

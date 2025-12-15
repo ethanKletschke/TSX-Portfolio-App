@@ -6,9 +6,12 @@ export default function Stopwatch() {
   const animFrameRef = useRef<number>(null);
   const elapsedBeforePauseRef = useRef<number>(0);
 
+  // The current time.
   const [now, setNow] = useState<number>(Date.now());
+  // Is the stopwatch running?
   const [isRunning, setIsRunning] = useState<boolean>(false);
-  const [logs, setLogs] = useState<string[]>([]);
+  // The laps.
+  const [logs, setLogs] = useState<string[]>([]); // TODO -> Rename to "laps"
 
   // Unmount cleanup
   useEffect(() => {

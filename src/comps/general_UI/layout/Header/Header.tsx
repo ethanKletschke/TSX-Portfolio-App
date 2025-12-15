@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 
 type HeaderProps = {
+  // TODO -> Change to "ReactNode"
   children: string; // The inner text of the element
 };
 

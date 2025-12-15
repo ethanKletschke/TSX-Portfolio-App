@@ -1,12 +1,12 @@
 .heading {
-  color: var(--black); /* from "index.css" */
-  background-color: var(--mainColour); /* From "index.css" */
+  color: var(--black);
+  background-color: var(--mainColour);
   padding: 1.5em;
   text-align: center;
   margin-bottom: 1em;
 }
 
 .heading > h1 {
-  font-weight: 800; /* Bolder font */
+  font-weight: 800;
   text-decoration: underline;
 }

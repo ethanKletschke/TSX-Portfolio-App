@@ -1,9 +1,17 @@
+/* Container element for the toasts */
 .toastRoot {
+  /* Fixed position on bottom right of the page. */
   position: fixed;
   bottom: 1em;
   right: 1em;
+
+  /* Flex display */
   display: flex;
   flex-direction: column;
+
+  /* Gap between toasts */
   gap: 0.5em;
+  
+  /* Allows the toast to appear over every other element */
   z-index: 9999;
 }

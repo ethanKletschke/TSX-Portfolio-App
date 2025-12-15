@@ -15,6 +15,7 @@ import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
 
 export default function App() {
   return (
+    // The different routes to the app's pages.
     <Routes>
       {/* Index Route */}
       <Route path="/" element={<Home />} />
