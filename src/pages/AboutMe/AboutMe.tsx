@@ -116,6 +116,21 @@ export default function AboutMe() {
         </article>
       </section>
 
+      <hr />
+
+      <section className={styles["body-section"]}>
+        <header>
+          <h2>Contacting Me</h2>
+        </header>
+        <article>
+          <ul>
+            <li><a href="mailto:ethankletschke@outlook.com">Email Me (ethankletschke@outlook.com)</a></li>
+            <li><a href="https://github.com/ethanKletschke">My GitHub</a></li>
+            <li>WhatsApp (text only): +27 71 131 0453</li>
+          </ul>
+        </article>
+      </section>
+
       <GoHomeBtn />
     </Page>
   );
