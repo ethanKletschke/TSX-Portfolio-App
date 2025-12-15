@@ -18,7 +18,6 @@
   color: var(--dblue);
 }
 
-/* TODO -> Finish styling. */
 .contentCard .subtitle {
-  
+  font-style: italic;
 }

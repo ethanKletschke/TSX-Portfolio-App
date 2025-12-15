@@ -3,6 +3,7 @@ import CardGrid from "../../comps/cards/CardGrid/CardGrid.tsx";
 import UserCard from "../../comps/cards/UserCard/UserCard.tsx";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import Page from "../../comps/general_UI/layout/Page/Page.tsx";
+import styles from "./CardsDemo.module.css";
 
 // A single user card represented as an object.
 interface UserCardObj {
@@ -28,8 +29,7 @@ export default function CardsDemo() {
 
   return (
     <Page headerText="Cards Demo">
-      {/* TODO -> Add className to the <section> elements in order to center every <h2> */}
-      <section>
+      <section className={styles.section}>
         <h2>Basic Cards</h2>
 
         {/* Basic cards */}
@@ -77,7 +77,7 @@ export default function CardsDemo() {
 
       <hr />
 
-      <section>
+      <section className={styles.section}>
         <h2>User Cards</h2>
 
         <CardGrid>
