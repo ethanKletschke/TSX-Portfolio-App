@@ -14,3 +14,7 @@
   /* Full-width footer */
   width: 100%;
 }
+
+.foot > .version {
+  font-size: 0.7em;
+}
