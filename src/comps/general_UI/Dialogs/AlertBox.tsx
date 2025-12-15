@@ -33,7 +33,7 @@ export default function AlertBox({ children, alertTitle }: AlertBoxProps) {
     openBtnRef.current?.focus();
 
     // Display a toast to show that something did happen when clicking "OK"
-    addToast("Confirmed!", { variant: "success" });
+    addToast("Confirmed!", { variant: "info" });
   };
 
   return (

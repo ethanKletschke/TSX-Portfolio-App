@@ -1,4 +1,10 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .contentsTable {
+  padding: 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -7,6 +13,8 @@
   align-items: stretch;
   justify-items: stretch;
   justify-content: stretch;
+
+  grid-auto-rows: 1fr;
 }
 
 .contentsTable * {

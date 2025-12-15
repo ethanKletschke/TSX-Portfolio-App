@@ -7,7 +7,7 @@ import styles from "./DiceRoll.module.css";
 // Dice roll page
 export default function DiceRoll() {
   // Source of the die face image
-  const [imgSrc, setImgSrc] = useState<string>("DiceQuestion.png");
+  const [imgSrc, setImgSrc] = useState<string>("DiceQuestion.webp");
   // Die roll log
   const [log, setLog] = useState<string>("");
   // Number of rolls
@@ -35,7 +35,7 @@ export default function DiceRoll() {
     setLog(`Die Roll #${newRollCount}: ${dieRoll}\n\nTotal: ${newTotal}\nAverage: ${newAverage.toFixed(2)}\n`);
 
     // Set the image to display the corresponding die roll.
-    setImgSrc(`Dice${dieRoll || "Question"}.png`);
+    setImgSrc(`Dice${dieRoll || "Question"}.webp`);
   };
 
   // Refreshes the values of the dice rolls
@@ -47,14 +47,14 @@ export default function DiceRoll() {
     setLog("Refreshed Values!");
 
     // Set the die face image to the initial state (die face with question mark).
-    setImgSrc("DiceQuestion.png");
+    setImgSrc("DiceQuestion.webp");
   };
 
   return (
     <Page headerText="Dice Rolling">
       {/* Dice Image */}
       <img
-        src={imgSrc || "DiceQuestion.png"}
+        src={imgSrc || "DiceQuestion.webp"}
         alt="Die Face"
         className={styles.dieImg}
       />
