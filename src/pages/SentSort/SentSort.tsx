@@ -1,7 +1,6 @@
 import { useState } from "react";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import sortString from "../../funcs/sortString.ts";
-import styles from "./SentSort.module.css";
 import Form from "../../comps/general_UI/Form/Form.tsx";
 import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
@@ -26,12 +25,6 @@ export default function SentSort() {
 
   return (
     <Page headerText="Sort a Sentence">
-      <img
-        src="/Sort.webp"
-        alt="Image of someone sorting similar shapes together"
-        className={styles.img}
-      />
-
       <Form submitHandler={handleSubmit}>
         {/* Sentence Input */}
         <fieldset>
