@@ -61,7 +61,6 @@ export default function ObjSort() {
   const handleCreateClick = () => {
     // If any input is empty
     if (id === "" || fname === "" || lname === "") {
-      // TODO -> Replace with toast
       // Alert the user that they're missing input
       addToast("Field(s) missing.", { variant: "error" });
 
@@ -128,8 +127,7 @@ export default function ObjSort() {
           <legend>Create Object</legend>
 
           <label htmlFor="personId">
-            {/* TODO -> Change to "ID Number (3-digits)" */}
-            ID (3-digits)
+            ID Number (3-digits)
           </label>
           <input
             id="personId"
