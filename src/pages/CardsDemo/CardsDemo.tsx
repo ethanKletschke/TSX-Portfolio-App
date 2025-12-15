@@ -18,12 +18,12 @@ export default function CardsDemo() {
     {
       username: "anon_129099801",
       displayName: "Anonymous",
-      imgSrc: "/AnonPFP.jpg"
+      imgSrc: "/AnonPFP.webp"
     },
     {
       username: "ethanKletschke",
       displayName: "Ethan K.",
-      imgSrc: "/EthanPFP.jpg"
+      imgSrc: "/EthanPFP.webp"
     }
   ];
 
@@ -38,7 +38,7 @@ export default function CardsDemo() {
             title="Paris"
             footerText="Come to Paris today!"
             imgCaption="The Eiffel Tower"
-            imgSrc="/Eiffel.png"
+            imgSrc="/Eiffel.webp"
           >
             <p> 
               Paris is the capital (and most well-known) city in
@@ -51,7 +51,7 @@ export default function CardsDemo() {
             title="Moscow"
             footerText="Come to Moscow today!"
             imgCaption="Saint Basil's Cathedral in Moscow"
-            imgSrc="/Moscow.jpg"
+            imgSrc="/Moscow.webp"
           >
             <p>
               Moscow is the capital city of Russia. The Saint Basil's Cathedral
@@ -64,7 +64,7 @@ export default function CardsDemo() {
             title="New York City"
             footerText="Come to New York today!"
             imgCaption="Statue of Liberty"
-            imgSrc="/Liberty.png"
+            imgSrc="/Liberty.webp"
           >
             <p>
               New York City is a major city in the USA. It is home to the 

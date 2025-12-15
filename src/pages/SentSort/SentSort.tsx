@@ -27,7 +27,7 @@ export default function SentSort() {
   return (
     <Page headerText="Sort a Sentence">
       <img
-        src="/Sort.png"
+        src="/Sort.webp"
         alt="Image of someone sorting similar shapes together"
         className={styles.img}
       />

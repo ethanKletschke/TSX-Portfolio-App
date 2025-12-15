@@ -22,7 +22,7 @@ export default function EmailValidate() {
 
   return (
     <Page headerText="Validate Email">
-      <img src="/Mail.png" alt="Mail logo" className={styles.mailImg} />
+      <img src="/Mail.webp" alt="Mail logo" className={styles.mailImg} />
 
       <Form submitHandler={handleSubmit}>
         <label htmlFor="email-addr">Enter Email Below:</label>
