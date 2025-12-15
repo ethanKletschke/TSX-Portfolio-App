@@ -11,7 +11,7 @@ export default function Stopwatch() {
   // Is the stopwatch running?
   const [isRunning, setIsRunning] = useState<boolean>(false);
   // The laps.
-  const [laps, setLaps] = useState<string[]>([]); // TODO -> Rename to "laps"
+  const [laps, setLaps] = useState<string[]>([]);
 
   // Unmount cleanup
   useEffect(() => {
