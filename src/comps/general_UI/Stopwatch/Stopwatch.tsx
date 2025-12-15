@@ -11,7 +11,7 @@ export default function Stopwatch() {
   // Is the stopwatch running?
   const [isRunning, setIsRunning] = useState<boolean>(false);
   // The laps.
-  const [logs, setLogs] = useState<string[]>([]); // TODO -> Rename to "laps"
+  const [laps, setLaps] = useState<string[]>([]); // TODO -> Rename to "laps"
 
   // Unmount cleanup
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function Stopwatch() {
       return;
 
     // Store the log. This will also append it to the list.
-    setLogs(prev => [...prev, timeElapsed.toFixed(2)])
+    setLaps(prev => [...prev, timeElapsed.toFixed(2)])
 
     // Log the current elapsed time 
     console.log(timeElapsed.toFixed(2));
@@ -92,7 +92,7 @@ export default function Stopwatch() {
     elapsedBeforePauseRef.current = 0;
 
     setNow(Date.now());
-    setLogs([]); // Empty the logs
+    setLaps([]); // Empty the laps
   };
 
   return (
@@ -112,7 +112,7 @@ export default function Stopwatch() {
       <h3>Log</h3>
 
       <ul className={styles.stopwatchLogs}>
-        {logs.map((log, logIndex) => (
+        {laps.map((log, logIndex) => (
           <li key={logIndex}>
             {/* e.g.: Lap 1: 6.00s */}
             Lap {logIndex + 1}: {log}s
