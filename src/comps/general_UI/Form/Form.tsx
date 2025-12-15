@@ -14,11 +14,6 @@ export default function Form({ submitHandler, children, dialog }: FormProps) {
   // Default form submit handler if one isn't supplied
   const defaultHandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Prevent page refresh on submit
-    /* TODO -> Check if needed. 
-      This could interfere with dialog forms if the component isn't 
-      used properly, i.e. "dialog" is true but no submit handler is 
-      added.
-    */
     e.preventDefault();
   };
   
