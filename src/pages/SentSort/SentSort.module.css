@@ -3,7 +3,7 @@
   /* Center the image */
   margin: auto;
   display: block;
-  max-width: 100%;
+  width: 60%;
 
   /* Give it rounded borders */
   border: none;
