@@ -7,19 +7,19 @@ import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 export default function Numeronyms() {
   // State
   // TODO -> Rename to "acronym" and "setAcronym"
-  const [numeronymInput, setNumeronym] = useState<string>(""); // Input from user
+  const [acronym, setAcronym] = useState<string>(""); // Input from user
   const [out, setOut] = useState<string>(""); // output string
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Set the numeric acronym input
-    setNumeronym(e.target.value);
+    setAcronym(e.target.value);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Set the output to the numeric acronym of the user's input
-    setOut(numeronym(numeronymInput));
+    setOut(numeronym(acronym));
   };
 
   return (
@@ -34,7 +34,7 @@ export default function Numeronyms() {
             type="text"
             name="numeronym-in"
             id="numeronym-in"
-            value={numeronymInput}
+            value={acronym}
             onChange={handleChange}
             minLength={3}
           />
