@@ -1,18 +1,13 @@
+import type { ReactNode } from "react";
 import styles from "./Header.module.css";
 
 type HeaderProps = {
-  // TODO -> Change to "ReactNode"
-  children: string; // The inner text of the element
+  children: ReactNode; // The inner text of the element
 };
 
-export default function Header({ children /* Inner Header Text */ }: HeaderProps) {
+export default function Header({ children }: HeaderProps) {
   return (
     <header className={styles.heading}>
-      {/* Allows for a syntax like:
-        <Header>
-          Header Text!
-        </Header>
-      */}
       <h1>{children}</h1>
     </header>
   );
