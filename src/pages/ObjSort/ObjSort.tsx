@@ -3,6 +3,7 @@ import Form from "../../comps/general_UI/Form/Form.tsx";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
 import sortObject from "../../funcs/sortObjects.ts";
 import Page from "../../comps/general_UI/layout/Page/Page.tsx";
+import { useToast } from "../../systems/toast/toast.context.tsx";
 
 // Object Sorting Component
 export default function ObjSort() {
@@ -43,6 +44,8 @@ export default function ObjSort() {
   // A string representation of the previously made object
   const [previousObj, setPreviousObj] = useState<string>("");
 
+  const { addToast } = useToast();
+
   const handleIdChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setId(e.target.value);
   };
@@ -60,7 +63,7 @@ export default function ObjSort() {
     if (id === "" || fname === "" || lname === "") {
       // TODO -> Replace with toast
       // Alert the user that they're missing input
-      alert("Field(s) missing.");
+      addToast("Field(s) missing.", { variant: "error" });
 
       // Don't continue
       return;
@@ -103,7 +106,7 @@ export default function ObjSort() {
 
     // If there were no objects made yet.
     if (objs.length === 0) {
-      toOutput = "No people were made yet!";
+      addToast("No people made yet!", { variant: "warning" })
     } else {
       // Sort the array of objects with my own function
       const sorted = sortObject(objs, (toSortBy as FieldsToSortBy));
