@@ -28,7 +28,7 @@ export default function DiceRoll() {
     const newTotal = totalOfRolls + dieRoll;
     const newAverage = newTotal / newRollCount;
 
-    // Update state
+    // Update roll count and roll total
     setRollCount(newRollCount);
     setTotalOfRolls(newTotal);
     // Update log

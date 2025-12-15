@@ -8,7 +8,7 @@ import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 export default function ObjSort() {
   // The class for the object(s) to sort
   class Person {
-    private id: string;
+    private id: string; // 3-digit ID number
     private fname: string;
     private lname: string;
 
@@ -36,10 +36,11 @@ export default function ObjSort() {
   // State
   const [id, setId] = useState<string>(""); // Person ID
   const [fname, setFname] = useState<string>(""); // Person first name
-  const [lname, setLname] = useState<string>(""); // PErson surname
+  const [lname, setLname] = useState<string>(""); // Person surname
   const [toSortBy, setToSortBy] = useState<FieldsToSortBy | "">(""); // Field to sort by
   const [outputTxt, setOutputTxt] = useState<string>(""); // the Output Text
   const [objs, setObjs] = useState<Person[]>([]); // Object array to sort
+  // A string representation of the previously made object
   const [previousObj, setPreviousObj] = useState<string>("");
 
   const handleIdChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,8 +56,13 @@ export default function ObjSort() {
   };
 
   const handleCreateClick = () => {
+    // If any input is empty
     if (id === "" || fname === "" || lname === "") {
+      // TODO -> Replace with toast
+      // Alert the user that they're missing input
       alert("Field(s) missing.");
+
+      // Don't continue
       return;
     }
     // Create a new Person object with the values entered by the user.
@@ -69,6 +75,7 @@ export default function ObjSort() {
     setPreviousObj(`ID${p.personID}: ${p.firstName} ${p.lastName}\n`)
   };
 
+  // Clear all input and output on the page.
   const handleClear = () => {
     setId("");
     setFname("");
@@ -80,6 +87,7 @@ export default function ObjSort() {
   }
 
   const handleSortByChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    // Set the field to sort the objects by.
     setToSortBy(e.target.value as FieldsToSortBy);
   };
 
@@ -91,31 +99,33 @@ export default function ObjSort() {
 
   const handleSortClick = () => {
     // Output string to display
-    let toOutput: string = "";
+    let toOutput = "";
 
+    // If there were no objects made yet.
     if (objs.length === 0) {
       toOutput = "No people were made yet!";
     } else {
       // Sort the array of objects with my own function
       const sorted = sortObject(objs, (toSortBy as FieldsToSortBy));
 
+      // Build the list of the sorted objects as strings
       sorted.forEach((prsn) => {
         toOutput += `ID${prsn.personID}: ${prsn.firstName} ${prsn.lastName}\n`;
       });
     }
 
+    // Set the output textarea to the built list.
     setOutputTxt(toOutput);
   };
 
   return (
     <Page headerText="Object Sort">
-
-
       <Form submitHandler={handleSubmit}>
         <fieldset>
           <legend>Create Object</legend>
 
           <label htmlFor="personId">
+            {/* TODO -> Change to "ID Number (3-digits)" */}
             ID (3-digits)
           </label>
           <input
@@ -123,10 +133,10 @@ export default function ObjSort() {
             name="personId"
             onChange={handleIdChange}
             maxLength={3}
-            pattern="[0-9][0-9][0-9]"
-            placeholder="ID#"
+            pattern="[0-9][0-9][0-9]" // 3-digit ID
+            placeholder="ID#" // Placeholder
             required
-            type="text"
+            type="text" // Set as a text field to avoid bugs regarding empty number input
             value={id}
           />
 

@@ -10,7 +10,7 @@ export default function StopwatchPage() {
 
       <hr />
 
-      {/* button to return to the index route. */}
+      {/* button to return to the home page */}
       <GoHomeBtn />
     </Page>
   );

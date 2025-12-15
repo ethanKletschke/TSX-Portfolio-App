@@ -6,6 +6,7 @@ type FigureProps = {
   caption?: string;
 };
 
+// Image for the card
 export default function Figure({ src, alt, caption }: FigureProps) {
   return (
     <figure className={styles.figure}>

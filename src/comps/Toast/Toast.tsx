@@ -10,6 +10,7 @@ type ToastProps = {
 export default function Toast({ message, variant }: ToastProps) {
   return (
     <div className={clsx(styles.toast, styles[variant])}>
+      {/* Toast message */}
       {message}
     </div>
   );

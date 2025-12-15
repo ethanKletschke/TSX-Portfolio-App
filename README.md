@@ -26,6 +26,7 @@ prohibits AI training. Previous versions remain under the standard MIT License.
 - [Ethan K.'s TypeScript Portfolio](#ethan-ks-typescript-portfolio)
   - [Table of Contents](#table-of-contents)
   - [About the App](#about-the-app)
+    - [Disclaimer About Me Testing the App](#disclaimer-about-me-testing-the-app)
     - [Features](#features)
     - [Planned Features](#planned-features)
   - [Using the App](#using-the-app)
@@ -54,6 +55,23 @@ frontend are purely just React. No databases or server involved.
 This app has a few pages that demonstrate different concepts and ideas I wanted
 to program. The app is also fully styled. Each page is described briefly in this
 README.
+
+### Disclaimer About Me Testing the App
+
+Over the course of developing this app since I started it in October 2025, I
+initially tested it on Microsoft Edge, as it was my main browser at the time. I
+have since moved to Mozilla Firefox, so 99% of the time, I just test on there.
+It's not guaranteed that I test my app on MS Edge unless I do cross-browser
+styling with CSS prefixes (i.e., `-moz-` and `-webkit-`).
+
+Furthermore, I haven't tested the app at all on any mobile platform as of yet,
+as I can't get Vite to properly expose itself on my home network to properly
+test on my phone as I program the app. If you have any suggestions on how to fix
+this, or even if you cloned the app and tested it on mobile yourself, please
+email me below and mark it as an urgent email, especially if it regards any fix
+I should work on:
+
+<a href="mailto:ethankletschke@outlook.com">ethankletschke@outlook.com</a>
 
 ### Features
 
@@ -85,12 +103,17 @@ README.
 
 For the heavily tested "dev" version:
 
-1. Run `npm run dev` in the project folder.
+1. Run `npm run dev` via a terminal in the project folder. This will run Vite's 
+   development server in the terminal.
+2. Type `O` and press enter to open the app in your browser.
 
-For the (currently untested) production version:
+For the seemingly identical production version:
 
 1. Run `npm run build` to build the production version of the app.
-2. Run `npm run preview` to run the production version.
+2. Run `npm run preview` to run the built production app.
+3. Type `O` and press enter.
+
+I suggest just running the dev server, because this is quicker and easier to do.
 
 ## Pages
 
@@ -177,7 +200,8 @@ _Idea Credit: My hilariously slow phone_
 
 A simple page that just takes a word and builds a new string where each 
 word's character is repeated up to its index in the word.  
-For example, `hey there buddy` will become `hheheytththethertherebbubudbuddbuddy`.
+For example, `hey there buddy` will become
+`hheheytththethertherebbubudbuddbuddy`.
 
 Example of Output:
 
@@ -227,7 +251,7 @@ A small page demonstrating fully-styled dialog boxes of 3 types:
 1. Alert Box
    - A box with a short message and an "OK" button.
 2. Confirm Box
-   - A box with a short confirmation message, along with "Yes" and "No" buttons. 
+   - A box with a short confirmation message, along with "Yes" and "No" buttons.
 3. Form Box
    - A confirm box with a simple form.
 

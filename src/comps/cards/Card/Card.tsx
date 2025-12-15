@@ -28,12 +28,14 @@ export default function Card({ children, title, imgSrc, footerText, imgCaption }
       </header>
       {/* Card body */}
       <section>
+        {/* The card image */}
         <Figure src={imgSrc} alt={imgCaption} caption={imgCaption} />
       
         {children}
       </section>
       {/* Card footer */}
       <footer>
+        {/* Card footer text */}
         <p>{footerText || "Footer"}</p>
       </footer>
     </div>

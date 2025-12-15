@@ -10,5 +10,9 @@
 }
 
 .contentsTable * {
+  /* 
+    Removes underlines from all the text in the card
+    except for the title. See the <ContentsTableCard> CSS Module.
+  */
   text-decoration: none;
 }

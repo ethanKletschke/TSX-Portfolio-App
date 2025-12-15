@@ -65,7 +65,7 @@ export default function SentSort() {
         </fieldset>
       </Form>
 
-      {/* Button to go to the index route. */}
+      {/* Button to go to the home page. */}
       <GoHomeBtn />
     </Page>
   );

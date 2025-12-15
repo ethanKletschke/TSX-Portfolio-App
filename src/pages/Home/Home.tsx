@@ -5,6 +5,7 @@ import sortObjects from "../../funcs/sortObjects";
 import styles from "./Home.module.css";
 
 export default function Home() {
+  // The cards to display
   const links: CardObj[] = [
     {
       route: "/aboutMe",

@@ -6,16 +6,19 @@ import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 
 export default function Numeronyms() {
   // State
-  const [numeronymInput, setNumeronym] = useState<string>("");
-  const [out, setOut] = useState<string>("");
+  // TODO -> Rename to "acronym" and "setAcronym"
+  const [numeronymInput, setNumeronym] = useState<string>(""); // Input from user
+  const [out, setOut] = useState<string>(""); // output string
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    // Set the numeric acronym input
     setNumeronym(e.target.value);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Set the output to the numeric acronym of the user's input
     setOut(numeronym(numeronymInput));
   };
 
@@ -25,6 +28,7 @@ export default function Numeronyms() {
         <fieldset>
           <legend>Input</legend>
 
+          {/* User input */}
           <label htmlFor="numeronym-in">Word to shorten:</label>
           <input
             type="text"
@@ -43,6 +47,7 @@ export default function Numeronyms() {
         <fieldset>
           <legend>Output</legend>
 
+          {/* Output string */}
           <label htmlFor="numeronym-out">Generated Acronym</label>
           <output
             htmlFor="numeronym-in"

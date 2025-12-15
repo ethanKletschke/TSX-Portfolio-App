@@ -2,10 +2,10 @@ import type { ReactNode } from "react";
 import styles from "./CardGrid.module.css";
 
 type CardGridProps = {
-  children: ReactNode;
+  children: ReactNode; // The cards in the grid.
 };
 
-// Grid of cards. Functions as a wrapper to sort any group of cards into a grid shape
+// Grid of cards. Functions as a wrapper to sort any group of cards into a grid layout
 export default function CardGrid({ children }: CardGridProps) {
   return (
     <div className={styles.cardGrid}>

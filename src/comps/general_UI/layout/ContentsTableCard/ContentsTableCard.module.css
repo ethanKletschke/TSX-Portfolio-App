@@ -5,14 +5,20 @@
 }
 
 .contentCard h3 {
+  /*
+    Add an underline to the card's heading text.
+    See the <ContentsTable> CSS Module.
+    */
   text-decoration: underline;
 }
 
+/* The UTF-8 Unicode Icon for the card. */
 .contentCard .icon {
   font-size: 1.6em;
   color: var(--dblue);
 }
 
+/* TODO -> Finish styling. */
 .contentCard .subtitle {
   
 }

@@ -9,7 +9,8 @@
   /* Fix the footer at the bottom of the page regardless of scrolling */
   position: fixed;
   bottom: 0;
-  left: 0; 
+  left: 0;
 
-  width: 100%; /* Full-width */
+  /* Full-width footer */
+  width: 100%;
 }
