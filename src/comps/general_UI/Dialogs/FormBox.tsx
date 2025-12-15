@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Form from "../Form/Form";
 import styles from "./Dialogs.module.css";
+import { useToast } from "../../../systems/toast/toast.context";
 
 export default function FormBox() {
   // States
@@ -8,6 +9,8 @@ export default function FormBox() {
   const [lname, setLname] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [feedback, setFeedback] = useState<string>("");
+
+  const { addToast } = useToast();
 
   // Dialog element Ref
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -51,7 +54,7 @@ export default function FormBox() {
   const handleSubmit = () => {
     // No preventDefault() was used. This allows the dialog to close on submit.
     // Alert the user on submit
-    window.alert(`Feedback Submitted!\nName: ${fname} ${lname}\nEmail: ${email || "Not specified"}`);
+    addToast("Feedback Submitted!", { variant: "success" });
 
     // Reset the values to clear the inputs when the form is submitted
     setFname("");
