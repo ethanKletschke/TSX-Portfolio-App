@@ -5,13 +5,14 @@ export default function numeronym(word: string): string {
     return word;
   }
 
-  // TODO -> Add "temp" variable that stores only the first word entered up to the first whitespace.
   let result = "";
+  // stores only the first word entered up to the first whitespace.
+  let temp = word.slice(0, word.match(/\s/)?.index);
 
   // Build the numeric acronym
-  result = word.charAt(0); // Append the first letter
-  result += String(word.length - 2); // Count of every letter in between
-  result += word.charAt(word.length - 1); // Last letter
+  result = temp.charAt(0); // Append the first letter
+  result += String(temp.length - 2); // Count of every letter in between
+  result += temp.charAt(word.length - 1); // Last letter
 
   // Convert to all lowercase and return the acronym.
   return result.toLowerCase();
