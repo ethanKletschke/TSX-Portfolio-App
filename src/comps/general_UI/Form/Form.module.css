@@ -22,8 +22,8 @@
 .form input::placeholder,
 .form input::-webkit-input-placeholder,
 .form input::-moz-placeholder {
-  /* TODO -> Change font family */
-  font-family: 'Courier New', Courier, monospace;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: inherit;
 }
 
 /* Form Text Areas */
@@ -46,7 +46,7 @@
 }
 
 .form textarea:focus {
-  outline: 2pt solid darkblue;
+  outline: 2pt solid var(--dblue);
 }
 
 /* Input fields except submit button */
@@ -61,7 +61,7 @@
 .form input:not([type=submit],[type=button]):focus,
 .form button:focus,
 .form select:focus {
-  outline: 2pt outset lightgray;
+  outline: 2pt outset var(--dblue);
   border: var(--inputBorder) var(--mainColour);
 }
 
