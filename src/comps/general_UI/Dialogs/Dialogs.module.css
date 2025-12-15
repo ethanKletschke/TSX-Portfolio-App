@@ -49,3 +49,11 @@
   background-color:  var(--dblue);
   transition-duration: 0.2s;
 }
+
+@media screen and (max-width: 720px) {
+  .alertBox,
+  .confirmBox,
+  .formBox {
+    width: 90%;
+  }
+}
