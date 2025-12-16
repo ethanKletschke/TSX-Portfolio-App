@@ -28,8 +28,12 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
+
 
 ::-webkit-scrollbar {
   /* Hides Chrome (et al.) scrollbar */
