@@ -6,16 +6,6 @@ type UserCardProps = {
   imgSrc: string;
 };
 
-/*
-Above type is the same as:
-
-type UserCardProps = {
-  username: string;
-  displayName: string;
-  imgSrc: string;
-}
-*/
-
 export default function UserCard({ username, displayName, imgSrc }: UserCardProps) {
   return (
     <div className={styles.userCard}>
