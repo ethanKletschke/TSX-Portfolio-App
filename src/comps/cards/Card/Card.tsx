@@ -1,21 +1,15 @@
-import type { DefaultCardProps } from "../../props/DefaultCardProps";
+import type { ReactNode } from "react";
 import Figure from "../Figure/Figure";
 import styles from "./Card.module.css";
 
 // Props for a simple card component.
-type CardProps = Required<Omit<DefaultCardProps, "icon" | "subtitle" | "visible">>;
-
-/*
-  Above type is equivalent to:
-
-  type CardProps = {
-    title: string;
-    imgSrc: string;
-    imgCaption: string;
-    children: ReactNode;
-    footerText: string;
-  }
-*/
+type CardProps = {
+  children: ReactNode;
+  title: string;
+  imgSrc: string;
+  footerText: string;
+  imgCaption: string;
+};
 
 // Simple card
 export default function Card({ children, title, imgSrc, footerText, imgCaption }: CardProps) {
@@ -30,7 +24,7 @@ export default function Card({ children, title, imgSrc, footerText, imgCaption }
       <section>
         {/* The card image */}
         <Figure src={imgSrc} alt={imgCaption} caption={imgCaption} />
-      
+
         {children}
       </section>
       {/* Card footer */}
