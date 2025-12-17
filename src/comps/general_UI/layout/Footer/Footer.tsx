@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.foot}>
       {/* Footer copyright text */}
       <p>&copy; Ethan Kletschke, {/* Copyright year */ new Date().getFullYear()}</p>
-      <p className={styles.version}>v2.7.0</p>
+      <p className={styles.version}>v2.8.0</p> {/* NB -> Remember to update */}
     </footer>
   );
 }

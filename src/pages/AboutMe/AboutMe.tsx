@@ -1,6 +1,5 @@
-import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
-import Page from "../../comps/general_UI/layout/Page/Page";
-import SkillMeter from "../../comps/general_UI/SkillMeter/SkillMeter";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn.tsx";
+import Page from "../../comps/general_UI/layout/Page/Page.tsx";
 import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {
@@ -101,31 +100,12 @@ export default function AboutMe() {
 
       <section className={styles["body-section"]}>
         <header>
-          <h2>My Skills and My Confidence in Them</h2>
-        </header>
-        <article>
-          <SkillMeter lblText="HTML" value={80} htmlID="html" />
-          <SkillMeter lblText="JavaScript" value={70} htmlID="js" />
-          <SkillMeter lblText="Git" value={65} htmlID="git" />
-          <SkillMeter lblText="React" value={65} htmlID="react" />
-          <SkillMeter lblText="TypeScript" value={65} htmlID="ts" />
-          <SkillMeter lblText="CSS" value={55} htmlID="css" />
-          <SkillMeter lblText="Database Normalisation" value={55} htmlID="db-norm" />
-          <SkillMeter lblText="PostgreSQL" value={45} htmlID="pgsql" />
-          <SkillMeter lblText="GitHub Automation" value={20} htmlID="github-auto" />
-        </article>
-      </section>
-
-      <hr />
-
-      <section className={styles["body-section"]}>
-        <header>
-          <h2>Contacting Me</h2>
+          <h2>Where to Find Me</h2>
         </header>
         <article>
           <ul>
             <li><a href="mailto:ethankletschke@outlook.com">Email Me (ethankletschke@outlook.com)</a></li>
-            <li><a href="https://github.com/ethanKletschke">My GitHub</a></li>
+            <li><a href="https://github.com/ethanKletschke">ethanKletsche (GitHub)</a></li>
             <li>WhatsApp (text only): +27 71 131 0453</li>
           </ul>
         </article>
