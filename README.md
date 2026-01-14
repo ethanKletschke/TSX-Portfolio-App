@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.8.0`
+- Version: `2.9.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -32,7 +32,7 @@ prohibits AI training. Previous versions remain under the standard MIT License.
   - [Using the App](#using-the-app)
     - [Requirements to Run](#requirements-to-run)
     - [Installation](#installation)
-    - [Running the App](#running-the-app)
+    - [Running the App Yourself](#running-the-app-yourself)
   - [Pages](#pages)
     - [About Me](#about-me)
     - [Cards Demo (WIP)](#cards-demo-wip)
@@ -99,7 +99,11 @@ I should work on:
 2. Use `cd` to navigate to the repository folder
 3. Run `npm install` to download all the dependencies.
 
-### Running the App
+### Running the App Yourself
+
+As of 2026-01-14, this site is 
+[live on Netlify](https://ethankletschke.netlify.app/). But if you want to clone
+this repository, you have two ways to run this app:
 
 For the heavily tested "dev" version:
 

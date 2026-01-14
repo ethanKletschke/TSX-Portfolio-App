@@ -99,6 +99,27 @@ export default function AboutMe() {
       <hr />
 
       <section className={styles["body-section"]}>
+        <article>
+          <header>
+            <h2>Facts About This Project</h2>
+          </header>
+          
+          <ul>
+            <li>
+              This project is proudly open-source on 
+              <a href="https://github.com/ethanKletschke/TSX-Portfolio-App" target="_blank">GitHub</a>,
+              and has been worked on extensively since September 2025.
+            </li>
+            <li>
+              This project was started from scratch with Vite.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <section className={styles["body-section"]}>
         <header>
           <h2>Where to Find Me</h2>
         </header>
