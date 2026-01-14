@@ -103,7 +103,17 @@ export default function AboutMe() {
           <header>
             <h2>Facts About This Project</h2>
           </header>
-
+          
+          <ul>
+            <li>
+              This project is proudly open-source on 
+              <a href="https://github.com/ethanKletschke/TSX-Portfolio-App" target="_blank">GitHub</a>,
+              and has been worked on extensively since September 2025.
+            </li>
+            <li>
+              This project was started from scratch with Vite.
+            </li>
+          </ul>
         </article>
       </section>
 
