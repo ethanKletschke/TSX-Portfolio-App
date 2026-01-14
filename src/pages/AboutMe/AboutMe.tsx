@@ -99,6 +99,17 @@ export default function AboutMe() {
       <hr />
 
       <section className={styles["body-section"]}>
+        <article>
+          <header>
+            <h2>Facts About This Project</h2>
+          </header>
+
+        </article>
+      </section>
+
+      <hr />
+
+      <section className={styles["body-section"]}>
         <header>
           <h2>Where to Find Me</h2>
         </header>
