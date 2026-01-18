@@ -102,6 +102,7 @@ export default function AboutMe() {
         <article>
           <header>
             <h2>Facts About This Project</h2>
+            <p>If you don't program, this section may sound like gibberish...</p>
           </header>
           
           <ul>
