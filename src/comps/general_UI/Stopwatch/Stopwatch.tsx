@@ -24,9 +24,8 @@ export default function Stopwatch() {
 
   // Starts the timer
   const handleStart = () => {
-    // If already running
-    if (isRunning)
-      return; // Don't run the function
+    // If already running, don't start the timer
+    if (isRunning) return; 
 
     // Set start time to "now minus elapsedBeforePause"
     // so the timer resumes from where it left off
