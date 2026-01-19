@@ -107,8 +107,10 @@ export default function AboutMe() {
           
           <ul>
             <li>
-              This project is proudly open-source on 
-              <a href="https://github.com/ethanKletschke/TSX-Portfolio-App" target="_blank">GitHub</a>,
+              This project is proudly open-source on&nbsp;
+              <a href="https://github.com/ethanKletschke/TSX-Portfolio-App" target="_blank">
+                GitHub
+              </a>,
               and has been worked on extensively since September 2025.
             </li>
             <li>
