@@ -82,7 +82,7 @@ I should work on:
 
 ### Planned Features
 
-- Full Jest testing
+- Full Jest testing for React components
 - A page with a styled &lt;select&gt; element (combo box)
 - An advanced modal example demonstrating the use of `forwardRef()`.
 
