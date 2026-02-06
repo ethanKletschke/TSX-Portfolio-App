@@ -1,7 +1,7 @@
 {
   "name": "tsx-portfolio",
   "private": true,
-  "version": "2.9.0",
+  "version": "3.0.0",
   "type": "module",
   "license": "MIT (Modified)",
   "scripts": {
@@ -29,10 +29,10 @@
     "depcheck": "^1.4.7",
     "globals": "^16.5.0",
     "mocha": "^11.7.5",
-    "ts-node": "^10.9.2",
+    "ts-node": "^1.7.1",
     "tsx": "^4.20.6",
     "typescript": "~5.9.3",
-    "vite": "^7.2.4"
+    "vite": "^7.3.1"
   },
   "browserslist": [
     "last 2 Chrome versions",

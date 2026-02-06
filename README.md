@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `2.9.0`
+- Version: `3.0.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -82,7 +82,7 @@ I should work on:
 
 ### Planned Features
 
-- Full Jest testing
+- Full Jest testing for React components
 - A page with a styled &lt;select&gt; element (combo box)
 - An advanced modal example demonstrating the use of `forwardRef()`.
 

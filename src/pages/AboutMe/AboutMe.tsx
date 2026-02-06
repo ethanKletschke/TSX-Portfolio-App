@@ -102,12 +102,15 @@ export default function AboutMe() {
         <article>
           <header>
             <h2>Facts About This Project</h2>
+            <p>If you don't program, this section may sound like gibberish...</p>
           </header>
           
           <ul>
             <li>
-              This project is proudly open-source on 
-              <a href="https://github.com/ethanKletschke/TSX-Portfolio-App" target="_blank">GitHub</a>,
+              This project is proudly open-source on&nbsp;
+              <a href="https://github.com/ethanKletschke/TSX-Portfolio-App" target="_blank">
+                GitHub
+              </a>,
               and has been worked on extensively since September 2025.
             </li>
             <li>
@@ -127,6 +130,7 @@ export default function AboutMe() {
           <ul>
             <li><a href="mailto:ethankletschke@outlook.com">Email Me (ethankletschke@outlook.com)</a></li>
             <li><a href="https://github.com/ethanKletschke">ethanKletsche (GitHub)</a></li>
+            <li><a href="www.linkedin.com/in/ethan-kletschke-164a24384">LinkedIn</a></li>
             <li>WhatsApp (text only): +27 71 131 0453</li>
           </ul>
         </article>

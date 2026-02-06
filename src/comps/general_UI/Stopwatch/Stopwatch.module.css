@@ -16,6 +16,10 @@
   font-family: OpenSans, Arial, Helvetica, sans-serif;
 }
 
+.btnWrap > button:disabled {
+  opacity: 0.7;
+}
+
 .btnWrap > button:hover {
   color: var(--mainColour);
   background-color: var(--dblue);
@@ -28,6 +32,7 @@
 /* On smaller screens */
 @media screen and (max-width: 720px) {
   .btnWrap {
+    /* Display the button group as a column */
     flex-direction: column;
     margin: 1em 0;
   } 
