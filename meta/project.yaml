@@ -1,0 +1,21 @@
+# Project metadata for humans to read
+# Not used by the application at runtime
+
+project-meta:
+  project-name: Ethan's Portfolio Project
+  author: Ethan Kletschke
+  date-started: 2025-09-27 # Approximate
+  last-updated: 2026-02-07
+  languages:
+    - React
+    - TypeScript
+    - CSS
+  status: Stable
+  license: MIT (Modified)
+  version: 3.0.0
+
+build:
+  developed-on: Ubuntu (through Windows 11 WSL)
+  tested-on:
+    - Mozilla Firefox
+    - Microsoft Edge
