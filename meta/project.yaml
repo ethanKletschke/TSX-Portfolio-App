@@ -3,9 +3,8 @@
 
 project-meta:
   project-name: Ethan's Portfolio Project
-  author: Ethan Kletschke
   date-started: 2025-09-27 # Approximate
-  last-updated: 2026-02-07
+  last-updated: 2026-02-27
   languages:
     - React
     - TypeScript
@@ -15,7 +14,23 @@ project-meta:
   version: 3.0.0
 
 build:
-  developed-on: Ubuntu (through Windows 11 WSL)
-  tested-on:
+  dev-environments:
+    - Ubuntu (WSL2)
+  test-environments:
+    - Ubuntu (WSL2)
     - Mozilla Firefox
-    - Microsoft Edge
+  target-platforms:
+    - Cross-platform (browser)
+  compiler:
+    compiler-name: tsc
+    compiler-version: 5.9.3
+    compilation-process:
+      timing: AOT
+      output: Transpiled Source
+
+team:
+  author: Ethan Kletschke
+  contributors:
+    - name: Ethan Kletschke
+      role: Owner and Author
+      github-username: ethanKletschke
