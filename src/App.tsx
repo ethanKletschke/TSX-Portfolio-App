@@ -12,6 +12,7 @@ import Numeronyms from "./pages/Numeronyms/Numeronyms.tsx";
 import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
+import TempConvert from "./pages/TempConvert/TempConvert.tsx";
 
 export default function App() {
   return (
@@ -41,6 +42,8 @@ export default function App() {
       <Route path="/numeronyms" element={<Numeronyms />} />
       {/* Cards Page */}
       <Route path="/cards" element={<CardsDemo />} />
+      {/* Temperature conversion page */}
+      <Route path="/temps" element={<TempConvert />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>
