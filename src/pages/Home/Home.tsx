@@ -50,6 +50,12 @@ export default function Home() {
       subtitle: "Generate a numeric acronym"
     },
     {
+      route: "/temps",
+      title: "Temperature Conversions",
+      icon: "☀",
+      subtitle: "Convert temperatures"
+    },
+    {
       route: "/sentenceSort",
       title: "Sentence Sort",
       icon: "☷",
