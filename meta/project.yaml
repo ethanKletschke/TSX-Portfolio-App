@@ -4,7 +4,7 @@
 project-meta:
   project-name: Ethan's Portfolio Project
   date-started: 2025-09-27 # Approximate
-  last-updated: 2026-02-27
+  last-updated: 2026-03-12
   languages:
     - React
     - TypeScript
@@ -24,9 +24,6 @@ build:
   compiler:
     compiler-name: tsc
     compiler-version: 5.9.3
-    compilation-process:
-      timing: AOT
-      output: Transpiled Source
 
 team:
   author: Ethan Kletschke
