@@ -18,10 +18,10 @@ export default function AboutMe() {
 
     // If my birthday hasn't passed
     if (!hasHadBirthdayThisYear) {
-      // Subtract 1 from my age 
+      // Subtract 1 from my age
       age--;
     }
-    
+
     return age;
   }
 
@@ -31,7 +31,8 @@ export default function AboutMe() {
     "TypeScript",
     "HTML",
     "CSS",
-    "PostgreSQL"
+    "PostgreSQL",
+    "Bash"
   ].sort(); // Sort it alphabetically
 
   // Things I experimented with
@@ -104,7 +105,7 @@ export default function AboutMe() {
             <h2>Facts About This Project</h2>
             <p>If you don't program, this section may sound like gibberish...</p>
           </header>
-          
+
           <ul>
             <li>
               This project is proudly open-source on&nbsp;
@@ -131,7 +132,6 @@ export default function AboutMe() {
             <li><a href="mailto:ethankletschke@outlook.com">Email Me (ethankletschke@outlook.com)</a></li>
             <li><a href="https://github.com/ethanKletschke">ethanKletsche (GitHub)</a></li>
             <li><a href="www.linkedin.com/in/ethan-kletschke-164a24384">LinkedIn</a></li>
-            <li>WhatsApp (text only): +27 71 131 0453</li>
           </ul>
         </article>
       </section>
