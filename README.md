@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `3.0.0`
+- Version: `3.1.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -101,13 +101,13 @@ I should work on:
 
 ### Running the App Yourself
 
-As of 2026-01-14, this site is 
+As of 2026-01-14, this site is
 [live on Netlify](https://ethankletschke.netlify.app/). But if you want to clone
 this repository, you have two ways to run this app:
 
 For the heavily tested "dev" version:
 
-1. Run `npm run dev` via a terminal in the project folder. This will run Vite's 
+1. Run `npm run dev` via a terminal in the project folder. This will run Vite's
    development server in the terminal.
 2. Type `o` and press enter to open the app in your browser.
 
@@ -121,7 +121,8 @@ I suggest just running the dev server, because this is quicker and easier to do.
 
 ## Pages
 
-Unless otherwise specified, all ideas were conceived by me.  
+Unless otherwise specified, all ideas were conceived by me.
+
 The home page shown below features links to each of the pages discussed in this
 section.
 
@@ -145,13 +146,14 @@ cards about famous landmarks.
 
 On this page, you can input a number to add to a previous number (starting at 0)
 with each button press, and you can optionally add a "step" (how many times
-to add the same number).  
-For example, setting the number as 2 and the step as 2 will add 4 to the number. 
+to add the same number).
+
+For example, setting the number as 2 and the step as 2 will add 4 to the number.
 
 The formula is as follows:
 
 $$
-val = val + (new \times step) 
+val = val + (new \times step)
 $$
 
 Where:
@@ -166,8 +168,8 @@ Example of output:
 
 ### Custom Email Validator
 
-On this page, you can validate an entered email address, and the app will 
-automatically validate the email as you type it using a custom RegEx instead of 
+On this page, you can validate an entered email address, and the app will
+automatically validate the email as you type it using a custom RegEx instead of
 the browser's built-in `email` input validator. Supports `email` autocomplete.
 
 Example of output:
@@ -178,7 +180,7 @@ Example of output:
 
 _Idea Credit: ChatGPT_
 
-A simple page containing a stopwatch (measured in seconds only) 
+A simple page containing a stopwatch (measured in seconds only)
 and a time log for it.
 
 Example of output on Firefox:
@@ -187,11 +189,11 @@ Example of output on Firefox:
 
 ### Numeric Acronym Generator
 
-A page that generates a numeric acronym out of a word.  
+A page that generates a numeric acronym out of a word.
 A numeric acronym is an abbreviation of a word (especially in IT
 documentation) that is made up of the word's first letter,
 its last letter, and the number of characters in between the
-first and last letters.  
+first and last letters.
 For example, `accessibility` would become `a11y`.
 
 Example of output for `internationalisation`:
@@ -202,8 +204,9 @@ Example of output for `internationalisation`:
 
 _Idea Credit: My hilariously slow phone_
 
-A simple page that just takes a word and builds a new string where each 
-word's character is repeated up to its index in the word.  
+A simple page that just takes a word and builds a new string where each
+word's character is repeated up to its index in the word.
+
 For example, `hey there buddy` will become
 `hheheytththethertherebbubudbuddbuddy`.
 
@@ -214,7 +217,7 @@ Example of Output:
 ### Sentence Sorting
 
 On this page, you can enter a sentence, and the program will sort that sentence
-by its individual letters (case- and accent-insensitive).  
+by its individual letters (case- and accent-insensitive).
 For example, `Letters` would be sorted as `eeLrstt`.
 
 Example of Output:
