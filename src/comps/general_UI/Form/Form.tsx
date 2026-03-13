@@ -7,7 +7,7 @@ type FormProps = {
   // The child elements of the component, i.e. the form controls.
   children: ReactNode;
   // Is the form in a dialog?
-  dialog?: boolean; 
+  dialog?: boolean;
 };
 
 export default function Form({ submitHandler, children, dialog }: FormProps) {
@@ -16,15 +16,15 @@ export default function Form({ submitHandler, children, dialog }: FormProps) {
     // Prevent page refresh on submit
     e.preventDefault();
   };
-  
+
   return (
-    <form 
+    <form
       // Prevents autocomplete by default.
       autoComplete="off"
       className={styles.form}
       // Determines the method of the form. If it's a dialog,
       // it will allow the form to close the dialog on submit.
-      method={(dialog) ? "dialog" : "get"}
+      method={(dialog) ? "dialog" : "post"}
       onSubmit={submitHandler || defaultHandleSubmit}
     >
       {/* Form controls, i.e., input elements */}
