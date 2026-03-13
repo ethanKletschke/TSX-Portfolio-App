@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "../../comps/general_UI/Form/Form";
 import Page from "../../comps/general_UI/layout/Page/Page";
 import Temperatures from "../../funcs/Temperatures";
+import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
 
 export default function TempConvert() {
   // State
@@ -49,6 +50,8 @@ export default function TempConvert() {
           <input type="submit" value="Convert" />
         </fieldset>
       </Form>
+
+      <GoHomeBtn/>
     </Page>
   );
 }
