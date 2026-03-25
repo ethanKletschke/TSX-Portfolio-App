@@ -31,13 +31,13 @@ export default function AboutMe() {
     "TypeScript",
     "HTML",
     "CSS",
-    "PostgreSQL",
     "Bash"
   ].sort(); // Sort it alphabetically
 
   // Things I experimented with
   const experimentedWith = [
     "Bootstrap 4",
+    "PostgreSQL",
     "Bootstrap 5",
     "GnuCOBOL",
     "C++",
@@ -53,7 +53,8 @@ export default function AboutMe() {
     "Responsive Web Design (RWD)",
     "Accessibility in web development",
     "Good programming practices",
-    "Version control with Git"
+    "Version control with Git",
+    "Object-oriented programming (OOP)"
   ].sort();
 
   return (
@@ -103,7 +104,6 @@ export default function AboutMe() {
         <article>
           <header>
             <h2>Facts About This Project</h2>
-            <p>If you don't program, this section may sound like gibberish...</p>
           </header>
 
           <ul>
