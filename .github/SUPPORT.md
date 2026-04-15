@@ -1,6 +1,7 @@
 # Application Support
 
-Thank you for your interest in my portfolio project!  
+Thank you for your interest in my portfolio project!
+
 This document outlines where (and how) to find support for the app
 if it doesn't work as intended on your machine.
 
@@ -24,7 +25,8 @@ are disabled, so please contact me instead.
 
 ## Encountered a Security Issue?
 
-Security issues are taken seriously.  
+Security issues are taken seriously.
+
 Please _**do NOT **_ make a security issue public with a GitHub Issue under ANY
 circumstance. <a href="mailto:ethankletschke@outlook.com">Email me</a> and set it
 as high priority. I'll respond as soon as possible.
