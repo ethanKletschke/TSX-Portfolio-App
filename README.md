@@ -16,10 +16,9 @@ A TypeScript React app used as my portfolio.
   - Vite
   - Windows Subsystem for Linux (WSL)
   - ChatGPT _**(for problem-solving and ideas only)**_
-- License: Modified MIT (See below)
+- License: MIT
 
-As of version 0.22.0, this project is licensed under a modified MIT License that
-prohibits AI training. Previous versions remain under the standard MIT License.
+As of 2026-04-15, this app is licensed under the MIT license.
 
 ## Table of Contents
 

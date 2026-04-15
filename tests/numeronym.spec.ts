@@ -6,7 +6,7 @@ describe("numeronym()", function () {
   it("Returns the two letters in lowercase with numbers in between them", function () {
     const tests: string[] = [
       "Accessibility",
-      "Ethan", 
+      "Ethan",
       "Sabrielle",
       "International"
     ];
@@ -35,7 +35,7 @@ describe("numeronym()", function () {
       ["Heidi", "h3i"],
       ["Markiplier", "m8r"]
     ];
-    
+
     tests.forEach(test => {
       expect(numeronym(test[0])).to.equal(test[1], "Should generate a correct numeronym");
     });
