@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/AboutMe/AboutMe.tsx";
 import CardsDemo from "./pages/CardsDemo/CardsDemo.tsx";
 import ConsecSum from "./pages/ConsecSum/ConsecSum.tsx";
+import DescriptionListDemo from "./pages/DescriptionListDemo/DescriptionListDemo.tsx";
 import DialogsDemo from "./pages/DialogsDemo/DialogsDemo.tsx";
 import DiceRoll from "./pages/DiceRoll/DiceRoll.tsx";
 import EmailValidate from "./pages/EmailValidate/EmailValidate.tsx";
@@ -44,6 +45,8 @@ export default function App() {
       <Route path="/cards" element={<CardsDemo />} />
       {/* Temperature conversion page */}
       <Route path="/temps" element={<TempConvert />} />
+      {/* Description list page */}
+      <Route path="/descLists" element={<DescriptionListDemo />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>

@@ -78,6 +78,12 @@ export default function Home() {
       title: "Cards Demo",
       icon: "🂡",
       subtitle: "A demo of simple user cards"
+    },
+    {
+      route: "/descLists",
+      title: "Description List Demo",
+      icon: "⠇",
+      subtitle: "A styled list of key-value pairs"
     }
   ];
 
