@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { useId } from "react";
+import styles from "./DescriptionList.module.css";
 
 /**
  * The description list item
@@ -18,7 +19,7 @@ export function DescriptionList({ items }: Props) {
   const id = useId();
 
   return (
-    <dl>
+    <dl className={styles.dl}>
       {/* Generate  */}
       {items.map(({ dtContent, ddContent }) => (
         <div key={`DL-${id}`}>

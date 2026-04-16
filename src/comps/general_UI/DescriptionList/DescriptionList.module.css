@@ -1,0 +1,13 @@
+.dl {
+  padding: 1em;
+}
+
+.dl dt {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--dblue);
+}
+
+.dl dd {
+  margin-left: 1em;
+}
