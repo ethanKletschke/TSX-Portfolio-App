@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `3.1.0`
+- Version: `3.2.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -18,7 +18,9 @@ A TypeScript React app used as my portfolio.
   - ChatGPT _**(for problem-solving and ideas only)**_
 - License: MIT
 
-As of 2026-04-15, this app is licensed under the MIT license.
+As of 2026-04-15, this app is licensed under the MIT license. Previous versions
+of the app remain under a modified MIT license specifying that AI training is
+prohibited for my app.
 
 ## Table of Contents
 
@@ -44,6 +46,8 @@ As of 2026-04-15, this app is licensed under the MIT license.
     - [Dice Roll](#dice-roll)
     - [Object Sort](#object-sort)
     - [Dialog Box Demo](#dialog-box-demo)
+    - [Temperature Conversions](#temperature-conversions)
+    - [Description List Demo](#description-list-demo)
   - [Credits](#credits)
 
 ## About the App
@@ -129,15 +133,13 @@ section.
 
 ### About Me
 
-A page discussing me and my confidence in my skills. The skills are displayed as
-a meter from 1% to 100%.
+A page discussing me and my confidence in my skills.
 
 ![Output Screenshot](./README_screenshots/About.png)
 
 ### Cards Demo (WIP)
 
-A small page demonstrating fully styled "Card" components, currently only basic
-cards about famous landmarks.
+A small page demonstrating fully styled "Card" components.
 
 ![Output](./README_screenshots/CardsBasic.png)
 
@@ -268,6 +270,23 @@ Page by Default:
 After opening the alert box:
 
 ![Output screenshot](./README_screenshots/AlertBox.png)
+
+### Temperature Conversions
+
+Converts a temperature from Celsius to Fahrenheit.
+
+Output after converting 14&deg;C:
+
+![Output Screenshot](./README_screenshots/Temps.png)
+
+### Description List Demo
+
+Simply shows a list of programming terms and their definitions using a
+`<dl>` element.
+
+Example Output:
+
+![Output Screenshot](./README_screenshots/DList.png)
 
 ## Credits
 

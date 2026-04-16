@@ -15,13 +15,13 @@ if it doesn't work as intended on your machine.
 ## Encountered a Bug?
 
 If you find a bug, please report it as soon as possible, so I can investigate
-and fix it.
+and fix it, such as styling anomalies, logic bugs, and so on.
 
 To report a bug, open a GitHub Issue in this repository, or
 <a href="mailto:ethankletschke@outlook.com">email me</a>.
 
 As specified in [the contribution document](./CONTRIBUTING.md), pull requests
-are disabled, so please contact me instead.
+are disabled, so please contact me or make an issue instead.
 
 ## Encountered a Security Issue?
 
