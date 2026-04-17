@@ -11,7 +11,7 @@
 
   /* Gap between toasts */
   gap: 0.5em;
-  
+
   /* Allows the toast to appear over every other element */
   z-index: 9999;
 }

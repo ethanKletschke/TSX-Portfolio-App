@@ -14,7 +14,7 @@ export const ToastContext = createContext<ToastContextValue | null>(null);
 export function useToast(): ToastContextValue {
   // Create a toast context value with useContext()
   const ctx = useContext(ToastContext);
-  
+
   // If the context does not exist
   if (!ctx) {
     // Throw an error, as the context was not used in a context provider.

@@ -3,7 +3,7 @@
 A TypeScript React app used as my portfolio.
 
 - Author: Ethan Kletschke
-- Version: `3.2.0`
+- Version: `3.3.0`
 - Development Environment: Ubuntu (WSL)
   - Initially tested on MS Edge, mostly tested on Mozilla Firefox
     - Screenshots taken from output on Firefox
@@ -48,6 +48,7 @@ prohibited for my app.
     - [Dialog Box Demo](#dialog-box-demo)
     - [Temperature Conversions](#temperature-conversions)
     - [Description List Demo](#description-list-demo)
+    - [Custom Word Counter](#custom-word-counter)
   - [Credits](#credits)
 
 ## About the App
@@ -287,6 +288,15 @@ Simply shows a list of programming terms and their definitions using a
 Example Output:
 
 ![Output Screenshot](./README_screenshots/DList.png)
+
+### Custom Word Counter
+
+Counts how many times a specific word is present in a paragraph you type.
+
+Example output for counting "hello" in multiple occurences of the phrase
+"Hello World":
+
+<!-- TODO Add Screenshot -->
 
 ## Credits
 

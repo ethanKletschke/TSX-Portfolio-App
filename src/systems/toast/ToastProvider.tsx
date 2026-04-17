@@ -19,10 +19,10 @@ export function ToastProvider({ children }: ToastProviderProps) {
   const removeToast = useCallback((id: string) => {
     // Remove the toast with the specified ID.
     setToasts(prev => prev.filter((t) => t.id !== id));
-    
+
     // Get the timer of that toast.
     const timer = timers.current.get(id);
-    
+
     // If the timer exists
     if (timer) {
       // clear that timer
@@ -42,7 +42,7 @@ export function ToastProvider({ children }: ToastProviderProps) {
     const newToast: ToastObj = {
       id,
       message,
-      duration, 
+      duration,
       variant: options?.variant ?? "default"
     };
 
@@ -71,7 +71,7 @@ export function ToastProvider({ children }: ToastProviderProps) {
     <ToastContext.Provider value={{ addToast, removeToast, toasts }}>
       {/* Represents the <App> component. */}
       {children}
-      
+
       {/* The toast portal */}
       <ToastPortal>
         {/* Toast container element */}
