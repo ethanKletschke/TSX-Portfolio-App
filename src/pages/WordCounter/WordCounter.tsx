@@ -1,15 +1,13 @@
 import { useState } from "react";
 import Form from "../../comps/general_UI/Form/Form";
-import Page from "../../comps/general_UI/layout/Page/Page";
 import GoHomeBtn from "../../comps/general_UI/GoHomeBtn/GoHomeBtn";
+import Page from "../../comps/general_UI/layout/Page/Page";
 
 export default function WordCounter() {
   // The word entered by the user
   const [providedWord, setProvidedWord] = useState("");
   // The paragraph to search
   const [para, setPara] = useState("");
-  // The number of occurrences
-  const [count, setCount] = useState(0);
   // The output text
   const [resText, setResText] = useState("");
 
@@ -30,7 +28,6 @@ export default function WordCounter() {
 
     // Clear all the input
     setProvidedWord("");
-    setCount(0);
     setPara("");
     setResText("");
   };
@@ -45,12 +42,9 @@ export default function WordCounter() {
 
     if (matches) {
       const matchCount = matches.length;
-
-      setCount(matchCount);
-      setResText(`The word "${providedWord}" was found ${matchCount} times in your paragraph.`);
+      setResText(`The word "${providedWord}" was found ${matchCount} time(s) in your paragraph.`);
     } else {
       setResText(`The word "${providedWord}" was not found in your paragraph.`);
-      setCount(0);
     }
   };
 

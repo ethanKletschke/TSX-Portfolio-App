@@ -296,7 +296,7 @@ Counts how many times a specific word is present in a paragraph you type.
 Example output for counting "hello" in multiple occurences of the phrase
 "Hello World":
 
-<!-- TODO Add Screenshot -->
+![Output Screenshot](./README_screenshots/WordCount.png)
 
 ## Credits
 
