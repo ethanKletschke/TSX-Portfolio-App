@@ -84,9 +84,16 @@ export default function Home() {
       title: "Description List Demo",
       icon: "⠇",
       subtitle: "A styled list of key-value pairs"
+    },
+    {
+      route: "/wordCount",
+      title: "Word Counter",
+      icon: "⒲⒞=②",
+      subtitle: "Counts a specified word in a provided paragraph"
     }
   ];
 
+  // Sort the links
   const sortedLinks = sortObjects(links, "title");
 
   return (
@@ -94,6 +101,7 @@ export default function Home() {
       {/* Heading with instruction */}
       <h2 className={styles.heading}>Select a Page to Go To</h2>
 
+      {/* Create the table of contents with the sorted links */}
       <ContentsTable cards={sortedLinks} />
     </Page>
   );

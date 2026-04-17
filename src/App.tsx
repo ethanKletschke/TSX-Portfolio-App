@@ -14,6 +14,7 @@ import ObjSort from "./pages/ObjSort/ObjSort.tsx";
 import SentSort from "./pages/SentSort/SentSort.tsx";
 import StopwatchPage from "./pages/StopwatchPage/StopwatchPage.tsx";
 import TempConvert from "./pages/TempConvert/TempConvert.tsx";
+import WordCounter from "./pages/WordCounter/WordCounter.tsx";
 
 export default function App() {
   return (
@@ -47,6 +48,8 @@ export default function App() {
       <Route path="/temps" element={<TempConvert />} />
       {/* Description list page */}
       <Route path="/descLists" element={<DescriptionListDemo />} />
+      {/* Word Counter page */}
+      <Route path="/wordCount" element={<WordCounter />} />
       {/* 404 Page */}
       <Route path="*" element={<NoPage />} />
     </Routes>
